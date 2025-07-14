@@ -12,10 +12,10 @@ site_theme               : "default"
 title                    : "Michael Phillips"
 title_separator          : "-"
 name                     : &name "Your Name"
-description              : "Planetary Scientist & Astrobiology Researcher"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "michaelphillips/michaelphillips.github.io"
+description              : "Planetary Scientist"
+url                      : "https://michael-s-phillips.github.io"
+baseurl                  : "/michaelphillips.github.io"
+repository               : "michael-s-phillips/michaelphillips.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,7 +24,6 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Michael Phillips"
-  pronouns         : # example: "she/her"  
   bio              : "Planetary Scientist specializing in Mars geology and astrobiology"
   location         : "University of Arizona, Lunar & Planetary Laboratory"
   employer         : "University of Arizona"
