@@ -22,10 +22,10 @@ repository               : "michael-s-phillips/michaelphillips.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Michael Phillips"
   bio              : "Planetary Scientist specializing in Mars geology and astrobiology"
-  location         : "University of Arizona, Lunar & Planetary Laboratory"
+  location         : "Lunar & Planetary Laboratory"
   employer         : "University of Arizona"
   uri              : # URL
   email            : "phillipsm@arizona.edu" 
