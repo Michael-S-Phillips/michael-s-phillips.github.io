@@ -29,7 +29,21 @@ I develop computational tools and processing pipelines for analyzing CRISM (Comp
 
 ## Current Work
 
-I am actively involved in Mars 2020 Perseverance rover mission support, Mars Sample Return planning, and the development of AI-driven approaches for autonomous science operations in planetary exploration. My work combines orbital remote sensing observations with terrestrial analog studies to better understand Mars' geological history and astrobiological potential.
+I currently lead and contribute to multiple NASA-funded research projects investigating Mars through orbital remote sensing and data analysis. My active projects include:
+
+- **From Olivine to Feldspar: Tracing Martian Crustal Evolution with CRISM Mapping Data** (PI) - Using CRISM hyperspectral data to map and understand the compositional evolution of Mars' ancient crust.
+
+- **Spectral Cube Analysis Tool** (PI) - Developing a Python-based graphical user interface for analyzing hyperspectral imaging data from planetary missions.
+
+- **Production of Digital Terrain Models from HiRISE Stereo Pairs** (PI) - Creating high-resolution topographic data products from Mars Reconnaissance Orbiter imagery.
+
+- **Geologic Context of Unique Basin-Related Alteration Environments** (Co-I, Johns Hopkins University) - Characterizing ancient aqueous alteration in Martian impact basins and their astrobiological implications.
+
+- **Spectral and Geologic Analyses of Light-Toned Units in Southern Sinus Meridiani** (Co-I, SUNY) - Investigating sedimentary and altered outcrops in equatorial Mars regions.
+
+- **Planetary Data Training Workshops** (Team Member, Arizona State University) - Training the next generation of planetary scientists in data analysis techniques.
+
+My research combines detailed spectral analysis of Mars' surface with computational tool development and terrestrial analog studies to advance our understanding of the planet's geological history and astrobiological potential.
 
 ## Approach
 
