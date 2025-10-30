@@ -44,7 +44,8 @@ redirect_from:
   overflow: hidden;
 }
 
-.research-image img {
+.research-image img,
+.research-image video {
   width: 100%;
   height: auto;
   display: block;
@@ -88,7 +89,7 @@ I am a planetary scientist at the University of Arizona's Lunar & Planetary Labo
 
 ## Featured Research Overview
 
-<img src="/michaelphillips.github.io/assets/images/mars_art_map.png" alt="Mars geological map and composition analysis" class="banner-image">
+<img src="/michaelphillips.github.io/assets/images/mars_art_map.webp" alt="Mars geological map and composition analysis" class="banner-image">
 
 ## Research Focus
 
@@ -104,7 +105,10 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
         I investigate the composition and evolution of Mars' oldest terrains, including the recent discovery of widespread anorthosites in the planet's lower crust. This work provides fundamental insights into early planetary differentiation processes and the geological evolution of terrestrial planets.
       </div>
       <div class="research-image">
-        <img src="/michaelphillips.github.io/assets/images/primordial_mars_art.jpg" alt="Ancient Mars environment reconstruction">
+        <video controls autoplay muted loop>
+          <source src="/michaelphillips.github.io/assets/images/primordial_mars_art.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
