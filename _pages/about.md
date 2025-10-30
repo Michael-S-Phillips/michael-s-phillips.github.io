@@ -8,29 +8,50 @@ redirect_from:
 ---
 
 <style>
-.homepage-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.research-section {
   margin: 30px 0;
 }
 
-.gallery-item {
-  position: relative;
-  overflow: hidden;
+.research-item {
+  margin-bottom: 30px;
+}
+
+.research-item h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.research-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.research-image {
+  flex: 0 0 350px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
-.gallery-item:hover {
-  transform: scale(1.02);
-}
-
-.gallery-item img {
+.research-image img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.research-text {
+  flex: 1;
 }
 
 .video-embed {
@@ -51,29 +72,23 @@ redirect_from:
   height: 100%;
   border: none;
 }
+
+@media (max-width: 768px) {
+  .research-content {
+    flex-direction: column;
+  }
+
+  .research-image {
+    flex: 0 0 auto;
+  }
+}
 </style>
 
 I am a planetary scientist at the University of Arizona's Lunar & Planetary Laboratory, specializing in Mars geology, astrobiology, and the application of artificial intelligence to planetary exploration. My research focuses on understanding the ancient history of Mars through orbital remote sensing, with particular emphasis on crustal composition, hydrothermal systems, and the search for biosignatures.
 
-## Featured Research
+## Featured Research Overview
 
-<div class="homepage-gallery">
-  <div class="gallery-item">
-    <img src="/michaelphillips.github.io/images/mars_art_map.png" alt="Mars geological map and composition analysis">
-  </div>
-  <div class="gallery-item">
-    <img src="/michaelphillips.github.io/images/primordial_mars_art.jpg" alt="Ancient Mars environment reconstruction">
-  </div>
-  <div class="gallery-item">
-    <img src="/michaelphillips.github.io/images/salt_constructs_graphical_abstract.png" alt="Salt constructs in Mars analog environments">
-  </div>
-</div>
-
-### Research Overview
-
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/72FFi2Hdxdg" allowfullscreen="" loading="lazy"></iframe>
-</div>
+![Mars geological map and composition analysis]({{ site.baseurl }}/images/mars_art_map.png)
 
 ## Research Focus
 
@@ -81,17 +96,47 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
 
 ### Key Research Areas
 
-**Ancient Martian Crust & Planetary Evolution**
-I investigate the composition and evolution of Mars' oldest terrains, including the recent discovery of widespread anorthosites in the planet's lower crust. This work provides fundamental insights into early planetary differentiation processes and the geological evolution of terrestrial planets.
+<div class="research-section">
+  <div class="research-item">
+    <h4>Ancient Martian Crust & Planetary Evolution</h4>
+    <div class="research-content">
+      <div class="research-text">
+        I investigate the composition and evolution of Mars' oldest terrains, including the recent discovery of widespread anorthosites in the planet's lower crust. This work provides fundamental insights into early planetary differentiation processes and the geological evolution of terrestrial planets.
+      </div>
+      <div class="research-image">
+        <img src="{{ site.baseurl }}/images/primordial_mars_art.jpg" alt="Ancient Mars environment reconstruction">
+      </div>
+    </div>
+  </div>
 
-**Mars Astrobiology & Biosignature Detection**
-I develop and apply AI/machine learning techniques to improve the detection of potential biosignatures and identify high-priority targets for astrobiology investigations. My work addresses critical knowledge gaps in understanding Mars' habitability through time.
+  <div class="research-item">
+    <h4>Mars Astrobiology & Biosignature Detection</h4>
+    <div class="research-content">
+      <div class="research-image">
+        <img src="{{ site.baseurl }}/images/biosigs_orbit2ground.png" alt="Orbit to ground biosignature framework">
+      </div>
+      <div class="research-text">
+        I develop and apply AI/machine learning techniques to improve the detection of potential biosignatures and identify high-priority targets for astrobiology investigations. My work addresses critical knowledge gaps in understanding Mars' habitability through time.
+      </div>
+    </div>
+  </div>
 
-**Hydrothermal Systems & Aqueous Alteration**
-My research characterizes ancient hydrothermal environments in Martian impact basins, investigating mineral assemblages that record past water-rock interactions and their implications for habitability and preservation of biosignatures.
+  <div class="research-item">
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/72FFi2Hdxdg" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
 
-**Hyperspectral Data Processing & Analysis**
-I develop computational tools and processing pipelines for analyzing CRISM (Compact Reconnaissance Imaging Spectrometer for Mars) hyperspectral data, including automated detection algorithms and spectral analysis frameworks that enable large-scale compositional mapping.
+  <div class="research-item">
+    <h4>Hydrothermal Systems & Aqueous Alteration</h4>
+    <p>My research characterizes ancient hydrothermal environments in Martian impact basins, investigating mineral assemblages that record past water-rock interactions and their implications for habitability and preservation of biosignatures.</p>
+  </div>
+
+  <div class="research-item">
+    <h4>Hyperspectral Data Processing & Analysis</h4>
+    <p>I develop computational tools and processing pipelines for analyzing CRISM (Compact Reconnaissance Imaging Spectrometer for Mars) hyperspectral data, including automated detection algorithms and spectral analysis frameworks that enable large-scale compositional mapping.</p>
+  </div>
+</div>
 
 ## Current Work
 
