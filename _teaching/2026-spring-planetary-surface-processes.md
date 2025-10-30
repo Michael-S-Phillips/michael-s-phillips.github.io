@@ -10,7 +10,7 @@ location: "Tucson, Arizona"
 
 ## Course Overview
 
-Upper-level undergraduate course examining physical and chemical processes that shape planetary surfaces. The course emphasizes understanding surface evolution through the lens of planetary geology, climate systems, and environmental change.
+Upper-level undergraduate course examining the physical and chemical processes that shape planetary surfaces across our solar system.
 
 ## Topics Covered
 

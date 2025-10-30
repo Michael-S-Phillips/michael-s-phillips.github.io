@@ -10,7 +10,7 @@ location: "Tucson, Arizona"
 
 ## Course Overview
 
-Graduate seminar exploring applications of artificial intelligence and machine learning in planetary science research. The course covers fundamental ML concepts and demonstrates practical implementations for analyzing planetary data, detecting features, and making scientific discoveries.
+Graduate seminar on applying machine learning and deep learning techniques to solve real problems in planetary science and planetary exploration.
 
 ## Topics Covered
 

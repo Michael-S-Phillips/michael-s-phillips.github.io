@@ -10,7 +10,7 @@ location: "Tucson, Arizona"
 
 ## Course Overview
 
-Co-taught graduate course on planetary remote sensing techniques and applications. The course covers fundamental principles of orbital remote sensing instruments, data processing methods, and applications to planetary geology and astrobiology.
+Graduate course on orbital remote sensing instruments, data processing, and applications to understanding planetary geology and composition.
 
 ## Topics Covered
 
