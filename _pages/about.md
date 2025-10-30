@@ -28,7 +28,7 @@ redirect_from:
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 1.1em;
-  color: #2c3e50;
+  color: inherit;
 }
 
 .research-content {
