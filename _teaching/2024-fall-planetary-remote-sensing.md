@@ -6,6 +6,7 @@ permalink: /teaching/2024-fall-planetary-remote-sensing
 venue: "University of Arizona, Lunar & Planetary Laboratory"
 date: 2024-08-01
 location: "Tucson, Arizona"
+excerpt: "Graduate course on orbital remote sensing instruments, data processing, and applications to understanding planetary geology and composition."
 ---
 
 ## Course Overview

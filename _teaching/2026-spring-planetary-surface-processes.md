@@ -6,6 +6,7 @@ permalink: /teaching/2026-spring-planetary-surface-processes
 venue: "University of Arizona, Lunar & Planetary Laboratory"
 date: 2026-01-01
 location: "Tucson, Arizona"
+excerpt: "Upper-level undergraduate course examining the physical and chemical processes that shape planetary surfaces across our solar system."
 ---
 
 ## Course Overview

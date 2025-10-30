@@ -6,6 +6,7 @@ permalink: /teaching/2025-spring-ai-ml-planetary-science
 venue: "University of Arizona, Lunar & Planetary Laboratory"
 date: 2025-01-01
 location: "Tucson, Arizona"
+excerpt: "Graduate seminar on applying machine learning and deep learning techniques to solve real problems in planetary science and planetary exploration."
 ---
 
 ## Course Overview
