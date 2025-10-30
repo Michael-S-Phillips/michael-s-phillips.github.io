@@ -133,7 +133,14 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
 
   <div class="research-item">
     <h4>Hydrothermal Systems & Aqueous Alteration</h4>
-    <p>My research characterizes ancient hydrothermal environments in Martian impact basins, investigating mineral assemblages that record past water-rock interactions and their implications for habitability and preservation of biosignatures.</p>
+    <div class="research-content">
+      <div class="research-text">
+        My research characterizes ancient hydrothermal environments in Martian impact basins, investigating mineral assemblages that record past water-rock interactions and their implications for habitability and preservation of biosignatures.
+      </div>
+      <div class="research-image">
+        <img src="/assets/images/viviano-phillips-alteration.webp" alt="Hydrothermal alteration in Martian impact basins">
+      </div>
+    </div>
   </div>
 
   <div class="research-item">
