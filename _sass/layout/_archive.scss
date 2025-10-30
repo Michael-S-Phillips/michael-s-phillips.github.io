@@ -80,16 +80,16 @@
   .archive__item-teaser {
     float: left;
     margin-right: 2em;
-    margin-bottom: 0;
+    margin-bottom: 1.5em;
     max-width: 350px;
   }
 
   .archive__item {
-    @include clearfix();
+    overflow: auto;
   }
 
   h2 {
-    clear: none;
+    margin-top: 0;
   }
 
   p {
