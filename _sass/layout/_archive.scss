@@ -69,8 +69,19 @@
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
+  margin-bottom: 1em;
+  max-width: 300px;
   img {
     width: 100%;
+  }
+}
+
+.list__item {
+  .archive__item-teaser {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    max-width: 250px;
   }
 }
 
