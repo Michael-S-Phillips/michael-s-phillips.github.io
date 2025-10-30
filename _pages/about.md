@@ -88,7 +88,7 @@ I am a planetary scientist at the University of Arizona's Lunar & Planetary Labo
 
 ## Featured Research Overview
 
-<img src="/michaelphillips.github.io/images/mars_art_map.png" alt="Mars geological map and composition analysis" class="banner-image">
+<img src="/michaelphillips.github.io/assets/images/mars_art_map.png" alt="Mars geological map and composition analysis" class="banner-image">
 
 ## Research Focus
 
@@ -104,7 +104,7 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
         I investigate the composition and evolution of Mars' oldest terrains, including the recent discovery of widespread anorthosites in the planet's lower crust. This work provides fundamental insights into early planetary differentiation processes and the geological evolution of terrestrial planets.
       </div>
       <div class="research-image">
-        <img src="/michaelphillips.github.io/images/primordial_mars_art.jpg" alt="Ancient Mars environment reconstruction">
+        <img src="/michaelphillips.github.io/assets/images/primordial_mars_art.jpg" alt="Ancient Mars environment reconstruction">
       </div>
     </div>
   </div>
@@ -113,7 +113,7 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
     <h4>Mars Astrobiology & Biosignature Detection</h4>
     <div class="research-content">
       <div class="research-image">
-        <img src="/michaelphillips.github.io/images/biosigs_orbit2ground.png" alt="Orbit to ground biosignature framework">
+        <img src="/michaelphillips.github.io/assets/images/biosigs_orbit2ground.png" alt="Orbit to ground biosignature framework">
       </div>
       <div class="research-text">
         I develop and apply AI/machine learning techniques to improve the detection of potential biosignatures and identify high-priority targets for astrobiology investigations. My work addresses critical knowledge gaps in understanding Mars' habitability through time.
