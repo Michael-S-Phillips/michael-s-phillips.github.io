@@ -1,7 +1,7 @@
 ---
 title: 'Codifying Intuition in the Search for Life'
-date: 2025-10-30
-permalink: /posts/2025/10/codifying-intuition-mars-biosignatures/
+date: 2023-03-06
+permalink: /posts/2023/03/codifying-intuition-mars-biosignatures/
 tags:
   - astrobiology
   - machine learning
