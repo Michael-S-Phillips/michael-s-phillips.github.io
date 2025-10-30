@@ -19,7 +19,7 @@ For citation metrics and full publication list, see my [Google Scholar](https://
   {% for post in site.publications %}
     {% assign post_filename = post.path | split: "/" | last | remove: ".md" %}
     {% if post_filename == paper_id %}
-      {% include archive-single.html %}
+      {% include archive-single.html type="grid" %}
     {% endif %}
   {% endfor %}
 {% endfor %}

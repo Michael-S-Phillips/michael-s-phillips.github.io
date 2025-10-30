@@ -7,6 +7,8 @@ date: 2025-06-01
 venue: 'Nature Communications Earth &amp; Environment (Accepted)'
 paperurl: ''
 citation: 'Phillips, M., Viviano, C., Rogers, A.D., Larson, L., Tornabene, L., Trowbridge, A., Moersch, J., McSween, H. (2025). &quot;Ancient Anorthosites on Mars: Widespread in the Lower Crust.&quot; <i>Nature Communications Earth &amp; Environment</i>.'
+header:
+  teaser: '/assets/images/04_crust_strat_sketchv2.png'
 ---
 Discovery of widespread ancient anorthosite in Mars&apos; lower crust, providing new insights into early planetary differentiation and crustal evolution.
 
