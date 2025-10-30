@@ -7,6 +7,8 @@ date: 2021-09-01
 venue: 'Icarus'
 paperurl: 'https://doi.org/10.1016/j.icarus.2021.114306'
 citation: 'Phillips, M.S., Moersch, J.E., Viviano, C.E., Emery, J.P. (2021). &quot;The lifecycle of hollows on Mercury: An evaluation of candidate volatile phases and a novel model of formation.&quot; <i>Icarus</i>. 359, 114306.'
+header:
+  teaser: '/assets/images/hollow-formation-model.jpg'
 ---
 Comprehensive analysis of Mercury's enigmatic hollow features, evaluating volatile phases and proposing a novel formation mechanism.
 
