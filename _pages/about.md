@@ -142,6 +142,12 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
   <div class="research-item">
     <h4>Hyperspectral Data Processing & Analysis</h4>
     <p>I develop computational tools and processing pipelines for analyzing CRISM (Compact Reconnaissance Imaging Spectrometer for Mars) hyperspectral data, including automated detection algorithms and spectral analysis frameworks that enable large-scale compositional mapping.</p>
+    <div style="margin-top: 20px;">
+      <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <source src="/assets/images/spectral-cube-analysis-tool.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
 </div>
 
