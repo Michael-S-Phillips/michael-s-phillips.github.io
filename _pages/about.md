@@ -7,7 +7,73 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+.homepage-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
+
 I am a planetary scientist at the University of Arizona's Lunar & Planetary Laboratory, specializing in Mars geology, astrobiology, and the application of artificial intelligence to planetary exploration. My research focuses on understanding the ancient history of Mars through orbital remote sensing, with particular emphasis on crustal composition, hydrothermal systems, and the search for biosignatures.
+
+## Featured Research
+
+<div class="homepage-gallery">
+  <div class="gallery-item">
+    <img src="/michaelphillips.github.io/images/mars_art_map.png" alt="Mars geological map and composition analysis">
+  </div>
+  <div class="gallery-item">
+    <img src="/michaelphillips.github.io/images/primordial_mars_art.jpg" alt="Ancient Mars environment reconstruction">
+  </div>
+  <div class="gallery-item">
+    <img src="/michaelphillips.github.io/images/salt_constructs_graphical_abstract.png" alt="Salt constructs in Mars analog environments">
+  </div>
+</div>
+
+### Research Overview
+
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/72FFi2Hdxdg" allowfullscreen="" loading="lazy"></iframe>
+</div>
 
 ## Research Focus
 
