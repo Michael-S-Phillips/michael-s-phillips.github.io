@@ -88,7 +88,7 @@ I am a planetary scientist at the University of Arizona's Lunar & Planetary Labo
 
 ## Featured Research Overview
 
-![Mars geological map and composition analysis]({{ site.baseurl }}/images/mars_art_map.png)
+<img src="{{ site.baseurl }}/images/mars_art_map.png" alt="Mars geological map and composition analysis" class="banner-image">
 
 ## Research Focus
 
