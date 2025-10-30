@@ -77,15 +77,22 @@
 }
 
 .list__item {
+  .archive__item {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
   .archive__item-teaser {
-    float: left;
-    margin-right: 2em;
-    margin-bottom: 1.5em;
+    flex: 0 0 350px;
+    margin-right: 0;
+    margin-bottom: 0;
     max-width: 350px;
   }
 
   .archive__item-content {
-    overflow: hidden;
+    flex: 1;
+    min-width: 0;
   }
 
   h2 {
