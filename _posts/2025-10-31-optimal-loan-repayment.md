@@ -1,7 +1,7 @@
 ---
 title: 'The Math Behind Loan Repayment: Why "Optimal" Isn't Always Simple'
-date: 2025-11-12
-permalink: /posts/2025/11/optimal-loan-repayment/
+date: 2025-10-31
+permalink: /posts/2025/10/optimal-loan-repayment/
 tags:
   - finance
   - mathematics
