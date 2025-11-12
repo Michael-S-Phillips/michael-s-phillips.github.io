@@ -1,5 +1,5 @@
 ---
-title: 'The Math Behind Loan Repayment: Why "Optimal" Isn''t Always Simple'
+title: 'Optimize your loan repayment strategy'
 date: 2025-11-12
 permalink: /posts/2025/11/optimal-loan-repayment/
 tags:
