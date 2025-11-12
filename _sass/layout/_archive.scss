@@ -69,8 +69,68 @@
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
+  margin-bottom: 1em;
+  max-width: 300px;
   img {
     width: 100%;
+  }
+}
+
+.list__item {
+  @include breakpoint($medium) {
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($large) {
+    padding-right: $right-sidebar-width;
+  }
+
+  @include breakpoint($x-large) {
+    padding-right: $right-sidebar-width-wide;
+  }
+
+  .page__meta {
+    margin: 0 0 4px;
+  }
+
+  /* Featured publications with teaser images */
+  .archive__item-teaser {
+    & + .archive__item-content {
+      .archive__item {
+        display: flex;
+        gap: 2em;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .archive__item {
+    &:has(.archive__item-teaser) {
+      display: flex;
+      gap: 2em;
+      align-items: flex-start;
+      margin-bottom: 3em;
+    }
+  }
+
+  .archive__item-teaser {
+    flex: 0 0 350px;
+    margin-right: 0;
+    margin-bottom: 0;
+    max-width: 350px;
+  }
+
+  .archive__item-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0.5em;
   }
 }
 
