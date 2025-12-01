@@ -13,7 +13,7 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 
 ## Featured Publications
 
-{% assign featured_papers = "2025-06-01-ancient-anorthosites-mars-2025,2023-04-01-orbit-to-ground-biosignature-framework-2023,2022-10-01-feldspathic-crust-hellas-geology-2022,2021-09-01-mercury-hollows-lifecycle-2021,2023-02-01-salt-constructs-astrobiology-targets-2023" | split: "," %}
+{% assign featured_papers = "2025-11-22-ancient-anorthosites-mars-2025,2023-04-01-orbit-to-ground-biosignature-framework-2023,2022-10-01-feldspathic-crust-hellas-geology-2022,2021-09-01-mercury-hollows-lifecycle-2021,2023-02-01-salt-constructs-astrobiology-targets-2023" | split: "," %}
 
 {% for paper_id in featured_papers %}
   {% for post in site.publications %}
@@ -28,7 +28,7 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 
 ## Peer-Reviewed Journal Articles
 
-{% assign journal_venues = "Nature Astronomy,Geology,The Planetary Science Journal,Icarus,Frontiers in Astronomy and Space Sciences,Earth Surface Processes and Landforms,Science of the Total Environment,Remote Sensing,Bulletin of the American Astronomical Society" | split: "," %}
+{% assign journal_venues = "Nature Astronomy,Nature Communications Earth & Environment,Geology,The Planetary Science Journal,Icarus,Frontiers in Astronomy and Space Sciences,Earth Surface Processes and Landforms,Science of the Total Environment,Remote Sensing,Bulletin of the American Astronomical Society" | split: "," %}
 
 {% for post in site.publications reversed %}
   {% if journal_venues contains post.venue %}
