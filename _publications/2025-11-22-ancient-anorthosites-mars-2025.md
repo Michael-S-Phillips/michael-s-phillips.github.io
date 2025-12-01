@@ -2,6 +2,8 @@
 title: "Widespread ancient anorthosites in the lower crust of Mars"
 collection: publications
 permalink: /publication/2025-11-22-ancient-anorthosites-mars-2025
+redirect_from:
+  - /publication/2025-06-01-ancient-anorthosites-mars-2025
 excerpt: 'Discovery of widespread ancient anorthosite in Mars&apos; lower crust, providing new insights into early planetary differentiation and crustal evolution.'
 date: 2025-11-22
 venue: 'Nature Communications Earth &amp; Environment'
