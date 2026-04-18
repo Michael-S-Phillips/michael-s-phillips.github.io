@@ -12,7 +12,7 @@ Run from the site root:
     python scripts/sync_publications.py
 """
 
-import re, json, html, sys, time
+import re, json, html
 import urllib.request, urllib.parse
 from pathlib import Path
 from datetime import date
@@ -212,21 +212,22 @@ def make_slug(title):
 
 def render_md(work, slug, today_str):
     """Return the full text content for a new _publications/*.md file."""
-    title    = work["title"].replace('"', "&quot;").replace("'", "&apos;")
-    venue    = (work.get("venue") or "").replace("&", "&amp;")
-    doi      = work.get("doi", "")
-    doi_url  = f"https://doi.org/{doi}" if doi else ""
-    date_str = work.get("date", "2020-01-01")[:10]
-    year     = date_str[:4]
+    raw_title = work["title"]
+    title     = raw_title.replace('"', "&quot;").replace("'", "&apos;")
+    venue     = (work.get("venue") or "").replace("&", "&amp;")
+    doi       = work.get("doi", "")
+    doi_url   = f"https://doi.org/{doi}" if doi else ""
+    date_str  = work.get("date", "2020-01-01")[:10]
+    year      = date_str[:4]
 
     paper_url_line = f"paperurl: '{doi_url}'"
     if venue:
         citation = (
             f"citation: 'Phillips, M.S., et al. ({year}). "
-            f"&quot;{title}.&quot; <i>{venue}</i>.'"
+            f"&quot;{raw_title}.&quot; <i>{venue}</i>.'"
         )
     else:
-        citation = f"citation: 'Phillips, M.S., et al. ({year}). &quot;{title}.&quot;'"
+        citation = f"citation: 'Phillips, M.S., et al. ({year}). &quot;{raw_title}.&quot;'"
 
     body_link = f"[{work['title']}]({doi_url})" if doi_url else work["title"]
 
@@ -250,15 +251,18 @@ def render_md(work, slug, today_str):
 
 
 def unique_path(pub_dir, date_str, slug):
-    """Return a Path that does not exist, appending -2/-3 as needed."""
+    """Return a Path that does not exist, appending -2/-3 as needed.
+
+    Returns None if no unique path can be found within 99 attempts.
+    """
     base = pub_dir / f"{date_str}-{slug}.md"
     if not base.exists():
         return base
-    for n in range(2, 20):
+    for n in range(2, 100):
         candidate = pub_dir / f"{date_str}-{slug}-{n}.md"
         if not candidate.exists():
             return candidate
-    raise RuntimeError(f"Cannot find unique path for slug '{slug}'")
+    return None
 
 
 def create_new_publications(works, pub_dir, doi_idx, title_idx, today_str=None):
@@ -281,6 +285,9 @@ def create_new_publications(works, pub_dir, doi_idx, title_idx, today_str=None):
         date_str = work.get("date", "2020-01-01")[:10]
         slug     = make_slug(work["title"])
         path     = unique_path(pub_dir, date_str, slug)
+        if path is None:
+            print(f"[SKIP] Cannot find unique filename for: {work['title'][:65]}")
+            continue
         content  = render_md(work, slug, today_str)
         path.write_text(content, encoding="utf-8")
         print(f"[NEW] {path.name}  ← {work['title'][:65]}")

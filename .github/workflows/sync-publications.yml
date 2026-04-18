@@ -22,7 +22,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests scholarly
+        run: pip install scholarly
 
       - name: Sync publications from ORCID and Scholar
         run: python scripts/sync_publications.py
@@ -37,4 +37,4 @@ jobs:
           git add _publications/ _data/
           git diff --cached --quiet \
             || git commit -m "chore: weekly publication sync $(date +%Y-%m-%d)"
-          git push
+          git push origin HEAD:master
