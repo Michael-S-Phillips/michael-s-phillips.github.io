@@ -71,7 +71,7 @@ function createCat(options) {
     var diffY = catY - target.y;
     var distance = Math.sqrt(diffX * diffX + diffY * diffY);
 
-    if (distance < CAT_SPEED || distance < 24) {
+    if (distance < 24) {
       idle();
       return;
     }
