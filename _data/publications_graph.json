@@ -1,0 +1,646 @@
+{
+  "nodes": [
+    {
+      "id": "2018-03-01-astrobiology-fdl-partnership-2018",
+      "title": "Advancing Astrobiology Through Public/Private Partnership: The FDL Model",
+      "year": 2018,
+      "venue": "49th Annual Lunar and Planetary Science Conference",
+      "url": "",
+      "planet": "multi",
+      "topic": "astrobiology",
+      "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning."
+    },
+    {
+      "id": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "title": "Feldspathic Rock in Ancient Crust, N. Hellas, Mars: Implications for Early Mantle Conditions",
+      "year": 2018,
+      "venue": "Differentiation: Building the Internal Architecture of Planets",
+      "url": "",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Analysis of feldspathic rock compositions in northern Hellas providing insights into early Martian mantle conditions and differentiation."
+    },
+    {
+      "id": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "title": "Hydrothermal alteration in association with large impact basins on Mars",
+      "year": 2018,
+      "venue": "European Planetary Science Congress",
+      "url": "",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Study of hydrothermal processes and mineral alteration patterns around major Martian impact basins."
+    },
+    {
+      "id": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "title": "Hydrothermal Alteration and Large Impact Basins on Mars",
+      "year": 2019,
+      "venue": "50th Annual Lunar and Planetary Science Conference",
+      "url": "",
+      "planet": "mars",
+      "topic": "astrobiology",
+      "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
+    },
+    {
+      "id": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
+      "title": "Plagioclase in Primary Mineralogy of Ancient Crust, Northern Hellas, Mars",
+      "year": 2019,
+      "venue": "50th Annual Lunar and Planetary Science Conference",
+      "url": "",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Spectroscopic detection and analysis of plagioclase in ancient crustal rocks of northern Hellas region on Mars."
+    },
+    {
+      "id": "2019-07-01-microbial-communities-salar-pajonales-2019",
+      "title": "Landscape Ecology of Microbial Communities in the Mars Analog Salar de Pajonales, Chile",
+      "year": 2019,
+      "venue": "The Astrobiology Science Conference (AbSciCon) 2019",
+      "url": "",
+      "planet": "mars",
+      "topic": "astrobiology",
+      "excerpt": "Ecological study of microbial communities in the Mars analog environment of Salar de Pajonales, Chile, examining habitability patterns."
+    },
+    {
+      "id": "2020-03-01-temporal-analysis-cerro-pasco-2020",
+      "title": "Temporal multispectral and 3D analysis of Cerro de Pasco, Peru",
+      "year": 2020,
+      "venue": "Science of the Total Environment",
+      "url": "http://dx.doi.org/10.1016/j.scitotenv.2019.135640",
+      "planet": "earth",
+      "topic": "mineralogy",
+      "excerpt": "Multispectral and 3D analysis of mining impacts and environmental changes at Cerro de Pasco using remote sensing techniques."
+    },
+    {
+      "id": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
+      "title": "Addressing strategic knowledge gaps in the search for biosignatures on Mars",
+      "year": 2021,
+      "venue": "Bulletin of the American Astronomical Society",
+      "url": "",
+      "planet": "mars",
+      "topic": "astrobiology",
+      "excerpt": "Strategic assessment of current knowledge gaps and future research priorities for Mars biosignature detection."
+    },
+    {
+      "id": "2021-09-01-mercury-hollows-lifecycle-2021",
+      "title": "The lifecycle of hollows on Mercury: An evaluation of candidate volatile phases and a novel model of formation",
+      "year": 2021,
+      "venue": "Icarus",
+      "url": "https://doi.org/10.1016/j.icarus.2021.114306",
+      "planet": "mercury",
+      "topic": "astrobiology",
+      "excerpt": "Comprehensive analysis of Mercury s enigmatic hollow features, evaluating volatile phases and proposing a novel formation mechanism."
+    },
+    {
+      "id": "2021-12-01-regional-composition-isidis-hellas-2021",
+      "title": "Regional compositional trends in the circum-Isidis and Hellas regions",
+      "year": 2021,
+      "venue": "AGU Fall Meeting Abstracts",
+      "url": "",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Regional analysis of surface composition around major impact basins on Mars using orbital spectroscopy data."
+    },
+    {
+      "id": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
+      "title": "Surface Morphologies in a Mars-Analog Ca-Sulfate Salar, High Andes, Northern Chile",
+      "year": 2022,
+      "venue": "Frontiers in Astronomy and Space Sciences",
+      "url": "https://doi.org/10.3389/fspas.2021.797591",
+      "planet": "mars",
+      "topic": "other",
+      "excerpt": "Characterization of surface morphologies in a high-altitude calcium sulfate salar, providing insights into Mars analog environments and sulfate formation processes."
+    },
+    {
+      "id": "2022-04-01-automated-detection-mars-analog-2022",
+      "title": "Automated Detection and Machine Learning Classification of Mars Analog Habitats",
+      "year": 2022,
+      "venue": "The Astrobiology Science Conference (AbSciCon) 2022",
+      "url": "",
+      "planet": "mars",
+      "topic": "ai_ml",
+      "excerpt": "Machine learning algorithms for automated detection and classification of potential habitable environments in Mars analog settings."
+    },
+    {
+      "id": "2022-04-01-gypsum-habitability-zones-2022",
+      "title": "Gypsum Habit Demarcates Zones of Habitability at Decameter to Millimeter Scales",
+      "year": 2022,
+      "venue": "The Astrobiology Science Conference (AbSciCon) 2022",
+      "url": "",
+      "planet": "mars",
+      "topic": "astrobiology",
+      "excerpt": "Study of gypsum crystal habits as indicators of habitable zones across multiple spatial scales in Mars analog environments."
+    },
+    {
+      "id": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "title": "CRISM Hyperspectral Mapping Data Preliminary Empirical Radiometric Reconciliation",
+      "year": 2022,
+      "venue": "53rd Lunar and Planetary Science Conference",
+      "url": "",
+      "planet": "mars",
+      "topic": "remote_sensing",
+      "excerpt": "Development of radiometric calibration methods for CRISM hyperspectral mapping data to improve data quality and accuracy."
+    },
+    {
+      "id": "2022-06-01-astrobiological-mars-exploration-2022",
+      "title": "Addressing the Astrobiological Exploration of Mars Through an Integrated Earth-Mars Approach",
+      "year": 2022,
+      "venue": "Frontiers in Astronomy and Space Sciences",
+      "url": "",
+      "planet": "mars",
+      "topic": "astrobiology",
+      "excerpt": "Comprehensive framework for astrobiology research combining Earth analog studies with Mars exploration strategies."
+    },
+    {
+      "id": "2022-06-01-mars-analog-deep-learning-2022",
+      "title": "What is that? Identification confidence of Mars analog habitats with Deep Learning",
+      "year": 2022,
+      "venue": "Copernicus Meetings",
+      "url": "",
+      "planet": "mars",
+      "topic": "ai_ml",
+      "excerpt": "Deep learning approach to automated identification and classification of Mars analog habitats with confidence metrics."
+    },
+    {
+      "id": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "title": "Mars uplifted massifs: unique and extensive samples of ancient crust",
+      "year": 2022,
+      "venue": "Copernicus Meetings",
+      "url": "",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Analysis of uplifted massifs on Mars as windows into ancient crustal composition and early planetary processes."
+    },
+    {
+      "id": "2022-10-01-feldspathic-crust-hellas-geology-2022",
+      "title": "Extensive and ancient feldspathic crust detected across north Hellas rim, Mars: Possible implications for primary crust formation",
+      "year": 2022,
+      "venue": "Geology",
+      "url": "https://pubs.geoscienceworld.org/gsa/geology/article/50/10/1182/615121/Extensive-and-ancient-feldspathic-crust-detected",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Discovery of extensive feldspathic crust around the northern Hellas basin rim, providing insights into Mars  primary crustal formation and early differentiation."
+    },
+    {
+      "id": "2023-02-01-salt-constructs-astrobiology-targets-2023",
+      "title": "Salt constructs in paleo-lake basins as high-priority astrobiology targets",
+      "year": 2023,
+      "venue": "Remote Sensing",
+      "url": "https://doi.org/10.3390/rs15020314",
+      "planet": "multi",
+      "topic": "astrobiology",
+      "excerpt": "Identification and characterization of salt constructs in ancient lake basins as priority targets for astrobiology investigations and biosignature preservation."
+    },
+    {
+      "id": "2023-03-01-crism-processing-pipeline-2023",
+      "title": "A Processing Pipeline for CRISM Hyperspectral Mapping Data",
+      "year": 2023,
+      "venue": "54th Lunar and Planetary Science Conference",
+      "url": "",
+      "planet": "mars",
+      "topic": "remote_sensing",
+      "excerpt": "Development of automated processing pipeline for CRISM hyperspectral data to enable systematic analysis of Mars surface composition."
+    },
+    {
+      "id": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "title": "Orbit-to-ground framework to decode and predict biosignature patterns in terrestrial analogues",
+      "year": 2023,
+      "venue": "Nature Astronomy",
+      "url": "https://doi.org/10.1038/s41550-023-01901-z",
+      "planet": "mars",
+      "topic": "remote_sensing",
+      "excerpt": "Multi-scale framework combining orbital remote sensing with ground observations to identify and predict biosignature patterns in Mars analog environments."
+    },
+    {
+      "id": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "title": "A first look at CRISM hyperspectral mapping mosaicked data: Results from Mawrth Vallis",
+      "year": 2023,
+      "venue": "Icarus",
+      "url": "https://doi.org/10.1016/j.icarus.2023.115712",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "First comprehensive analysis of CRISM hyperspectral mapping data from Mawrth Vallis, Mars, revealing detailed mineralogical compositions."
+    },
+    {
+      "id": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
+      "title": "Gypsum-lined degassing holes in tumuli",
+      "year": 2023,
+      "venue": "Earth Surface Processes and Landforms",
+      "url": "https://doi.org/10.1002/esp.5692",
+      "planet": "mars",
+      "topic": "astrobiology",
+      "excerpt": "Study of gypsum formations in volcanic tumuli with implications for Mars analog environments and habitability."
+    },
+    {
+      "id": "2023-10-01-ai-search-for-life-2023",
+      "title": "Using AI to Fine Tune the Search for Life",
+      "year": 2023,
+      "venue": "ARPHA Conference Abstracts",
+      "url": "http://dx.doi.org/10.3897/aca.6.e108253",
+      "planet": "multi",
+      "topic": "astrobiology",
+      "excerpt": "Application of artificial intelligence techniques to improve biosignature detection and astrobiology research methodologies."
+    },
+    {
+      "id": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "title": "Unraveling the context of unique basin-related alteration on early Mars",
+      "year": 2023,
+      "venue": "AAS/Division for Planetary Sciences Meeting Abstracts",
+      "url": "",
+      "planet": "mars",
+      "topic": "other",
+      "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins on early Mars."
+    },
+    {
+      "id": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
+      "title": "Bottlenecks and Next Steps in the Integration of AI/ML into Astrobiology and the Search for Life Beyond Earth",
+      "year": 2024,
+      "venue": "The Astrobiology Science Conference (AbSciCon) 2024",
+      "url": "",
+      "planet": "earth",
+      "topic": "ai_ml",
+      "excerpt": "Analysis of current limitations and future directions for artificial intelligence applications in astrobiology research."
+    },
+    {
+      "id": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "title": "New Views into Pre-Noachian Mars",
+      "year": 2024,
+      "venue": "LPI Contributions",
+      "url": "",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Investigation of ancient Martian crustal composition and processes from the earliest period of Mars history."
+    },
+    {
+      "id": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
+      "title": "Interpreting Plagioclase Detections in Igneous Rock Spectra: Felsic Rocks and Plagioclase-Rich Basalts are Similar to Mars Detections",
+      "year": 2024,
+      "venue": "LPI Contributions",
+      "url": "",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Spectroscopic analysis comparing terrestrial and Martian plagioclase detections in igneous rocks."
+    },
+    {
+      "id": "2024-03-01-space-imagery-center-arizona-2024",
+      "title": "The Space Imagery Center at the University of Arizona's Lunar and Planetary Laboratory",
+      "year": 2024,
+      "venue": "LPI Contributions",
+      "url": "",
+      "planet": "multi",
+      "topic": "remote_sensing",
+      "excerpt": "Overview of the Space Imagery Center facilities and capabilities for planetary image processing and analysis."
+    },
+    {
+      "id": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "title": "Spectral Cube Analysis Tool: A Python Program for Analyzing Multi- and Hyperspectral Images",
+      "year": 2024,
+      "venue": "LPI Contributions",
+      "url": "",
+      "planet": "multi",
+      "topic": "remote_sensing",
+      "excerpt": "Development of Python software for processing and analyzing hyperspectral image cubes in planetary science."
+    },
+    {
+      "id": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
+      "title": "Comparing Rover and Helicopter Planetary Mission Architectures in a Mars Analog Setting in Iceland",
+      "year": 2024,
+      "venue": "The Planetary Science Journal",
+      "url": "http://dx.doi.org/10.3847/PSJ/ad55f4",
+      "planet": "mars",
+      "topic": "ai_ml",
+      "excerpt": "Field study comparing rover and helicopter mission architectures for planetary exploration using Mars analog terrain in Iceland."
+    },
+    {
+      "id": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "title": "HyPyRameter: A Python Toolbox to Calculate Spectral Parameters from Hyperspectral Reflectance Data",
+      "year": 2024,
+      "venue": "The Planetary Science Journal",
+      "url": "",
+      "planet": "multi",
+      "topic": "ai_ml",
+      "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications."
+    },
+    {
+      "id": "2025-11-22-ancient-anorthosites-mars-2025",
+      "title": "Widespread ancient anorthosites in the lower crust of Mars",
+      "year": 2025,
+      "venue": "Nature Communications Earth   Environment",
+      "url": "https://doi.org/10.1038/s43247-025-03004-7",
+      "planet": "mars",
+      "topic": "mineralogy",
+      "excerpt": "Discovery of widespread ancient anorthosite in Mars  lower crust, providing new insights into early planetary differentiation and crustal evolution."
+    }
+  ],
+  "links": [
+    {
+      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "target": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "weight": 0.716
+    },
+    {
+      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "target": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "weight": 0.692
+    },
+    {
+      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "target": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "weight": 0.475
+    },
+    {
+      "source": "2022-04-01-automated-detection-mars-analog-2022",
+      "target": "2022-06-01-mars-analog-deep-learning-2022",
+      "weight": 0.399
+    },
+    {
+      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
+      "weight": 0.379
+    },
+    {
+      "source": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "weight": 0.366
+    },
+    {
+      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "target": "2023-03-01-crism-processing-pipeline-2023",
+      "weight": 0.353
+    },
+    {
+      "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
+      "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
+      "weight": 0.35
+    },
+    {
+      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "weight": 0.34
+    },
+    {
+      "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
+      "target": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
+      "weight": 0.323
+    },
+    {
+      "source": "2023-10-01-ai-search-for-life-2023",
+      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
+      "weight": 0.312
+    },
+    {
+      "source": "2023-03-01-crism-processing-pipeline-2023",
+      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "weight": 0.303
+    },
+    {
+      "source": "2022-10-01-feldspathic-crust-hellas-geology-2022",
+      "target": "2025-11-22-ancient-anorthosites-mars-2025",
+      "weight": 0.274
+    },
+    {
+      "source": "2022-04-01-gypsum-habitability-zones-2022",
+      "target": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
+      "weight": 0.247
+    },
+    {
+      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "target": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
+      "weight": 0.243
+    },
+    {
+      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
+      "weight": 0.235
+    },
+    {
+      "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "target": "2025-11-22-ancient-anorthosites-mars-2025",
+      "weight": 0.225
+    },
+    {
+      "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
+      "target": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
+      "weight": 0.216
+    },
+    {
+      "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
+      "weight": 0.213
+    },
+    {
+      "source": "2023-03-01-crism-processing-pipeline-2023",
+      "target": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "weight": 0.199
+    },
+    {
+      "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "target": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "weight": 0.196
+    },
+    {
+      "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
+      "target": "2025-11-22-ancient-anorthosites-mars-2025",
+      "weight": 0.188
+    },
+    {
+      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "target": "2025-11-22-ancient-anorthosites-mars-2025",
+      "weight": 0.183
+    },
+    {
+      "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
+      "target": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "weight": 0.17
+    },
+    {
+      "source": "2022-06-01-astrobiological-mars-exploration-2022",
+      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
+      "weight": 0.164
+    },
+    {
+      "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "target": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "weight": 0.163
+    },
+    {
+      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
+      "weight": 0.154
+    },
+    {
+      "source": "2022-06-01-astrobiological-mars-exploration-2022",
+      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "weight": 0.143
+    },
+    {
+      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "target": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "weight": 0.129
+    },
+    {
+      "source": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "target": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "weight": 0.129
+    },
+    {
+      "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
+      "target": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "weight": 0.128
+    },
+    {
+      "source": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
+      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
+      "weight": 0.126
+    },
+    {
+      "source": "2022-06-01-astrobiological-mars-exploration-2022",
+      "target": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
+      "weight": 0.126
+    },
+    {
+      "source": "2018-03-01-astrobiology-fdl-partnership-2018",
+      "target": "2022-04-01-automated-detection-mars-analog-2022",
+      "weight": 0.125
+    },
+    {
+      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "target": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "weight": 0.12
+    },
+    {
+      "source": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
+      "target": "2023-10-01-ai-search-for-life-2023",
+      "weight": 0.118
+    },
+    {
+      "source": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "target": "2025-11-22-ancient-anorthosites-mars-2025",
+      "weight": 0.116
+    },
+    {
+      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "target": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "weight": 0.109
+    },
+    {
+      "source": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "weight": 0.106
+    },
+    {
+      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "target": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "weight": 0.104
+    },
+    {
+      "source": "2024-03-01-space-imagery-center-arizona-2024",
+      "target": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "weight": 0.103
+    },
+    {
+      "source": "2022-10-01-feldspathic-crust-hellas-geology-2022",
+      "target": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "weight": 0.098
+    },
+    {
+      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "target": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "weight": 0.096
+    },
+    {
+      "source": "2023-03-01-crism-processing-pipeline-2023",
+      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "weight": 0.095
+    },
+    {
+      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "target": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
+      "weight": 0.093
+    },
+    {
+      "source": "2022-04-01-automated-detection-mars-analog-2022",
+      "target": "2022-04-01-gypsum-habitability-zones-2022",
+      "weight": 0.092
+    },
+    {
+      "source": "2018-03-01-astrobiology-fdl-partnership-2018",
+      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
+      "weight": 0.091
+    },
+    {
+      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "target": "2023-02-01-salt-constructs-astrobiology-targets-2023",
+      "weight": 0.091
+    },
+    {
+      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "weight": 0.089
+    },
+    {
+      "source": "2021-09-01-mercury-hollows-lifecycle-2021",
+      "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
+      "weight": 0.087
+    },
+    {
+      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "target": "2023-02-01-salt-constructs-astrobiology-targets-2023",
+      "weight": 0.086
+    },
+    {
+      "source": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "target": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "weight": 0.086
+    },
+    {
+      "source": "2023-02-01-salt-constructs-astrobiology-targets-2023",
+      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
+      "weight": 0.083
+    },
+    {
+      "source": "2022-04-01-automated-detection-mars-analog-2022",
+      "target": "2023-03-01-crism-processing-pipeline-2023",
+      "weight": 0.081
+    },
+    {
+      "source": "2021-12-01-regional-composition-isidis-hellas-2021",
+      "target": "2023-03-01-crism-processing-pipeline-2023",
+      "weight": 0.08
+    },
+    {
+      "source": "2023-02-01-salt-constructs-astrobiology-targets-2023",
+      "target": "2023-10-01-ai-search-for-life-2023",
+      "weight": 0.08
+    },
+    {
+      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "target": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
+      "weight": 0.079
+    },
+    {
+      "source": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
+      "target": "2022-06-01-astrobiological-mars-exploration-2022",
+      "weight": 0.079
+    },
+    {
+      "source": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
+      "target": "2022-04-01-automated-detection-mars-analog-2022",
+      "weight": 0.077
+    },
+    {
+      "source": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
+      "target": "2023-02-01-salt-constructs-astrobiology-targets-2023",
+      "weight": 0.076
+    },
+    {
+      "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
+      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "weight": 0.074
+    },
+    {
+      "source": "2022-04-01-automated-detection-mars-analog-2022",
+      "target": "2023-10-01-ai-search-for-life-2023",
+      "weight": 0.073
+    }
+  ]
+}
