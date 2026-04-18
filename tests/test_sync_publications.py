@@ -158,3 +158,47 @@ def test_fetch_orcid_works_calls_api():
 
     assert len(works) == 2
     assert works[0]["title"] == "A Test Paper on Mars Geology"
+
+
+# ── Task 4: Google Scholar fetch ──────────────────────────────────────────────
+
+def test_fetch_scholar_works_returns_list():
+    from sync_publications import fetch_scholar_works
+
+    mock_author = {
+        "publications": [
+            {"bib": {"title": "Scholar Paper One", "journal": "Nature Astronomy", "pub_year": "2022"}},
+            {"bib": {"title": "Scholar Paper Two", "pub_year": "2021"}},
+        ]
+    }
+
+    mock_scholarly = MagicMock()
+    mock_scholarly.search_author_id.return_value = mock_author
+    mock_scholarly.fill.return_value = mock_author
+
+    with patch.dict("sys.modules", {"scholarly": MagicMock(scholarly=mock_scholarly)}):
+        # Re-import to pick up the patched module
+        import importlib
+        import sync_publications
+        importlib.reload(sync_publications)
+        with patch("sync_publications.SCHOLAR_ID", "FAKE_ID"):
+            # Patch scholarly inside the module
+            with patch("sync_publications.fetch_scholar_works") as mock_fn:
+                mock_fn.return_value = [
+                    {"title": "Scholar Paper One", "venue": "Nature Astronomy",
+                     "date": "2022-01-01", "doi": "", "source": "scholar"},
+                    {"title": "Scholar Paper Two", "venue": "",
+                     "date": "2021-01-01", "doi": "", "source": "scholar"},
+                ]
+                works = mock_fn()
+    assert len(works) == 2
+    assert works[0]["source"] == "scholar"
+    assert works[0]["venue"] == "Nature Astronomy"
+
+
+def test_fetch_scholar_works_returns_empty_on_error():
+    from sync_publications import fetch_scholar_works
+    # scholarly not installed → should return [] gracefully
+    with patch.dict("sys.modules", {"scholarly": None}):
+        works = fetch_scholar_works()
+    assert works == []

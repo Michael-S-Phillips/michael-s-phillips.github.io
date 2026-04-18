@@ -142,3 +142,35 @@ def fetch_orcid_works():
     with urllib.request.urlopen(req, timeout=15) as r:
         data = json.loads(r.read())
     return parse_orcid_works(data)
+
+
+# ── Google Scholar ─────────────────────────────────────────────────────────────
+
+def fetch_scholar_works():
+    """Fetch publications from Google Scholar via scholarly. Best-effort.
+
+    Returns an empty list (with a warning) if scholarly is unavailable,
+    rate-limited, or throws any other exception.
+    """
+    try:
+        from scholarly import scholarly as _scholarly
+        author = _scholarly.search_author_id(SCHOLAR_ID)
+        author = _scholarly.fill(author, sections=["publications"])
+        works = []
+        for pub in author.get("publications", []):
+            bib   = pub.get("bib", {})
+            title = bib.get("title", "").strip()
+            if not title:
+                continue
+            year = str(bib.get("pub_year", "2020"))
+            works.append({
+                "title":  title,
+                "venue":  bib.get("journal", bib.get("venue", "")),
+                "date":   f"{year}-01-01",
+                "doi":    "",
+                "source": "scholar",
+            })
+        return works
+    except Exception as e:
+        print(f"[WARN] Google Scholar fetch failed ({type(e).__name__}: {e}); skipping.")
+        return []
