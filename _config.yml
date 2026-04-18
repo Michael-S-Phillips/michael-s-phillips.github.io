@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : &name "Michael Phillips"
 description              : "Planetary scientist specializing in Mars geology, astrobiology, and AI applications for planetary exploration. Research focus on ancient Martian crustal composition, hydrothermal systems, and biosignature detection."
 url                      : "https://michael-s-phillips.github.io"
-baseurl                  : "/michaelphillips.github.io"
+baseurl                  : ""
 repository               : "michael-s-phillips/michaelphillips.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -353,3 +353,5 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Last updated: 2025-11-12

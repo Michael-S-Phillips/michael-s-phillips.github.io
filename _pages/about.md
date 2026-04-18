@@ -89,7 +89,7 @@ I am a planetary scientist at the University of Arizona's Lunar & Planetary Labo
 
 ## Featured Research Overview
 
-<img src="/michaelphillips.github.io/assets/images/mars_art_map.webp" alt="Mars geological map and composition analysis" class="banner-image">
+<img src="/assets/images/mars_art_map.webp" alt="Mars geological map and composition analysis" class="banner-image">
 
 ## Research Focus
 
@@ -106,7 +106,7 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
       </div>
       <div class="research-image">
         <video controls autoplay muted loop>
-          <source src="/michaelphillips.github.io/assets/images/primordial_mars_art.mp4" type="video/mp4">
+          <source src="/assets/images/primordial_mars_art.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -117,7 +117,7 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
     <h4>Mars Astrobiology & Biosignature Detection</h4>
     <div class="research-content">
       <div class="research-image">
-        <img src="/michaelphillips.github.io/assets/images/biosigs_orbit2ground.png" alt="Orbit to ground biosignature framework">
+        <img src="/assets/images/biosigs_orbit2ground.png" alt="Orbit to ground biosignature framework">
       </div>
       <div class="research-text">
         I develop and apply AI/machine learning techniques to improve the detection of potential biosignatures and identify high-priority targets for astrobiology investigations. My work addresses critical knowledge gaps in understanding Mars' habitability through time.
@@ -134,11 +134,20 @@ My work sits at the intersection of planetary geology, remote sensing, and data 
   <div class="research-item">
     <h4>Hydrothermal Systems & Aqueous Alteration</h4>
     <p>My research characterizes ancient hydrothermal environments in Martian impact basins, investigating mineral assemblages that record past water-rock interactions and their implications for habitability and preservation of biosignatures.</p>
+    <div class="research-image" style="max-width: 100%; margin: 20px 0;">
+      <img src="/assets/images/viviano-phillips-alteration.webp" alt="Hydrothermal alteration in Martian impact basins">
+    </div>
   </div>
 
   <div class="research-item">
     <h4>Hyperspectral Data Processing & Analysis</h4>
     <p>I develop computational tools and processing pipelines for analyzing CRISM (Compact Reconnaissance Imaging Spectrometer for Mars) hyperspectral data, including automated detection algorithms and spectral analysis frameworks that enable large-scale compositional mapping.</p>
+    <div style="margin-top: 20px;">
+      <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <source src="/assets/images/spectral-cube-analysis-tool.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
 </div>
 

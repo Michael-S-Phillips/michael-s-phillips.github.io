@@ -1,5 +1,5 @@
 ---
-title: 'The Math Behind Loan Repayment: Why "Optimal" Isn't Always Simple'
+title: 'Optimize your loan repayment strategy'
 date: 2025-11-12
 permalink: /posts/2025/11/optimal-loan-repayment/
 tags:
@@ -9,7 +9,7 @@ tags:
   - personal finance
 ---
 
-Loans are like armpits—we all have them and they all stink. If you've been researching debt repayment strategies, you've probably come across two popular methods: the "Snowball" method and the "Avalanche" method.
+Loans are like armpits - we all have them and they all stink. If you've been researching debt repayment strategies, you've probably come across two popular methods: the "Snowball" method and the "Avalanche" method.
 
 ## The Traditional Approaches
 
