@@ -174,3 +174,29 @@ def fetch_scholar_works():
     except Exception as e:
         print(f"[WARN] Google Scholar fetch failed ({type(e).__name__}: {e}); skipping.")
         return []
+
+
+# ── Merge & deduplicate ────────────────────────────────────────────────────────
+
+def merge_works(orcid_works, scholar_works):
+    """Merge two work lists, deduplicating by DOI then title key.
+
+    ORCID entries take precedence (appear first in the combined list).
+    Scholar entries are added only if not already represented.
+    """
+    seen_doi   = set()
+    seen_title = set()
+    merged = []
+    for w in orcid_works + scholar_works:
+        ndoi = normalize_doi(w.get("doi", ""))
+        tk   = title_key(w.get("title", ""))
+        if ndoi and ndoi in seen_doi:
+            continue
+        if tk and tk in seen_title:
+            continue
+        if ndoi:
+            seen_doi.add(ndoi)
+        if tk:
+            seen_title.add(tk)
+        merged.append(w)
+    return merged

@@ -202,3 +202,36 @@ def test_fetch_scholar_works_returns_empty_on_error():
     with patch.dict("sys.modules", {"scholarly": None}):
         works = fetch_scholar_works()
     assert works == []
+
+
+# ── Task 5: merge and deduplication ──────────────────────────────────────────
+
+def test_merge_works_deduplicates_by_doi():
+    from sync_publications import merge_works
+    orcid = [{"title": "Paper A", "doi": "10.1234/a", "venue": "Icarus",
+              "date": "2024-01-01", "source": "orcid"}]
+    scholar = [{"title": "Paper A (Scholar version)", "doi": "10.1234/a",
+                "venue": "Icarus", "date": "2024-01-01", "source": "scholar"}]
+    merged = merge_works(orcid, scholar)
+    assert len(merged) == 1
+    assert merged[0]["source"] == "orcid"   # ORCID wins
+
+
+def test_merge_works_deduplicates_by_title():
+    from sync_publications import merge_works
+    orcid = [{"title": "Ancient Anorthosites on Mars", "doi": "",
+              "venue": "Icarus", "date": "2024-01-01", "source": "orcid"}]
+    scholar = [{"title": "Ancient anorthosites on Mars!", "doi": "",
+                "venue": "Icarus", "date": "2024-01-01", "source": "scholar"}]
+    merged = merge_works(orcid, scholar)
+    assert len(merged) == 1
+
+
+def test_merge_works_keeps_unique():
+    from sync_publications import merge_works
+    orcid = [{"title": "Paper A", "doi": "10.1/a",
+              "venue": "J1", "date": "2024-01-01", "source": "orcid"}]
+    scholar = [{"title": "Paper B", "doi": "10.1/b",
+                "venue": "J2", "date": "2023-01-01", "source": "scholar"}]
+    merged = merge_works(orcid, scholar)
+    assert len(merged) == 2
