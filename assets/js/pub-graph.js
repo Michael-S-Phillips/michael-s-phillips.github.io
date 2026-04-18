@@ -46,6 +46,7 @@
   let nodeSel = null;
   let linkSel = null;
   let initialized = false;
+  let isTouch = false;
 
   // ── Public entry point ────────────────────────────────────────────────────
 
@@ -93,7 +94,10 @@
     if (!container) return;
 
     const W = container.clientWidth  || 900;
-    const H = Math.min(Math.max(W * 0.65, 480), 680);
+    isTouch = ("ontouchstart" in window);
+    const H = isTouch
+      ? Math.min(Math.max(W * 0.9, 320), 420)
+      : Math.min(Math.max(W * 0.65, 480), 680);
     container.style.height = H + "px";
 
     // ── SVG ----------------------------------------------------------------
@@ -217,13 +221,16 @@
     renderLegend();
 
     // ── Hint text ---------------------------------------------------------
+    const hintText = isTouch
+      ? "pinch to zoom \u00b7 drag to pan \u00b7 tap node to preview"
+      : "scroll to zoom \u00b7 drag to pan \u00b7 click node to open paper";
     svgSel.append("text")
       .attr("x", 12).attr("y", H - 10)
       .style("font-family", "'Jost', sans-serif")
       .style("font-size", "10px")
       .style("fill", "rgba(255,255,255,0.2)")
       .style("pointer-events", "none")
-      .text("scroll to zoom · drag to pan · click node to open paper");
+      .text(hintText);
   }
 
   // ── Tooltip ──────────────────────────────────────────────────────────────
