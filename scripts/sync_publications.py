@@ -200,3 +200,89 @@ def merge_works(orcid_works, scholar_works):
             seen_title.add(tk)
         merged.append(w)
     return merged
+
+
+# ── File generation ────────────────────────────────────────────────────────────
+
+def make_slug(title):
+    """Convert a title to a filesystem-safe hyphenated slug, max 60 chars."""
+    slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+    return slug[:60].rstrip("-")
+
+
+def render_md(work, slug, today_str):
+    """Return the full text content for a new _publications/*.md file."""
+    title    = work["title"].replace('"', "&quot;").replace("'", "&apos;")
+    venue    = (work.get("venue") or "").replace("&", "&amp;")
+    doi      = work.get("doi", "")
+    doi_url  = f"https://doi.org/{doi}" if doi else ""
+    date_str = work.get("date", "2020-01-01")[:10]
+    year     = date_str[:4]
+
+    paper_url_line = f"paperurl: '{doi_url}'"
+    if venue:
+        citation = (
+            f"citation: 'Phillips, M.S., et al. ({year}). "
+            f"&quot;{title}.&quot; <i>{venue}</i>.'"
+        )
+    else:
+        citation = f"citation: 'Phillips, M.S., et al. ({year}). &quot;{title}.&quot;'"
+
+    body_link = f"[{work['title']}]({doi_url})" if doi_url else work["title"]
+
+    return (
+        f'---\n'
+        f'title: "{title}"\n'
+        f'collection: publications\n'
+        f'permalink: /publication/{date_str}-{slug}\n'
+        f"excerpt: ''\n"
+        f'date: {date_str}\n'
+        f"venue: '{venue}'\n"
+        f'{paper_url_line}\n'
+        f'{citation}\n'
+        f'---\n'
+        f'<!-- auto-synced from ORCID on {today_str} —'
+        f' please fill in excerpt and verify citation -->\n\n'
+        f'{body_link}\n\n'
+        f'Recommended citation: Phillips, M.S., et al. ({year}). '
+        f'"{work["title"]}." <i>{venue}</i>.\n'
+    )
+
+
+def unique_path(pub_dir, date_str, slug):
+    """Return a Path that does not exist, appending -2/-3 as needed."""
+    base = pub_dir / f"{date_str}-{slug}.md"
+    if not base.exists():
+        return base
+    for n in range(2, 20):
+        candidate = pub_dir / f"{date_str}-{slug}-{n}.md"
+        if not candidate.exists():
+            return candidate
+    raise RuntimeError(f"Cannot find unique path for slug '{slug}'")
+
+
+def create_new_publications(works, pub_dir, doi_idx, title_idx, today_str=None):
+    """Write .md files for works not already in doi_idx or title_idx.
+
+    Returns list of Path objects for every file created.
+    Existing files are never modified.
+    """
+    today_str = today_str or str(date.today())
+    new_paths = []
+    for work in works:
+        ndoi = normalize_doi(work.get("doi", ""))
+        tk   = title_key(work.get("title", ""))
+
+        if ndoi and ndoi in doi_idx:
+            continue
+        if tk and tk in title_idx:
+            continue
+
+        date_str = work.get("date", "2020-01-01")[:10]
+        slug     = make_slug(work["title"])
+        path     = unique_path(pub_dir, date_str, slug)
+        content  = render_md(work, slug, today_str)
+        path.write_text(content, encoding="utf-8")
+        print(f"[NEW] {path.name}  ← {work['title'][:65]}")
+        new_paths.append(path)
+    return new_paths

@@ -235,3 +235,88 @@ def test_merge_works_keeps_unique():
                 "venue": "J2", "date": "2023-01-01", "source": "scholar"}]
     merged = merge_works(orcid, scholar)
     assert len(merged) == 2
+
+
+# ── Task 6: file generation ───────────────────────────────────────────────────
+
+def test_make_slug_basic():
+    from sync_publications import make_slug
+    assert make_slug("Ancient Anorthosites on Mars") == "ancient-anorthosites-on-mars"
+
+
+def test_make_slug_strips_special_chars():
+    from sync_publications import make_slug
+    assert make_slug("A Paper: With (Special!) Characters") == "a-paper-with-special-characters"
+
+
+def test_make_slug_max_length():
+    from sync_publications import make_slug
+    slug = make_slug("A " * 100)
+    assert len(slug) <= 60
+
+
+def test_render_md_contains_required_fields():
+    from sync_publications import render_md
+    work = {
+        "title":  "Test Paper on Mars",
+        "venue":  "Icarus",
+        "date":   "2024-03-15",
+        "doi":    "10.1234/test",
+        "source": "orcid",
+    }
+    content = render_md(work, "test-paper-on-mars", "2026-04-18")
+    assert 'title: "Test Paper on Mars"' in content
+    assert "collection: publications" in content
+    assert "venue: 'Icarus'" in content
+    assert "paperurl: 'https://doi.org/10.1234/test'" in content
+    assert "date: 2024-03-15" in content
+    assert "auto-synced from ORCID" in content
+    assert "permalink: /publication/2024-03-15-test-paper-on-mars" in content
+
+
+def test_render_md_no_doi():
+    from sync_publications import render_md
+    work = {"title": "No DOI Paper", "venue": "PSJ",
+            "date": "2023-01-01", "doi": "", "source": "orcid"}
+    content = render_md(work, "no-doi-paper", "2026-04-18")
+    assert "paperurl: ''" in content
+
+
+def test_create_new_publications_creates_file(tmp_path):
+    from sync_publications import create_new_publications
+    works = [
+        {"title": "Brand New Mars Paper", "venue": "Icarus",
+         "date": "2025-06-01", "doi": "10.9999/new", "source": "orcid"},
+    ]
+    new_paths = create_new_publications(works, tmp_path, {}, {}, today_str="2026-04-18")
+    assert len(new_paths) == 1
+    created = new_paths[0]
+    assert created.exists()
+    text = created.read_text()
+    assert "Brand New Mars Paper" in text
+    assert "auto-synced from ORCID on 2026-04-18" in text
+
+
+def test_create_new_publications_skips_existing_doi(tmp_path):
+    from sync_publications import create_new_publications
+    works = [
+        {"title": "Existing Paper", "venue": "Icarus",
+         "date": "2024-01-01", "doi": "10.1234/existing", "source": "orcid"},
+    ]
+    doi_idx = {"10.1234/existing": tmp_path / "existing.md"}
+    new_paths = create_new_publications(works, tmp_path, doi_idx, {}, today_str="2026-04-18")
+    assert new_paths == []
+
+
+def test_create_new_publications_handles_slug_collision(tmp_path):
+    from sync_publications import create_new_publications
+    # Pre-create a file that would collide with the slug
+    existing = tmp_path / "2024-01-01-collision-paper.md"
+    existing.write_text("---\ntitle: x\n---\n")
+    works = [
+        {"title": "Collision Paper", "venue": "PSJ",
+         "date": "2024-01-01", "doi": "10.1/new", "source": "orcid"},
+    ]
+    new_paths = create_new_publications(works, tmp_path, {}, {}, today_str="2026-04-18")
+    assert len(new_paths) == 1
+    assert new_paths[0].name == "2024-01-01-collision-paper-2.md"
