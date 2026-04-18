@@ -14,7 +14,7 @@ Citation counts are cached in _data/citations_cache.json so subsequent
 runs only fetch counts for new papers.
 """
 
-import re, json, time, html
+import re, json, time, html, argparse
 import urllib.request, urllib.parse
 from pathlib import Path
 from math import log, sqrt
@@ -252,11 +252,11 @@ def save_cache(cache):
     CACHE_FILE.parent.mkdir(exist_ok=True)
     CACHE_FILE.write_text(json.dumps(cache, indent=2))
 
-def get_citation_count(title, doi_url, cache):
+def get_citation_count(title, doi_url, cache, force=False):
     doi = extract_doi(doi_url)
     cache_key = doi or title
 
-    if cache_key in cache:
+    if not force and cache_key in cache:
         return cache[cache_key]
 
     count = None
@@ -275,8 +275,19 @@ def get_citation_count(title, doi_url, cache):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
+    parser = argparse.ArgumentParser(description="Build publication graph data.")
+    parser.add_argument(
+        "--force-citations",
+        action="store_true",
+        help="Ignore citation cache and re-fetch all counts from Semantic Scholar.",
+    )
+    args = parser.parse_args()
+
     pub_files = sorted(PUB_DIR.glob("*.md"))
     cache = load_cache()
+    if args.force_citations:
+        print("--force-citations: ignoring citation cache")
+        cache = {}
     nodes, docs = [], []
 
     print(f"Processing {len(pub_files)} publications...")
@@ -297,7 +308,7 @@ def main():
         pub_type      = "journal" if venue in JOURNAL_VENUES else "conference"
 
         print(f"  {'[cite]':7} {planet:8} {pub_type:10} {title[:55]}")
-        citations = get_citation_count(title, url, cache)
+        citations = get_citation_count(title, url, cache, force=args.force_citations)
         print(f"  {str(citations)+' cites':7} {planet:8} {pub_type:10} {title[:55]}")
 
         nodes.append({
