@@ -1,0 +1,782 @@
+---
+---
+
+/* ============================================================
+   MARS FIELD STATION — Design Override
+   Palette: deep space dark · Mars ochre · warm parchment
+   Fonts: Crimson Pro (headings) · Jost (UI/body) · JetBrains Mono (code)
+   ============================================================ */
+
+/* ============================================================
+   Design Tokens
+   ============================================================ */
+
+:root {
+  /* Dark Mars palette */
+  --global-bg-color:                 #0d0f14;
+  --global-footer-bg-color:          #090b10;
+  --global-border-color:             #1e2330;
+  --global-dark-border-color:        #2e3548;
+  --global-text-color:               #ccc5bc;
+  --global-text-color-light:         #6b7a96;
+  --global-base-color:               #6b7a96;
+  --global-link-color:               #e07b39;
+  --global-link-color-hover:         #f0a060;
+  --global-link-color-visited:       #c05820;
+  --global-masthead-link-color:      #ccc5bc;
+  --global-masthead-link-color-hover:#e07b39;
+  --global-code-background-color:    #10131a;
+  --global-code-text-color:          #a8c0d0;
+  --global-fig-caption-color:        #6b7a96;
+  --global-thead-color:              #10131a;
+
+  /* Custom accent tokens */
+  --mars-rust:   #b5390f;
+  --mars-ochre:  #e07b39;
+  --mars-gold:   #d4a843;
+  --space-blue:  #4a9bbe;
+  --deep-space:  #07090e;
+  --parchment:   #e4ddd4;
+
+  /* Font families */
+  --font-display: 'Crimson Pro', Georgia, serif;
+  --font-ui:      'Jost', -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'Monaco', monospace;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+
+html {
+  background-color: var(--global-bg-color);
+}
+
+body {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  letter-spacing: 0.01em;
+}
+
+/* Atmospheric glow — subtle Martian sky */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 15% 60%, rgba(181, 57, 15, 0.055) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 35% at 85% 15%, rgba(74, 155, 190, 0.04) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__subtitle {
+  font-family: var(--font-display) !important;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: var(--parchment);
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.6em; }
+h2 { font-size: 1.9em; }
+h3 { font-size: 1.45em; }
+h4 { font-size: 1.15em; }
+
+p, li, td, th, label {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+a {
+  color: var(--mars-ochre);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--mars-gold);
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: #c26a2e;
+  }
+}
+
+strong, b {
+  font-weight: 500;
+  color: var(--parchment);
+}
+
+blockquote {
+  border-left: 2px solid var(--mars-ochre);
+  background: rgba(224, 123, 57, 0.05);
+  color: var(--global-text-color-light);
+  font-style: italic;
+  padding: 0.75em 1.25em;
+  margin: 1.5em 0;
+  font-family: var(--font-display);
+  font-size: 1.15em;
+}
+
+/* ============================================================
+   Masthead / Navigation
+   ============================================================ */
+
+.masthead {
+  background: rgba(10, 12, 18, 0.88) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  &::after {
+    background: linear-gradient(to right,
+      transparent,
+      rgba(224, 123, 57, 0.25) 30%,
+      rgba(224, 123, 57, 0.25) 70%,
+      transparent
+    ) !important;
+  }
+}
+
+.masthead__inner-wrap {
+  padding: 0.4em 1.5em !important;
+}
+
+/* Site title */
+.masthead__menu-item--lg a {
+  font-family: var(--font-display) !important;
+  font-weight: 400 !important;
+  font-size: 1.35em !important;
+  letter-spacing: 0.05em !important;
+  text-transform: none !important;
+  color: var(--parchment) !important;
+
+  &:hover {
+    color: var(--mars-ochre) !important;
+  }
+}
+
+/* Nav links */
+.masthead__menu-item {
+  background-color: transparent !important;
+
+  a {
+    font-family: var(--font-ui) !important;
+    font-weight: 400 !important;
+    font-size: 0.78em !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: var(--global-text-color-light) !important;
+    position: relative;
+    padding-bottom: 2px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--mars-ochre);
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--parchment) !important;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Theme toggle icon */
+#theme-icon {
+  color: var(--global-text-color-light) !important;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--mars-gold) !important;
+  }
+}
+
+/* Greedy nav hidden links dropdown */
+.greedy-nav__toggle {
+  background: transparent;
+  border-color: var(--global-border-color);
+}
+
+.hidden-links {
+  background: rgba(13, 15, 20, 0.97) !important;
+  border: 1px solid var(--global-border-color) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+
+  a {
+    color: var(--global-text-color) !important;
+
+    &:hover {
+      background: rgba(224, 123, 57, 0.08) !important;
+      color: var(--mars-ochre) !important;
+    }
+  }
+}
+
+/* ============================================================
+   Sidebar & Author Profile
+   ============================================================ */
+
+.sidebar {
+  border-right: 1px solid var(--global-border-color);
+
+  p, li {
+    font-family: var(--font-ui) !important;
+  }
+}
+
+.author__avatar {
+  img {
+    border-radius: 3px !important;
+    border: 1px solid rgba(224, 123, 57, 0.25) !important;
+    padding: 3px !important;
+    filter: brightness(0.92) saturate(0.9);
+    transition: filter 0.4s ease, border-color 0.4s ease;
+    max-width: 160px;
+
+    &:hover {
+      filter: brightness(1.0) saturate(1.0);
+      border-color: var(--mars-ochre) !important;
+    }
+  }
+}
+
+.author__name {
+  font-family: var(--font-display) !important;
+  font-size: 1.35em !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.06em !important;
+  color: var(--parchment) !important;
+}
+
+.author__bio {
+  font-family: var(--font-ui) !important;
+  font-size: 0.8em !important;
+  font-weight: 300 !important;
+  line-height: 1.65 !important;
+  color: var(--global-text-color-light) !important;
+}
+
+.author__pronouns {
+  font-size: 0.75em !important;
+  color: var(--global-text-color-light) !important;
+  letter-spacing: 0.05em;
+}
+
+/* Social links */
+.author__urls {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  a {
+    font-family: var(--font-ui) !important;
+    font-size: 0.8em !important;
+    font-weight: 300 !important;
+    color: var(--global-text-color) !important;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    transition: color 0.2s ease, transform 0.2s ease;
+    padding: 3px 0 !important;
+
+    &:hover {
+      color: var(--mars-ochre) !important;
+      transform: translateX(3px);
+      text-decoration: none !important;
+    }
+  }
+
+  /* Icon colors */
+  .ai, .fas, .fab {
+    color: rgba(224, 123, 57, 0.6) !important;
+    transition: color 0.2s ease;
+  }
+
+  li:hover .ai,
+  li:hover .fas,
+  li:hover .fab {
+    color: var(--mars-ochre) !important;
+  }
+}
+
+/* Mobile "Follow" button */
+.author__urls-wrapper button.btn {
+  font-family: var(--font-ui);
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--global-border-color);
+  color: var(--global-text-color-light);
+
+  &:hover {
+    border-color: var(--mars-ochre);
+    color: var(--mars-ochre);
+  }
+}
+
+/* ============================================================
+   Page Content
+   ============================================================ */
+
+.page__content {
+  font-family: var(--font-ui);
+
+  h2 {
+    font-family: var(--font-display) !important;
+    color: var(--parchment);
+    border-bottom: 1px solid var(--global-border-color);
+    padding-bottom: 0.35em;
+    margin-top: 2.5em;
+  }
+
+  h3 {
+    font-family: var(--font-display) !important;
+    color: var(--parchment);
+  }
+
+  /* Decorative section marker */
+  h2::before {
+    content: '◆';
+    color: var(--mars-ochre);
+    font-size: 0.45em;
+    vertical-align: middle;
+    margin-right: 0.6em;
+    opacity: 0.7;
+  }
+}
+
+.page__title {
+  font-family: var(--font-display) !important;
+  color: var(--parchment) !important;
+  font-size: 2.4em !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.03em !important;
+  line-height: 1.15 !important;
+  border-bottom: none !important;
+}
+
+/* ============================================================
+   Archive / Publication listings
+   ============================================================ */
+
+.archive {
+  h1, h2 {
+    font-family: var(--font-display) !important;
+    color: var(--parchment);
+  }
+}
+
+.archive__item-title {
+  font-family: var(--font-display) !important;
+  font-size: 1.25em !important;
+  font-weight: 400 !important;
+  line-height: 1.35 !important;
+
+  a {
+    color: var(--parchment) !important;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--mars-ochre);
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--mars-ochre) !important;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.archive__item-excerpt {
+  font-family: var(--font-ui) !important;
+  font-size: 0.85em !important;
+  font-weight: 300 !important;
+  color: var(--global-text-color-light) !important;
+  line-height: 1.7 !important;
+}
+
+.archive__subtitle {
+  font-family: var(--font-display) !important;
+  color: var(--global-text-color-light) !important;
+  border-bottom: 1px solid var(--global-border-color) !important;
+}
+
+/* Publication venue / metadata */
+.page__meta,
+.page__meta-title {
+  font-family: var(--font-ui) !important;
+  font-size: 0.78em !important;
+  font-weight: 300 !important;
+  color: var(--global-text-color-light) !important;
+  letter-spacing: 0.04em;
+}
+
+/* ============================================================
+   Single / Publication detail pages
+   ============================================================ */
+
+.page__inner-wrap header {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    background: linear-gradient(to right, var(--mars-ochre), transparent);
+    margin-top: 1em;
+  }
+}
+
+/* Download / citation links */
+.page__content .btn,
+.page__footer-follow .btn {
+  font-family: var(--font-ui);
+  font-size: 0.75em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+
+.btn {
+  font-family: var(--font-ui) !important;
+  font-size: 0.78em !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  border-radius: 2px !important;
+  transition: all 0.25s ease !important;
+}
+
+.btn--inverse {
+  background: transparent !important;
+  border: 1px solid var(--global-border-color) !important;
+  color: var(--global-text-color-light) !important;
+  box-shadow: none !important;
+
+  &:hover {
+    border-color: var(--mars-ochre) !important;
+    color: var(--mars-ochre) !important;
+    background: rgba(224, 123, 57, 0.06) !important;
+  }
+}
+
+.btn--primary {
+  background: var(--mars-ochre) !important;
+  border-color: var(--mars-ochre) !important;
+  color: var(--deep-space) !important;
+
+  &:hover {
+    background: var(--mars-gold) !important;
+    border-color: var(--mars-gold) !important;
+  }
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
+.page__footer {
+  background: var(--global-footer-bg-color) !important;
+  border-top: 1px solid var(--global-border-color) !important;
+
+  footer {
+    font-family: var(--font-ui) !important;
+    font-size: 0.72em !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.06em !important;
+    color: var(--global-text-color-light) !important;
+  }
+
+  a {
+    color: var(--mars-ochre) !important;
+
+    &:hover {
+      color: var(--mars-gold) !important;
+    }
+  }
+}
+
+/* ============================================================
+   Tables
+   ============================================================ */
+
+table {
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.88em;
+  font-weight: 300;
+}
+
+thead th {
+  background: var(--global-thead-color) !important;
+  color: var(--global-text-color-light) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78em;
+  border-bottom: 1px solid var(--mars-ochre) !important;
+  padding: 0.7em 1em !important;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:hover {
+    background: rgba(224, 123, 57, 0.03);
+  }
+
+  td {
+    padding: 0.65em 1em !important;
+    color: var(--global-text-color);
+  }
+}
+
+/* ============================================================
+   Code
+   ============================================================ */
+
+pre, code {
+  font-family: var(--font-mono) !important;
+  font-size: 0.85em !important;
+  background: var(--global-code-background-color) !important;
+  border: 1px solid var(--global-border-color) !important;
+  border-radius: 2px !important;
+  color: var(--global-code-text-color) !important;
+}
+
+pre {
+  padding: 1em 1.25em !important;
+}
+
+code {
+  padding: 0.15em 0.4em !important;
+}
+
+/* ============================================================
+   Notices / Alerts
+   ============================================================ */
+
+.notice {
+  background: rgba(30, 35, 50, 0.5) !important;
+  border-left: 2px solid var(--mars-ochre) !important;
+  border-radius: 0 2px 2px 0 !important;
+  font-family: var(--font-ui) !important;
+  font-size: 0.88em !important;
+}
+
+/* ============================================================
+   Pagination
+   ============================================================ */
+
+.pagination {
+  font-family: var(--font-ui);
+  font-size: 0.82em;
+  letter-spacing: 0.05em;
+
+  a {
+    border: 1px solid var(--global-border-color) !important;
+    color: var(--global-text-color) !important;
+    border-radius: 2px !important;
+    transition: all 0.2s ease !important;
+
+    &:hover {
+      border-color: var(--mars-ochre) !important;
+      color: var(--mars-ochre) !important;
+      background: transparent !important;
+    }
+  }
+}
+
+/* ============================================================
+   Breadcrumbs
+   ============================================================ */
+
+.breadcrumbs {
+  font-family: var(--font-ui) !important;
+  font-size: 0.75em !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.04em !important;
+
+  a {
+    color: var(--global-text-color-light) !important;
+
+    &:hover {
+      color: var(--mars-ochre) !important;
+    }
+  }
+
+  span {
+    color: var(--global-text-color-light);
+  }
+}
+
+/* ============================================================
+   Forms & Search
+   ============================================================ */
+
+input, textarea, select {
+  font-family: var(--font-ui) !important;
+  font-weight: 300 !important;
+  background: var(--global-code-background-color) !important;
+  border: 1px solid var(--global-border-color) !important;
+  color: var(--global-text-color) !important;
+  border-radius: 2px !important;
+  transition: border-color 0.2s ease !important;
+
+  &:focus {
+    border-color: var(--mars-ochre) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(224, 123, 57, 0.12) !important;
+  }
+}
+
+/* ============================================================
+   Page Load Animation
+   ============================================================ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page__title {
+  animation: fadeUp 0.55s ease both;
+  animation-delay: 0.05s;
+}
+
+.page__content {
+  animation: fadeUp 0.55s ease both;
+  animation-delay: 0.12s;
+}
+
+.sidebar {
+  animation: fadeUp 0.55s ease both;
+  animation-delay: 0.08s;
+}
+
+/* ============================================================
+   Scrollbar
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--global-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--global-border-color);
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(224, 123, 57, 0.4);
+  }
+}
+
+/* ============================================================
+   Selection
+   ============================================================ */
+
+::selection {
+  background: rgba(224, 123, 57, 0.28);
+  color: var(--parchment);
+}
+
+/* ============================================================
+   Dark theme variant — reinforce our palette
+   ============================================================ */
+
+[data-theme="dark"] {
+  --global-bg-color:              #0d0f14;
+  --global-footer-bg-color:       #090b10;
+  --global-border-color:          #1e2330;
+  --global-text-color:            #ccc5bc;
+  --global-text-color-light:      #6b7a96;
+  --global-link-color:            #e07b39;
+  --global-link-color-hover:      #f0a060;
+  --global-masthead-link-color:   #ccc5bc;
+  --global-code-background-color: #10131a;
+}
+
+/* ============================================================
+   About page — research section
+   ============================================================ */
+
+.banner-image {
+  border-radius: 3px !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid var(--global-border-color);
+}
+
+.research-image {
+  border-radius: 3px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid var(--global-border-color);
+}
+
+.research-item h4 {
+  font-family: var(--font-display) !important;
+  font-weight: 400 !important;
+  font-size: 1.2em !important;
+  letter-spacing: 0.025em !important;
+  color: var(--parchment) !important;
+}
+
+/* ============================================================
+   Responsive tweaks
+   ============================================================ */
+
+@media (max-width: 768px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.6em; }
+
+  .page__title {
+    font-size: 1.9em !important;
+  }
+}
