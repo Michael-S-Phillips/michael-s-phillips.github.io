@@ -134,6 +134,19 @@
   }
 }
 
+@media (max-width: 599px) {
+  .list__item .archive__item:has(.archive__item-teaser) {
+    flex-direction: column;
+  }
+
+  .list__item .archive__item-teaser {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
 .archive__item:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
