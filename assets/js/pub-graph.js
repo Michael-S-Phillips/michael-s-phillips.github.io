@@ -237,6 +237,12 @@
 
   // ── Mobile panel ─────────────────────────────────────────────────────────
 
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
   function buildMobilePanel() {
     if (document.getElementById("pub-graph-mobile-panel")) return;
     const container = document.getElementById("pub-graph-container");
@@ -285,28 +291,28 @@
 
     panel.innerHTML =
       "<div style=\"font-family:'Crimson Pro',serif;font-size:1.05em;color:#e4ddd4;" +
-        "line-height:1.35;margin-bottom:6px\">" + d.title + "</div>" +
+        "line-height:1.35;margin-bottom:6px\">" + esc(d.title) + "</div>" +
       "<div style=\"display:flex;align-items:center;gap:6px;margin-bottom:4px\">" +
         "<span style=\"font-size:0.72em;letter-spacing:0.06em;text-transform:uppercase;" +
-          "color:#4a9bbe\">" + d.venue + "</span>" +
+          "color:#4a9bbe\">" + esc(d.venue) + "</span>" +
         "<span style=\"font-size:0.65em;letter-spacing:0.07em;text-transform:uppercase;" +
-          typeStyle + ";border-width:1px;padding:0 4px;border-radius:2px\">" + d.pub_type + "</span>" +
+          typeStyle + ";border-width:1px;padding:0 4px;border-radius:2px\">" + esc(d.pub_type) + "</span>" +
       "</div>" +
       "<div style=\"font-size:0.7em;font-family:'JetBrains Mono',monospace;" +
         "color:#6b7a96;margin-bottom:8px\">" +
-        d.year + (d.citations ? " \u00b7 " + d.citations + " citations" : "") +
+        esc(d.year) + (d.citations ? " \u00b7 " + esc(d.citations) + " citations" : "") +
       "</div>" +
       "<div style=\"font-size:0.72em;color:#6b7a96;line-height:1.55;margin-bottom:10px\">" +
-        d.excerpt +
+        esc(d.excerpt) +
       "</div>" +
       "<div style=\"display:flex;align-items:center;gap:6px;margin-bottom:10px\">" +
         "<span style=\"width:8px;height:8px;border-radius:50%;background:" + color + ";" +
           "display:inline-block;flex-shrink:0\"></span>" +
         "<span style=\"font-size:0.68em;letter-spacing:0.05em;text-transform:uppercase;" +
-          "color:" + color + "\">" + tLabel + "</span>" +
+          "color:" + color + "\">" + esc(tLabel) + "</span>" +
       "</div>" +
-      (d.url
-        ? "<a href=\"" + d.url + "\" target=\"_blank\" rel=\"noopener\" " +
+      (d.url && /^https?:\/\//.test(d.url)
+        ? "<a href=\"" + esc(d.url) + "\" target=\"_blank\" rel=\"noopener\" " +
             "style=\"display:inline-block;font-size:0.72em;letter-spacing:0.07em;" +
             "text-transform:uppercase;color:#e07b39;border:1px solid rgba(224,123,57,0.4);" +
             "padding:5px 12px;border-radius:2px;text-decoration:none\">\u2197 Open paper</a>"
