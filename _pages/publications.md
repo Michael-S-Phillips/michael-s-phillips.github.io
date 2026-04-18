@@ -239,7 +239,7 @@ For citation metrics and full publication list, see my [Google Scholar](https://
     Nodes connected by text similarity (TF-IDF) between titles and abstracts — closer nodes share more concepts.
     <strong style="color:var(--parchment)">Filled circles</strong> = peer-reviewed journals &nbsp;·&nbsp;
     <strong style="color:var(--parchment)">Dashed rings</strong> = conference proceedings.
-    Node size scales with publication year. Hover to preview; click to open the paper.
+    Node size scales with citation count (via Semantic Scholar). Hover to preview; click to open the paper.
   </p>
 
 </div><!-- #view-graph -->

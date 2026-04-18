@@ -80,10 +80,10 @@
   }
 
   function nodeRadius(d) {
-    // Slightly larger for more recent publications
-    const base = 9;
-    const boost = Math.max(0, (d.year - 2018) * 0.6);
-    return base + boost;
+    const base = 7;
+    const c = d.citations || 0;
+    // sqrt scale: 0→7, 5→9, 16→10.2, 19→10.5 — differentiated but not overwhelming
+    return base + Math.sqrt(c) * 0.8;
   }
 
   // ── Build ─────────────────────────────────────────────────────────────────
@@ -269,7 +269,7 @@
                      padding:0 4px;border-radius:2px">${d.pub_type}</span>
       </div>
       <div style="font-size:0.7em;font-family:'JetBrains Mono',monospace;
-                  color:#6b7a96;margin-bottom:8px">${d.year}</div>
+                  color:#6b7a96;margin-bottom:8px">${d.year}${d.citations ? ` &nbsp;·&nbsp; ${d.citations} citations` : ''}</div>
       <div style="font-size:0.72em;color:#6b7a96;line-height:1.55;margin-bottom:8px">${d.excerpt}</div>
       <div style="display:flex;align-items:center;gap:6px">
         <span style="width:8px;height:8px;border-radius:50%;background:${color};
