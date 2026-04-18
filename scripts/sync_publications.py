@@ -286,3 +286,42 @@ def create_new_publications(works, pub_dir, doi_idx, title_idx, today_str=None):
         print(f"[NEW] {path.name}  ← {work['title'][:65]}")
         new_paths.append(path)
     return new_paths
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+
+def main():
+    print("── Syncing publications ──────────────────────────────────────")
+    print(f"ORCID: {ORCID_ID}  |  Scholar: {SCHOLAR_ID}")
+    print()
+
+    print("Fetching ORCID works...")
+    orcid_works = fetch_orcid_works()
+    print(f"  → {len(orcid_works)} works found")
+
+    print("Fetching Google Scholar publications (best-effort)...")
+    scholar_works = fetch_scholar_works()
+    print(f"  → {len(scholar_works)} works found")
+
+    all_works = merge_works(orcid_works, scholar_works)
+    print(f"  → {len(all_works)} unique after merge")
+    print()
+
+    doi_idx, title_idx = build_existing_index(PUB_DIR)
+    print(f"Existing publications: {len(doi_idx)} indexed by DOI, "
+          f"{len(title_idx)} by title")
+    print()
+
+    new_paths = create_new_publications(all_works, PUB_DIR, doi_idx, title_idx)
+
+    if new_paths:
+        print(f"\n✓ Created {len(new_paths)} new publication file(s).")
+    else:
+        print("✓ No new publications found.")
+
+    print()
+    print("Next step: python scripts/build_graph.py --force-citations")
+
+
+if __name__ == "__main__":
+    main()

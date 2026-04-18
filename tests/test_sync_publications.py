@@ -320,3 +320,45 @@ def test_create_new_publications_handles_slug_collision(tmp_path):
     new_paths = create_new_publications(works, tmp_path, {}, {}, today_str="2026-04-18")
     assert len(new_paths) == 1
     assert new_paths[0].name == "2024-01-01-collision-paper-2.md"
+
+
+# ── Task 7: main function ─────────────────────────────────────────────────────
+
+def test_main_integration(tmp_path, capsys):
+    """main() creates new .md files for works not already present."""
+    from sync_publications import main
+
+    orcid_works  = [{"title": "Fresh New Paper", "venue": "Icarus",
+                     "date": "2025-01-15", "doi": "10.9999/fresh", "source": "orcid"}]
+    scholar_works = []
+
+    with patch("sync_publications.fetch_orcid_works",  return_value=orcid_works), \
+         patch("sync_publications.fetch_scholar_works", return_value=scholar_works), \
+         patch("sync_publications.PUB_DIR", tmp_path):
+        main()
+
+    captured = capsys.readouterr()
+    assert "[NEW]" in captured.out
+    assert any("fresh-new-paper" in str(p) for p in tmp_path.iterdir())
+
+
+def test_main_no_new_publications(tmp_path, capsys):
+    """main() prints 'No new publications found' when everything is already present."""
+    from sync_publications import main
+
+    # Pre-create a matching file
+    existing = tmp_path / "2025-01-15-fresh-new-paper.md"
+    existing.write_text(
+        '---\ntitle: "Fresh New Paper"\npaperurl: \'https://doi.org/10.9999/fresh\'\n---\n'
+    )
+
+    orcid_works = [{"title": "Fresh New Paper", "venue": "Icarus",
+                    "date": "2025-01-15", "doi": "10.9999/fresh", "source": "orcid"}]
+
+    with patch("sync_publications.fetch_orcid_works",  return_value=orcid_works), \
+         patch("sync_publications.fetch_scholar_works", return_value=[]), \
+         patch("sync_publications.PUB_DIR", tmp_path):
+        main()
+
+    captured = capsys.readouterr()
+    assert "No new publications found" in captured.out
