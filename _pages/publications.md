@@ -261,7 +261,7 @@ function pubSwitchView(view) {
     graphEl.style.display = 'block';
     btnList.classList.remove('active');
     btnGraph.classList.add('active');
-    // Lazy-init the graph on first show
+    /* Lazy-init the graph on first show */
     if (typeof window.initPubGraph === 'function') {
       window.initPubGraph(PUB_GRAPH_DATA);
     }
