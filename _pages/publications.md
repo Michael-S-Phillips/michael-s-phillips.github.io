@@ -174,9 +174,9 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 
 {% assign journal_venues = "Nature Astronomy,Nature Communications Earth & Environment,Geology,The Planetary Science Journal,Icarus,Frontiers in Astronomy and Space Sciences,Earth Surface Processes and Landforms,Science of the Total Environment,Remote Sensing,Bulletin of the American Astronomical Society,Astrobiology" | split: "," %}
 
-## Featured Publications
+<h2>Featured Publications</h2>
 
-{% assign featured_papers = "2023-04-01-orbit-to-ground-biosignature-framework-2023,2022-10-01-feldspathic-crust-hellas-geology-2022,2021-09-01-mercury-hollows-lifecycle-2021,2023-02-01-salt-constructs-astrobiology-targets-2023,2025-06-01-ancient-anorthosites-mars-2025" | split: "," %}
+{% assign featured_papers = "2023-04-01-orbit-to-ground-biosignature-framework-2023,2022-10-01-feldspathic-crust-hellas-geology-2022,2021-09-01-mercury-hollows-lifecycle-2021,2023-02-01-salt-constructs-astrobiology-targets-2023,2025-11-22-ancient-anorthosites-mars-2025" | split: "," %}
 
 {% for paper_id in featured_papers %}
   {% for post in site.publications %}
@@ -189,7 +189,7 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 
 ---
 
-## Peer-Reviewed Journal Articles
+<h2>Peer-Reviewed Journal Articles</h2>
 
 {% for post in site.publications reversed %}
   {% if journal_venues contains post.venue %}
@@ -199,7 +199,7 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 
 ---
 
-## Conference Proceedings & Abstracts
+<h2>Conference Proceedings &amp; Abstracts</h2>
 
 {% assign conf_keywords = "Lunar and Planetary Science,AbSciCon,Copernicus,AGU,LPI,AAS,ARPHA,European Planetary Science,Differentiation" | split: "," %}
 
@@ -247,7 +247,7 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 <!-- ── Scripts ───────────────────────────────────────────────────────── -->
 
 <script>
-// Inject graph data from Jekyll data file
+/* Inject graph data from Jekyll data file */
 var PUB_GRAPH_DATA = {{ site.data.publications_graph | jsonify }};
 
 function pubSwitchView(view) {
