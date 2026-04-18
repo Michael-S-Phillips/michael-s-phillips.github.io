@@ -108,3 +108,53 @@ def test_build_existing_index_empty(tmp_path):
     doi_idx, title_idx = build_existing_index(tmp_path)
     assert doi_idx == {}
     assert title_idx == {}
+
+
+# ── Task 3: ORCID parsing ─────────────────────────────────────────────────────
+
+def test_parse_orcid_works_extracts_fields():
+    from sync_publications import parse_orcid_works
+    works = parse_orcid_works(SAMPLE_ORCID_RESPONSE)
+    assert len(works) == 2
+
+    w0 = works[0]
+    assert w0["title"] == "A Test Paper on Mars Geology"
+    assert w0["venue"] == "Icarus"
+    assert w0["date"]  == "2024-03-15"
+    assert w0["doi"]   == "10.1234/test.2024"
+    assert w0["source"] == "orcid"
+
+
+def test_parse_orcid_works_handles_missing_month_day():
+    from sync_publications import parse_orcid_works
+    works = parse_orcid_works(SAMPLE_ORCID_RESPONSE)
+    w1 = works[1]
+    assert w1["date"] == "2023-01-01"
+    assert w1["doi"]  == ""
+
+
+def test_parse_orcid_works_skips_no_title():
+    from sync_publications import parse_orcid_works
+    data = {"group": [{"work-summary": [{"title": None}]}]}
+    works = parse_orcid_works(data)
+    assert works == []
+
+
+def test_fetch_orcid_works_calls_api():
+    from sync_publications import fetch_orcid_works
+    import io
+    fake_response = json.dumps(SAMPLE_ORCID_RESPONSE).encode()
+
+    class FakeHTTP:
+        def read(self):
+            return fake_response
+        def __enter__(self):
+            return self
+        def __exit__(self, *a):
+            pass
+
+    with patch("urllib.request.urlopen", return_value=FakeHTTP()):
+        works = fetch_orcid_works()
+
+    assert len(works) == 2
+    assert works[0]["title"] == "A Test Paper on Mars Geology"

@@ -75,3 +75,70 @@ def build_existing_index(pub_dir):
         if tk:
             title_idx[tk] = f
     return doi_idx, title_idx
+
+
+# ── ORCID API ──────────────────────────────────────────────────────────────────
+
+def parse_orcid_works(data):
+    """Parse ORCID /works JSON into a flat list of work dicts."""
+    works = []
+    for group in data.get("group", []):
+        summaries = group.get("work-summary", [])
+        if not summaries:
+            continue
+        s = summaries[0]
+
+        # Title (required — skip if absent)
+        try:
+            title = s["title"]["title"]["value"]
+            if not title:
+                continue
+        except (KeyError, TypeError):
+            continue
+
+        # Journal / venue
+        jt    = s.get("journal-title")
+        venue = jt["value"] if jt and jt.get("value") else ""
+
+        # Publication date — fill missing month/day with "01"
+        pd    = s.get("publication-date") or {}
+        year  = (pd.get("year")  or {}).get("value") or "2020"
+        month = (pd.get("month") or {}).get("value") or "01"
+        day   = (pd.get("day")   or {}).get("value") or "01"
+        pub_date = f"{year}-{str(month).zfill(2)}-{str(day).zfill(2)}"
+
+        # DOI — check work-summary external-ids first, then group-level
+        doi = ""
+        for id_source in [
+            (s.get("external-ids")     or {}).get("external-id", []),
+            (group.get("external-ids") or {}).get("external-id", []),
+        ]:
+            for eid in id_source:
+                if eid.get("external-id-type") == "doi":
+                    doi = eid.get("external-id-value", "")
+                    break
+            if doi:
+                break
+
+        works.append({
+            "title":  title,
+            "venue":  venue,
+            "date":   pub_date,
+            "doi":    doi,
+            "source": "orcid",
+        })
+    return works
+
+
+def fetch_orcid_works():
+    """Fetch work summaries from ORCID public API. Returns list of work dicts."""
+    req = urllib.request.Request(
+        ORCID_API,
+        headers={
+            "Accept":     "application/json",
+            "User-Agent": "personal-site-sync/1.0",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=15) as r:
+        data = json.loads(r.read())
+    return parse_orcid_works(data)
