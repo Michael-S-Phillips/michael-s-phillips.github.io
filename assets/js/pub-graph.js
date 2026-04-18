@@ -58,9 +58,12 @@
   window.setPubColorMode = function (mode) {
     colorMode = mode;
     if (!nodeSel) return;
-    nodeSel.select("circle")
+    nodeSel.select(".node-circle")
       .transition().duration(400)
-      .attr("fill", d => nodeColor(d));
+      .attr("fill", d => d.pub_type === "journal" ? nodeColor(d) : "none")
+      .attr("stroke", d => nodeColor(d));
+    nodeSel.select(".node-glow-ring")
+      .attr("stroke", d => nodeColor(d));
     renderLegend();
     // update active button styling
     document.querySelectorAll(".graph-color-btn").forEach(b => {
@@ -169,15 +172,10 @@
     nodeSel.append("circle")
       .attr("class", "node-circle")
       .attr("r", d => nodeRadius(d))
-      .attr("fill", d => d.pub_type === "journal"
-        ? nodeColor(d)
-        : "rgba(10,12,18,0.75)")
+      .attr("fill", d => d.pub_type === "journal" ? nodeColor(d) : "none")
       .attr("stroke", d => nodeColor(d))
-      .attr("stroke-width", d => d.pub_type === "journal" ? 1.2 : 2)
-      .attr("stroke-dasharray", d => d.pub_type === "conference"
-        ? "4,2.5"
-        : null)
-      .attr("opacity", d => d.pub_type === "journal" ? 1 : 0.85);
+      .attr("stroke-width", d => d.pub_type === "journal" ? 1.2 : 2.2)
+      .attr("stroke-dasharray", d => d.pub_type === "conference" ? "4,3" : null);
 
     // Year label (last two digits, inside circle)
     nodeSel.append("text")
@@ -341,7 +339,7 @@
 
     nodeSel.select(".node-circle")
       .transition().duration(200)
-      .attr("opacity", nd => (connectedIds.has(nd.id) ? 1.0 : 0.25));
+      .attr("opacity", nd => connectedIds.has(nd.id) ? 1.0 : 0.2);
 
     showTip(event, d);
     event.target.addEventListener("mousemove", moveTip);
