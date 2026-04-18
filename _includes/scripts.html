@@ -1,3 +1,27 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
+<script src="{{ base_path }}/assets/js/oneko.js"></script>
+<script>
+(function () {
+  if ('ontouchstart' in window) { return; }
+  var mouseX = window.innerWidth  / 2;
+  var mouseY = window.innerHeight / 2;
+  document.addEventListener('mousemove', function (e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+  var orange = createCat({
+    spriteUrl: '{{ base_path }}/assets/images/oneko-orange.gif',
+    targetFn:  function () { return { x: mouseX, y: mouseY }; },
+    spawnX: 80,
+    spawnY: window.innerHeight - 80
+  });
+  createCat({
+    spriteUrl: '{{ base_path }}/assets/images/oneko-black.gif',
+    targetFn:  function () { return orange.position(); },
+    spawnX: 20,
+    spawnY: window.innerHeight - 40
+  });
+}());
+</script>
 
 {% include analytics.html %}
