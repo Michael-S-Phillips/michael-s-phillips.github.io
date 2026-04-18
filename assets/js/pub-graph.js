@@ -46,6 +46,7 @@
   let nodeSel = null;
   let linkSel = null;
   let initialized = false;
+  let isTouch = false;
 
   // ── Public entry point ────────────────────────────────────────────────────
 
@@ -93,7 +94,10 @@
     if (!container) return;
 
     const W = container.clientWidth  || 900;
-    const H = Math.min(Math.max(W * 0.65, 480), 680);
+    isTouch = ("ontouchstart" in window);
+    const H = isTouch
+      ? Math.min(Math.max(W * 0.9, 320), 420)
+      : Math.min(Math.max(W * 0.65, 480), 680);
     container.style.height = H + "px";
 
     // ── SVG ----------------------------------------------------------------
@@ -152,6 +156,7 @@
       .on("click",    (e, d) => { if (d.url) window.open(d.url, "_blank"); })
       .on("mouseover", onHover)
       .on("mouseout",  onUnhover)
+      .on("touchstart", function (e, d) { e.stopPropagation(); showPanel(d); })
       .call(
         d3.drag()
           .on("start", dragStart)
@@ -212,18 +217,126 @@
 
     // ── Tooltip -----------------------------------------------------------
     buildTooltip();
+    buildMobilePanel();
 
     // ── Legend ------------------------------------------------------------
     renderLegend();
 
     // ── Hint text ---------------------------------------------------------
+    const hintText = isTouch
+      ? "pinch to zoom \u00b7 drag to pan \u00b7 tap node to preview"
+      : "scroll to zoom \u00b7 drag to pan \u00b7 click node to open paper";
     svgSel.append("text")
       .attr("x", 12).attr("y", H - 10)
       .style("font-family", "'Jost', sans-serif")
       .style("font-size", "10px")
       .style("fill", "rgba(255,255,255,0.2)")
       .style("pointer-events", "none")
-      .text("scroll to zoom · drag to pan · click node to open paper");
+      .text(hintText);
+  }
+
+  // ── Mobile panel ─────────────────────────────────────────────────────────
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  function buildMobilePanel() {
+    if (document.getElementById("pub-graph-mobile-panel")) return;
+    const container = document.getElementById("pub-graph-container");
+    if (!container) return;
+
+    const backdrop = document.createElement("div");
+    backdrop.id = "pub-graph-mobile-backdrop";
+    backdrop.style.cssText = [
+      "position:absolute", "inset:0",
+      "background:rgba(0,0,0,0.45)",
+      "display:none", "z-index:10",
+      "pointer-events:none"
+    ].join(";");
+    backdrop.addEventListener("touchstart", function (e) {
+      e.preventDefault();
+      hidePanel();
+    });
+
+    const panel = document.createElement("div");
+    panel.id = "pub-graph-mobile-panel";
+    panel.style.cssText = [
+      "position:absolute", "bottom:0", "left:0", "right:0",
+      "background:rgba(10,12,18,0.97)",
+      "border-top:1px solid rgba(224,123,57,0.3)",
+      "padding:14px 16px 18px",
+      "z-index:11",
+      "transform:translateY(100%)", "opacity:0",
+      "transition:transform 0.22s ease,opacity 0.18s ease",
+      "font-family:'Jost',sans-serif"
+    ].join(";");
+
+    container.appendChild(backdrop);
+    container.appendChild(panel);
+  }
+
+  function showPanel(d) {
+    const panel    = document.getElementById("pub-graph-mobile-panel");
+    const backdrop = document.getElementById("pub-graph-mobile-backdrop");
+    if (!panel) return;
+
+    const color  = nodeColor(d);
+    const tLabel = (colorMode === "planet" ? PLANET_LABEL[d.planet] : TOPIC_LABEL[d.topic]) || d.planet;
+    const typeStyle = d.pub_type === "journal"
+      ? "color:rgba(224,123,57,0.7);border-style:solid"
+      : "color:rgba(107,122,150,0.8);border-style:dashed";
+
+    panel.innerHTML =
+      "<div style=\"font-family:'Crimson Pro',serif;font-size:1.05em;color:#e4ddd4;" +
+        "line-height:1.35;margin-bottom:6px\">" + esc(d.title) + "</div>" +
+      "<div style=\"display:flex;align-items:center;gap:6px;margin-bottom:4px\">" +
+        "<span style=\"font-size:0.72em;letter-spacing:0.06em;text-transform:uppercase;" +
+          "color:#4a9bbe\">" + esc(d.venue) + "</span>" +
+        "<span style=\"font-size:0.65em;letter-spacing:0.07em;text-transform:uppercase;" +
+          typeStyle + ";border-width:1px;padding:0 4px;border-radius:2px\">" + esc(d.pub_type) + "</span>" +
+      "</div>" +
+      "<div style=\"font-size:0.7em;font-family:'JetBrains Mono',monospace;" +
+        "color:#6b7a96;margin-bottom:8px\">" +
+        esc(d.year) + (d.citations ? " \u00b7 " + esc(d.citations) + " citations" : "") +
+      "</div>" +
+      "<div style=\"font-size:0.72em;color:#6b7a96;line-height:1.55;margin-bottom:10px\">" +
+        esc(d.excerpt) +
+      "</div>" +
+      "<div style=\"display:flex;align-items:center;gap:6px;margin-bottom:10px\">" +
+        "<span style=\"width:8px;height:8px;border-radius:50%;background:" + color + ";" +
+          "display:inline-block;flex-shrink:0\"></span>" +
+        "<span style=\"font-size:0.68em;letter-spacing:0.05em;text-transform:uppercase;" +
+          "color:" + color + "\">" + esc(tLabel) + "</span>" +
+      "</div>" +
+      (d.url && /^https?:\/\//.test(d.url)
+        ? "<a href=\"" + esc(d.url) + "\" target=\"_blank\" rel=\"noopener\" " +
+            "style=\"display:inline-block;font-size:0.72em;letter-spacing:0.07em;" +
+            "text-transform:uppercase;color:#e07b39;border:1px solid rgba(224,123,57,0.4);" +
+            "padding:5px 12px;border-radius:2px;text-decoration:none\">\u2197 Open paper</a>"
+        : "");
+
+    if (backdrop) {
+      backdrop.style.display = "block";
+      backdrop.style.pointerEvents = "auto";
+    }
+    panel.style.transform = "translateY(0)";
+    panel.style.opacity   = "1";
+  }
+
+  function hidePanel() {
+    const panel    = document.getElementById("pub-graph-mobile-panel");
+    const backdrop = document.getElementById("pub-graph-mobile-backdrop");
+    if (panel) {
+      panel.style.transform = "translateY(100%)";
+      panel.style.opacity   = "0";
+    }
+    if (backdrop) {
+      backdrop.style.display      = "none";
+      backdrop.style.pointerEvents = "none";
+    }
   }
 
   // ── Tooltip ──────────────────────────────────────────────────────────────
