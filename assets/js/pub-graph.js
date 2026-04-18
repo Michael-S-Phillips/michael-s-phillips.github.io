@@ -165,13 +165,19 @@
       .attr("stroke-width", 1.5)
       .attr("opacity", 0);
 
-    // Main circle
+    // Main circle — solid fill for journals, dashed ring for conferences
     nodeSel.append("circle")
       .attr("class", "node-circle")
       .attr("r", d => nodeRadius(d))
-      .attr("fill", d => nodeColor(d))
-      .attr("stroke", "rgba(0,0,0,0.35)")
-      .attr("stroke-width", 1.2);
+      .attr("fill", d => d.pub_type === "journal"
+        ? nodeColor(d)
+        : "rgba(10,12,18,0.75)")
+      .attr("stroke", d => nodeColor(d))
+      .attr("stroke-width", d => d.pub_type === "journal" ? 1.2 : 2)
+      .attr("stroke-dasharray", d => d.pub_type === "conference"
+        ? "4,2.5"
+        : null)
+      .attr("opacity", d => d.pub_type === "journal" ? 1 : 0.85);
 
     // Year label (last two digits, inside circle)
     nodeSel.append("text")
@@ -256,8 +262,14 @@
     tip.innerHTML = `
       <div style="font-family:'Crimson Pro',serif;font-size:1.05em;font-weight:400;
                   color:#e4ddd4;line-height:1.3;margin-bottom:6px">${d.title}</div>
-      <div style="font-size:0.72em;letter-spacing:0.06em;text-transform:uppercase;
-                  color:#4a9bbe;margin-bottom:4px">${d.venue}</div>
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
+        <span style="font-size:0.72em;letter-spacing:0.06em;text-transform:uppercase;
+                     color:#4a9bbe">${d.venue}</span>
+        <span style="font-size:0.65em;letter-spacing:0.07em;text-transform:uppercase;
+                     color:${d.pub_type==='journal'?'rgba(224,123,57,0.7)':'rgba(107,122,150,0.8)'};
+                     border:1px ${d.pub_type==='journal'?'solid':'dashed'} currentColor;
+                     padding:0 4px;border-radius:2px">${d.pub_type}</span>
+      </div>
       <div style="font-size:0.7em;font-family:'JetBrains Mono',monospace;
                   color:#6b7a96;margin-bottom:8px">${d.year}</div>
       <div style="font-size:0.72em;color:#6b7a96;line-height:1.55;margin-bottom:8px">${d.excerpt}</div>

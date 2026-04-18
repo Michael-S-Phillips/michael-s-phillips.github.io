@@ -8,6 +8,7 @@
       "url": "",
       "planet": "multi",
       "topic": "astrobiology",
+      "pub_type": "conference",
       "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning."
     },
     {
@@ -18,6 +19,7 @@
       "url": "",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "conference",
       "excerpt": "Analysis of feldspathic rock compositions in northern Hellas providing insights into early Martian mantle conditions and differentiation."
     },
     {
@@ -28,6 +30,7 @@
       "url": "",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "conference",
       "excerpt": "Study of hydrothermal processes and mineral alteration patterns around major Martian impact basins."
     },
     {
@@ -38,6 +41,7 @@
       "url": "",
       "planet": "mars",
       "topic": "astrobiology",
+      "pub_type": "conference",
       "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
     },
     {
@@ -48,6 +52,7 @@
       "url": "",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "conference",
       "excerpt": "Spectroscopic detection and analysis of plagioclase in ancient crustal rocks of northern Hellas region on Mars."
     },
     {
@@ -58,6 +63,7 @@
       "url": "",
       "planet": "mars",
       "topic": "astrobiology",
+      "pub_type": "conference",
       "excerpt": "Ecological study of microbial communities in the Mars analog environment of Salar de Pajonales, Chile, examining habitability patterns."
     },
     {
@@ -68,6 +74,7 @@
       "url": "http://dx.doi.org/10.1016/j.scitotenv.2019.135640",
       "planet": "earth",
       "topic": "mineralogy",
+      "pub_type": "journal",
       "excerpt": "Multispectral and 3D analysis of mining impacts and environmental changes at Cerro de Pasco using remote sensing techniques."
     },
     {
@@ -78,6 +85,7 @@
       "url": "",
       "planet": "mars",
       "topic": "astrobiology",
+      "pub_type": "journal",
       "excerpt": "Strategic assessment of current knowledge gaps and future research priorities for Mars biosignature detection."
     },
     {
@@ -88,6 +96,7 @@
       "url": "https://doi.org/10.1016/j.icarus.2021.114306",
       "planet": "mercury",
       "topic": "astrobiology",
+      "pub_type": "journal",
       "excerpt": "Comprehensive analysis of Mercury s enigmatic hollow features, evaluating volatile phases and proposing a novel formation mechanism."
     },
     {
@@ -98,6 +107,7 @@
       "url": "",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "conference",
       "excerpt": "Regional analysis of surface composition around major impact basins on Mars using orbital spectroscopy data."
     },
     {
@@ -108,6 +118,7 @@
       "url": "https://doi.org/10.3389/fspas.2021.797591",
       "planet": "mars",
       "topic": "other",
+      "pub_type": "journal",
       "excerpt": "Characterization of surface morphologies in a high-altitude calcium sulfate salar, providing insights into Mars analog environments and sulfate formation processes."
     },
     {
@@ -118,6 +129,7 @@
       "url": "",
       "planet": "mars",
       "topic": "ai_ml",
+      "pub_type": "conference",
       "excerpt": "Machine learning algorithms for automated detection and classification of potential habitable environments in Mars analog settings."
     },
     {
@@ -128,6 +140,7 @@
       "url": "",
       "planet": "mars",
       "topic": "astrobiology",
+      "pub_type": "conference",
       "excerpt": "Study of gypsum crystal habits as indicators of habitable zones across multiple spatial scales in Mars analog environments."
     },
     {
@@ -138,6 +151,7 @@
       "url": "",
       "planet": "mars",
       "topic": "remote_sensing",
+      "pub_type": "conference",
       "excerpt": "Development of radiometric calibration methods for CRISM hyperspectral mapping data to improve data quality and accuracy."
     },
     {
@@ -148,6 +162,7 @@
       "url": "",
       "planet": "mars",
       "topic": "astrobiology",
+      "pub_type": "journal",
       "excerpt": "Comprehensive framework for astrobiology research combining Earth analog studies with Mars exploration strategies."
     },
     {
@@ -158,6 +173,7 @@
       "url": "",
       "planet": "mars",
       "topic": "ai_ml",
+      "pub_type": "conference",
       "excerpt": "Deep learning approach to automated identification and classification of Mars analog habitats with confidence metrics."
     },
     {
@@ -168,6 +184,7 @@
       "url": "",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "conference",
       "excerpt": "Analysis of uplifted massifs on Mars as windows into ancient crustal composition and early planetary processes."
     },
     {
@@ -178,6 +195,7 @@
       "url": "https://pubs.geoscienceworld.org/gsa/geology/article/50/10/1182/615121/Extensive-and-ancient-feldspathic-crust-detected",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "journal",
       "excerpt": "Discovery of extensive feldspathic crust around the northern Hellas basin rim, providing insights into Mars  primary crustal formation and early differentiation."
     },
     {
@@ -188,6 +206,7 @@
       "url": "https://doi.org/10.3390/rs15020314",
       "planet": "multi",
       "topic": "astrobiology",
+      "pub_type": "journal",
       "excerpt": "Identification and characterization of salt constructs in ancient lake basins as priority targets for astrobiology investigations and biosignature preservation."
     },
     {
@@ -198,6 +217,7 @@
       "url": "",
       "planet": "mars",
       "topic": "remote_sensing",
+      "pub_type": "conference",
       "excerpt": "Development of automated processing pipeline for CRISM hyperspectral data to enable systematic analysis of Mars surface composition."
     },
     {
@@ -208,6 +228,7 @@
       "url": "https://doi.org/10.1038/s41550-023-01901-z",
       "planet": "mars",
       "topic": "remote_sensing",
+      "pub_type": "journal",
       "excerpt": "Multi-scale framework combining orbital remote sensing with ground observations to identify and predict biosignature patterns in Mars analog environments."
     },
     {
@@ -218,6 +239,7 @@
       "url": "https://doi.org/10.1016/j.icarus.2023.115712",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "journal",
       "excerpt": "First comprehensive analysis of CRISM hyperspectral mapping data from Mawrth Vallis, Mars, revealing detailed mineralogical compositions."
     },
     {
@@ -228,6 +250,7 @@
       "url": "https://doi.org/10.1002/esp.5692",
       "planet": "mars",
       "topic": "astrobiology",
+      "pub_type": "journal",
       "excerpt": "Study of gypsum formations in volcanic tumuli with implications for Mars analog environments and habitability."
     },
     {
@@ -238,6 +261,7 @@
       "url": "http://dx.doi.org/10.3897/aca.6.e108253",
       "planet": "multi",
       "topic": "astrobiology",
+      "pub_type": "conference",
       "excerpt": "Application of artificial intelligence techniques to improve biosignature detection and astrobiology research methodologies."
     },
     {
@@ -248,6 +272,7 @@
       "url": "",
       "planet": "mars",
       "topic": "other",
+      "pub_type": "conference",
       "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins on early Mars."
     },
     {
@@ -258,6 +283,7 @@
       "url": "",
       "planet": "earth",
       "topic": "ai_ml",
+      "pub_type": "conference",
       "excerpt": "Analysis of current limitations and future directions for artificial intelligence applications in astrobiology research."
     },
     {
@@ -268,6 +294,7 @@
       "url": "",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "conference",
       "excerpt": "Investigation of ancient Martian crustal composition and processes from the earliest period of Mars history."
     },
     {
@@ -278,6 +305,7 @@
       "url": "",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "conference",
       "excerpt": "Spectroscopic analysis comparing terrestrial and Martian plagioclase detections in igneous rocks."
     },
     {
@@ -288,6 +316,7 @@
       "url": "",
       "planet": "multi",
       "topic": "remote_sensing",
+      "pub_type": "conference",
       "excerpt": "Overview of the Space Imagery Center facilities and capabilities for planetary image processing and analysis."
     },
     {
@@ -298,6 +327,7 @@
       "url": "",
       "planet": "multi",
       "topic": "remote_sensing",
+      "pub_type": "conference",
       "excerpt": "Development of Python software for processing and analyzing hyperspectral image cubes in planetary science."
     },
     {
@@ -308,6 +338,7 @@
       "url": "http://dx.doi.org/10.3847/PSJ/ad55f4",
       "planet": "mars",
       "topic": "ai_ml",
+      "pub_type": "journal",
       "excerpt": "Field study comparing rover and helicopter mission architectures for planetary exploration using Mars analog terrain in Iceland."
     },
     {
@@ -318,6 +349,7 @@
       "url": "",
       "planet": "multi",
       "topic": "ai_ml",
+      "pub_type": "journal",
       "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications."
     },
     {
@@ -328,6 +360,7 @@
       "url": "https://doi.org/10.1038/s43247-025-03004-7",
       "planet": "mars",
       "topic": "mineralogy",
+      "pub_type": "conference",
       "excerpt": "Discovery of widespread ancient anorthosite in Mars  lower crust, providing new insights into early planetary differentiation and crustal evolution."
     }
   ],

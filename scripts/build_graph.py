@@ -20,6 +20,15 @@ OUT_FILE = Path("_data/publications_graph.json")
 THRESHOLD = 0.07   # min similarity to include an edge
 MAX_EDGES_PER_NODE = 6  # keeps the graph readable
 
+JOURNAL_VENUES = {
+    "Nature Astronomy", "Nature Communications Earth & Environment",
+    "Geology", "The Planetary Science Journal", "Icarus",
+    "Frontiers in Astronomy and Space Sciences",
+    "Earth Surface Processes and Landforms",
+    "Science of the Total Environment", "Remote Sensing",
+    "Bulletin of the American Astronomical Society", "Astrobiology",
+}
+
 # ── Category keyword maps ───────────────────────────────────────────────────
 
 PLANET_KEYWORDS = {
@@ -163,16 +172,18 @@ def main():
 
         text           = f"{title} {excerpt}"
         planet, topic  = categorize(text)
+        pub_type       = "journal" if venue in JOURNAL_VENUES else "conference"
 
         nodes.append({
-            "id":      f.stem,
-            "title":   title,
-            "year":    year,
-            "venue":   venue,
-            "url":     url,
-            "planet":  planet,
-            "topic":   topic,
-            "excerpt": excerpt[:220]
+            "id":       f.stem,
+            "title":    title,
+            "year":     year,
+            "venue":    venue,
+            "url":      url,
+            "planet":   planet,
+            "topic":    topic,
+            "pub_type": pub_type,
+            "excerpt":  excerpt[:220]
         })
         docs.append(text)
 
