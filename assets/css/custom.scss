@@ -733,7 +733,7 @@ input, textarea, select {
    Dark theme variant — reinforce our palette
    ============================================================ */
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
   --global-bg-color:              #0d0f14;
   --global-footer-bg-color:       #090b10;
   --global-border-color:          #1e2330;
