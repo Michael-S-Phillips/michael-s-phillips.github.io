@@ -66,4 +66,38 @@
 }());
 </script>
 
+<script>
+/* Sidebar theme toggle — mirrors the masthead sun/moon button.
+   Works alongside main.min.js setTheme(): writes localStorage so
+   setTheme() on the next page load reads the correct preference. */
+(function () {
+  function _syncThemeIcons(isDark) {
+    var mastheadIcon = document.getElementById('theme-icon');
+    var sidebarIcon  = document.getElementById('sidebar-theme-icon');
+    var cls = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    if (mastheadIcon) mastheadIcon.className = cls;
+    if (sidebarIcon)  sidebarIcon.className  = cls;
+  }
+
+  window.toggleSiteTheme = function () {
+    var html   = document.documentElement;
+    var isDark = html.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      html.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+    _syncThemeIcons(!isDark);
+  };
+
+  /* Set initial sidebar icon state once DOM is ready */
+  document.addEventListener('DOMContentLoaded', function () {
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    _syncThemeIcons(isDark);
+  });
+}());
+</script>
+
 {% include analytics.html %}

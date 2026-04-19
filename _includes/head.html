@@ -18,6 +18,21 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
+<!-- Mars Field Station: enforce dark theme before CSS renders.
+     Version key "mfs1" resets any stale "light" preference from before
+     the dark theme was deployed. Bump to "mfs2" to reset again. -->
+<script>
+  (function () {
+    var V = 'mfs1';
+    if (localStorage.getItem('marsThemeV') !== V) {
+      localStorage.setItem('theme', 'dark');
+      localStorage.setItem('marsThemeV', V);
+    }
+    document.documentElement.setAttribute('data-theme',
+      localStorage.getItem('theme') || 'dark');
+  }());
+</script>
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 

@@ -730,6 +730,32 @@ input, textarea, select {
 }
 
 /* ============================================================
+   Sidebar theme toggle
+   ============================================================ */
+
+/* Lay cat + theme buttons side by side */
+.author__cat-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+/* Theme toggle pill — matches cat-toggle-btn style */
+.sidebar-theme-btn {
+  padding: 0.3em 0.75em;
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+
+/* Hide on desktop — masthead already has the toggle there */
+@media (min-width: 1024px) {
+  .sidebar-theme-btn {
+    display: none;
+  }
+}
+
+/* ============================================================
    Dark theme variant — reinforce our palette
    ============================================================ */
 
