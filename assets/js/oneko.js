@@ -144,6 +144,7 @@ function createCat(options) {
     }
 
     if (chaseDist < 24) {
+      if (!_wasIdling) { emote('\u2661'); } /* ♡ — arrived! */
       _wasIdling = true;
       idle();
       return;
