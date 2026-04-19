@@ -1,14 +1,19 @@
 /* Oneko pixel cat — factory function.
-   Creates a cat div that chases whatever targetFn() returns.
-   Returns { position: () => {x, y} } so other cats can follow it. */
+   Creates a cat div that wanders toward whatever targetFn() returns.
+   Returns { position, destroy } so other cats can follow it and it can be removed. */
 function createCat(options) {
-  var CAT_SPEED = 11;
+  var CAT_SPEED = 5;
   var catX = options.spawnX;
   var catY = options.spawnY;
   var frameCount = 0;
   var idleTime = 0;
   var idleAnimation = null;
   var idleFrame = 0;
+
+  /* Waypoint wander state */
+  var wpX = options.spawnX;
+  var wpY = options.spawnY;
+  var wpTimer = 1; /* pick first waypoint on first tick */
 
   var spriteSets = {
     idle:        [[-3, -3]],
@@ -28,7 +33,7 @@ function createCat(options) {
 
   var el = document.createElement('div');
   el.style.cssText = 'width:32px;height:32px;position:fixed;' +
-    'background-image:url(' + options.spriteUrl + ');' +
+    'background-image:url("' + options.spriteUrl + '");' +
     'image-rendering:pixelated;pointer-events:none;z-index:9999;' +
     'left:' + (catX - 16) + 'px;top:' + (catY - 16) + 'px';
   document.body.appendChild(el);
@@ -65,13 +70,46 @@ function createCat(options) {
     idleFrame++;
   }
 
+  function pickWaypoint(target) {
+    if (Math.random() < 0.2) {
+      wpX = Math.random() * window.innerWidth;
+      wpY = Math.random() * window.innerHeight;
+    } else {
+      wpX = catX + (target.x - catX) * 0.35 + (Math.random() - 0.5) * 400;
+      wpY = catY + (target.y - catY) * 0.35 + (Math.random() - 0.5) * 400;
+      wpX = Math.max(0, Math.min(window.innerWidth,  wpX));
+      wpY = Math.max(0, Math.min(window.innerHeight, wpY));
+    }
+    wpTimer = 30 + Math.floor(Math.random() * 50);
+  }
+
   function tick() {
     var target = options.targetFn();
-    var diffX = catX - target.x;
-    var diffY = catY - target.y;
-    var distance = Math.sqrt(diffX * diffX + diffY * diffY);
 
-    if (distance < 24) {
+    var tdx = catX - target.x;
+    var tdy = catY - target.y;
+    var trueDist = Math.sqrt(tdx * tdx + tdy * tdy);
+
+    var chaseX, chaseY, chaseDist;
+    if (trueDist < 60) {
+      chaseX = target.x;
+      chaseY = target.y;
+      chaseDist = trueDist;
+    } else {
+      wpTimer--;
+      var wdx = catX - wpX;
+      var wdy = catY - wpY;
+      if (wpTimer <= 0 || Math.sqrt(wdx * wdx + wdy * wdy) < 24) {
+        pickWaypoint(target);
+      }
+      chaseX = wpX;
+      chaseY = wpY;
+      wdx = catX - wpX;
+      wdy = catY - wpY;
+      chaseDist = Math.sqrt(wdx * wdx + wdy * wdy);
+    }
+
+    if (chaseDist < 24) {
       idle();
       return;
     }
@@ -89,24 +127,30 @@ function createCat(options) {
 
     frameCount++;
 
+    var diffX = catX - chaseX;
+    var diffY = catY - chaseY;
     var direction = '';
-    if (diffY / distance > 0.5)  { direction += 'N'; }
-    if (diffY / distance < -0.5) { direction += 'S'; }
-    if (diffX / distance > 0.5)  { direction += 'W'; }
-    if (diffX / distance < -0.5) { direction += 'E'; }
+    if (diffY / chaseDist > 0.5)  { direction += 'N'; }
+    if (diffY / chaseDist < -0.5) { direction += 'S'; }
+    if (diffX / chaseDist > 0.5)  { direction += 'W'; }
+    if (diffX / chaseDist < -0.5) { direction += 'E'; }
 
     setSprite(direction || 'idle', frameCount % 2);
 
-    catX -= (diffX / distance) * CAT_SPEED;
-    catY -= (diffY / distance) * CAT_SPEED;
+    catX -= (diffX / chaseDist) * CAT_SPEED;
+    catY -= (diffY / chaseDist) * CAT_SPEED;
 
     el.style.left = (catX - 16) + 'px';
     el.style.top  = (catY - 16) + 'px';
   }
 
-  setInterval(tick, 100);
+  var timer = setInterval(tick, 100);
 
   return {
-    position: function () { return { x: catX, y: catY }; }
+    position: function () { return { x: catX, y: catY }; },
+    destroy:  function () {
+      clearInterval(timer);
+      if (el.parentNode) { el.parentNode.removeChild(el); }
+    }
   };
 }

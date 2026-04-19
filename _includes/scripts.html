@@ -1,26 +1,62 @@
-<script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 <script src="{{ base_path }}/assets/js/oneko.js"></script>
 <script>
 (function () {
-  if ('ontouchstart' in window) { return; }
+  var _touch = 'ontouchstart' in window;
   var mouseX = window.innerWidth  / 2;
   var mouseY = window.innerHeight / 2;
-  document.addEventListener('mousemove', function (e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
-  var orange = createCat({
-    spriteUrl: '{{ base_path }}/assets/images/oneko-orange.gif',
-    targetFn:  function () { return { x: mouseX, y: mouseY }; },
-    spawnX: 80,
-    spawnY: window.innerHeight - 80
-  });
-  createCat({
-    spriteUrl: '{{ base_path }}/assets/images/oneko-black.gif',
-    targetFn:  function () { return orange.position(); },
-    spawnX: 20,
-    spawnY: window.innerHeight - 40
-  });
+  if (!_touch) {
+    document.addEventListener('mousemove', function (e) { mouseX = e.clientX; mouseY = e.clientY; });
+  }
+
+  var _cats = null;
+
+  function _releaseCats() {
+    if (_cats || _touch) { return; }
+    var orange = createCat({
+      spriteUrl: '{{ base_path }}/assets/images/oneko-orange.gif',
+      targetFn:  function () { return { x: mouseX, y: mouseY }; },
+      spawnX: 80,
+      spawnY: window.innerHeight - 80
+    });
+    var black = createCat({
+      spriteUrl: '{{ base_path }}/assets/images/oneko-black.gif',
+      targetFn:  function () { return orange.position(); },
+      spawnX: 20,
+      spawnY: window.innerHeight - 40
+    });
+    _cats = [orange, black];
+  }
+
+  function _sendCatsHome() {
+    if (!_cats) { return; }
+    _cats.forEach(function (c) { c.destroy(); });
+    _cats = null;
+  }
+
+  function _updateCatBtn() {
+    var btn = document.getElementById('cat-toggle-btn');
+    if (!btn) { return; }
+    var on = !!_cats;
+    btn.setAttribute('aria-pressed', String(on));
+    btn.style.opacity = on ? '1' : '0.4';
+    btn.title = on ? 'Send cats home' : 'Release the cats';
+  }
+
+  window.toggleCats = function () {
+    if (_cats) {
+      _sendCatsHome();
+      localStorage.setItem('oneko-cats', 'off');
+    } else {
+      _releaseCats();
+      localStorage.setItem('oneko-cats', 'on');
+    }
+    _updateCatBtn();
+  };
+
+  if (localStorage.getItem('oneko-cats') !== 'off') {
+    _releaseCats();
+  }
+  _updateCatBtn();
 }());
 </script>
 

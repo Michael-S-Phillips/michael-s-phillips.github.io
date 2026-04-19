@@ -262,3 +262,33 @@
     }
   }
 }
+
+/* Cat toggle button */
+.author__cat-toggle {
+  text-align: center;
+  margin: 0.4em 0 0.6em;
+}
+
+.cat-toggle-btn {
+  background: transparent;
+  border: 1px solid rgba(224, 123, 57, 0.35);
+  border-radius: 3px;
+  color: var(--mars-ochre, #e07b39);
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  padding: 0.3em 0.9em;
+  text-transform: uppercase;
+  transition: opacity 0.2s, border-color 0.2s;
+
+  &:hover {
+    border-color: rgba(224, 123, 57, 0.7);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(224, 123, 57, 0.7);
+    outline-offset: 2px;
+  }
+}
