@@ -15,12 +15,17 @@ function createCat(options) {
   var wpY = options.spawnY;
   var wpTimer = 1; /* pick first waypoint on first tick */
 
+  /* Emote state */
+  var emoteCooldown = 0;
+  var _wasIdling = false;
+
   var spriteSets = {
     idle:        [[-3, -3]],
     alert:       [[-7, -3]],
     tired:       [[-3, -2]],
     sleeping:    [[-2,  0], [-2, -1]],
     scratchSelf: [[-5,  0], [-6,  0], [-7,  0]],
+    wash:        [[-4,  0], [-4, -1]],
     N:           [[-1, -2], [-1, -3]],
     NE:          [[ 0, -2], [ 0, -3]],
     E:           [[-3,  0], [-3, -1]],
@@ -49,10 +54,32 @@ function createCat(options) {
     idleFrame = 0;
   }
 
+  function emote(symbol) {
+    if (emoteCooldown > 0) { return; }
+    var div = document.createElement('div');
+    div.className = 'cat-emote';
+    div.textContent = symbol;
+    div.style.left = (catX - 4) + 'px';
+    div.style.top  = (catY - 44) + 'px';
+    document.body.appendChild(div);
+    setTimeout(function () {
+      if (div.parentNode) { div.parentNode.removeChild(div); }
+    }, 1500);
+    emoteCooldown = 15;
+  }
+
   function idle() {
     idleTime++;
     if (idleTime > 10 && Math.floor(Math.random() * 200) === 0 && idleAnimation === null) {
-      idleAnimation = Math.random() < 0.5 ? 'sleeping' : 'scratchSelf';
+      var r = Math.random();
+      if (r < 0.33) {
+        idleAnimation = 'sleeping';
+        emote('\uD83D\uDCA4'); /* 💤 */
+      } else if (r < 0.67) {
+        idleAnimation = 'scratchSelf';
+      } else {
+        idleAnimation = 'wash';
+      }
     }
     if (idleAnimation === 'sleeping') {
       if (idleFrame < 8) {
@@ -64,9 +91,13 @@ function createCat(options) {
     } else if (idleAnimation === 'scratchSelf') {
       setSprite('scratchSelf', idleFrame % 3);
       if (idleFrame > 9) { resetIdle(); }
+    } else if (idleAnimation === 'wash') {
+      setSprite('wash', Math.floor(idleFrame / 3) % 2);
+      if (idleFrame > 12) { resetIdle(); }
     } else {
       setSprite('idle', 0);
     }
+    if (emoteCooldown <= 0 && Math.random() < 0.005) { emote('\u2665'); } /* ♡ */
     idleFrame++;
   }
 
@@ -74,6 +105,7 @@ function createCat(options) {
     if (Math.random() < 0.2) {
       wpX = Math.random() * window.innerWidth;
       wpY = Math.random() * window.innerHeight;
+      emote('~');
     } else {
       wpX = catX + (target.x - catX) * 0.35 + (Math.random() - 0.5) * 400;
       wpY = catY + (target.y - catY) * 0.35 + (Math.random() - 0.5) * 400;
@@ -84,6 +116,8 @@ function createCat(options) {
   }
 
   function tick() {
+    if (emoteCooldown > 0) { emoteCooldown--; }
+
     var target = options.targetFn();
 
     var tdx = catX - target.x;
@@ -110,8 +144,15 @@ function createCat(options) {
     }
 
     if (chaseDist < 24) {
+      _wasIdling = true;
       idle();
       return;
+    }
+
+    /* Cat noticed the target moved — fire alert emote */
+    if (_wasIdling) {
+      emote('\u2757'); /* ❗ */
+      _wasIdling = false;
     }
 
     idleAnimation = null;
