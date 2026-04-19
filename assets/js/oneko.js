@@ -97,7 +97,7 @@ function createCat(options) {
     } else {
       setSprite('idle', 0);
     }
-    if (emoteCooldown <= 0 && Math.random() < 0.005) { emote('\u2665'); } /* ♡ */
+    if (emoteCooldown <= 0 && Math.random() < 0.005) { emote('\u2661'); } /* ♡ */
     idleFrame++;
   }
 
