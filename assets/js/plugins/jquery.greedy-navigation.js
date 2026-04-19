@@ -70,6 +70,9 @@ function updateNav() {
 $(window).on('resize', function () {
   updateNav();
 });
+$(window).on('load', function () {
+  updateNav();
+});
 screen.orientation.addEventListener("change", function () {
   updateNav();
 });
