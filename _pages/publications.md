@@ -172,7 +172,7 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 
 <div id="view-list">
 
-{% assign journal_venues = "Nature Astronomy,Nature Communications Earth & Environment,Geology,The Planetary Science Journal,Icarus,Frontiers in Astronomy and Space Sciences,Earth Surface Processes and Landforms,Science of the Total Environment,Remote Sensing,Bulletin of the American Astronomical Society,Astrobiology" | split: "," %}
+{% assign conf_keywords = "Lunar and Planetary Science,AbSciCon,Copernicus,AGU,LPI,AAS,ARPHA,European Planetary Science,Differentiation,Planetary Data Workshop,Conference on Mars" | split: "," %}
 
 <h2>Featured Publications</h2>
 
@@ -192,16 +192,23 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 <h2>Peer-Reviewed Journal Articles</h2>
 
 {% for post in site.publications reversed %}
-  {% if journal_venues contains post.venue %}
-    {% include archive-single.html %}
-  {% endif %}
+  {% if post.venue == '' or post.venue == nil %}{% continue %}{% endif %}
+  {% assign is_conf = false %}
+  {% for keyword in conf_keywords %}
+    {% if post.venue contains keyword %}
+      {% assign is_conf = true %}
+    {% endif %}
+  {% endfor %}
+  {% unless is_conf %}
+    {% unless post.venue contains "Preprint" or post.venue contains "Research Square" %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endunless %}
 {% endfor %}
 
 ---
 
 <h2>Conference Proceedings &amp; Abstracts</h2>
-
-{% assign conf_keywords = "Lunar and Planetary Science,AbSciCon,Copernicus,AGU,LPI,AAS,ARPHA,European Planetary Science,Differentiation" | split: "," %}
 
 {% for post in site.publications reversed %}
   {% assign is_conf = false %}
@@ -210,13 +217,9 @@ For citation metrics and full publication list, see my [Google Scholar](https://
       {% assign is_conf = true %}
     {% endif %}
   {% endfor %}
-  {% unless journal_venues contains post.venue %}
-    {% unless post.venue contains "Preprint" or post.venue contains "Research Square" %}
-      {% if is_conf %}
-        {% include archive-single.html %}
-      {% endif %}
-    {% endunless %}
-  {% endunless %}
+  {% if is_conf %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
 </div><!-- #view-list -->
