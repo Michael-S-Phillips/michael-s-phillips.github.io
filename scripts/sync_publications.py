@@ -221,13 +221,14 @@ def render_md(work, slug, today_str):
     year      = date_str[:4]
 
     paper_url_line = f"paperurl: '{doi_url}'"
+    # Use HTML-escaped title in citation so apostrophes don't break YAML single-quoted strings
     if venue:
         citation = (
             f"citation: 'Phillips, M.S., et al. ({year}). "
-            f"&quot;{raw_title}.&quot; <i>{venue}</i>.'"
+            f"&quot;{title}.&quot; <i>{venue}</i>.'"
         )
     else:
-        citation = f"citation: 'Phillips, M.S., et al. ({year}). &quot;{raw_title}.&quot;'"
+        citation = f"citation: 'Phillips, M.S., et al. ({year}). &quot;{title}.&quot;'"
 
     body_link = f"[{work['title']}]({doi_url})" if doi_url else work["title"]
 

@@ -6,7 +6,7 @@ excerpt: ''
 date: 2024-01-01
 venue: ''
 paperurl: ''
-citation: 'Phillips, M.S., et al. (2024). &quot;A Prediction of the Inter-Annual Variability of Sulfur in Mercury's Exosphere and Subsurface.&quot;'
+citation: 'Phillips, M.S., et al. (2024). &quot;A Prediction of the Inter-Annual Variability of Sulfur in Mercury&apos;s Exosphere and Subsurface.&quot;'
 ---
 <!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
 

@@ -186,6 +186,10 @@ exclude:
   - README
   - tmp
   - vendor
+  - docs
+  - tests
+  - venv
+  - Makefile
 keep_files:
   - .git
   - .svn
