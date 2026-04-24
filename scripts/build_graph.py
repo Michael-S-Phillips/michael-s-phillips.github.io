@@ -23,18 +23,28 @@ from collections import Counter
 PUB_DIR        = Path("_publications")
 OUT_FILE       = Path("_data/publications_graph.json")
 CACHE_FILE     = Path("_data/citations_cache.json")
+SCHOLAR_ID     = "1DCuzasAAAAJ"
 THRESHOLD      = 0.07
 MAX_EDGES_PER  = 6
-API_DELAY      = 1.2   # seconds between Semantic Scholar requests (1 RPS limit)
+API_DELAY      = 4.0   # seconds between Semantic Scholar requests (public API is strict)
 
 # ── Journal venue list ────────────────────────────────────────────────────────
+# Matched case-insensitively after whitespace normalisation.
 
 JOURNAL_VENUES = {
-    "Nature Astronomy",
-    "Nature Communications Earth & Environment",
+    "Nature", "Nature Astronomy", "Nature Geoscience", "Nature Communications",
+    "Nature Communications Earth & Environment", "Nature Communications Earth and Environment",
+    "Science", "Science Advances",
+    "Proceedings of the National Academy of Sciences", "PNAS",
     "Geology",
-    "The Planetary Science Journal",
+    "Geophysical Research Letters",
+    "Journal of Geophysical Research", "Journal of Geophysical Research: Planets",
+    "JGR: Planets", "JGR Planets",
+    "The Planetary Science Journal", "Planetary Science Journal",
     "Icarus",
+    "Planetary and Space Science",
+    "Earth and Planetary Science Letters",
+    "American Mineralogist",
     "Frontiers in Astronomy and Space Sciences",
     "Earth Surface Processes and Landforms",
     "Science of the Total Environment",
@@ -43,6 +53,41 @@ JOURNAL_VENUES = {
     "Astrobiology",
     "ARPHA Conference Abstracts",   # journal-like proceedings
 }
+
+# Substring signals identifying a venue as a conference / workshop / abstracts.
+# Checked only AFTER the journal whitelist, so e.g. "ARPHA Conference Abstracts"
+# (explicit journal) wins over the generic "conference" substring.
+CONFERENCE_SIGNALS = (
+    "conference",
+    "congress",
+    "workshop",
+    "symposium",
+    "meeting abstracts",
+    "meeting",            # covers "AGU Fall Meeting", "Copernicus Meetings"
+    "proceedings",
+    "abstracts",
+    "lpi contributions",  # LPI Contributions = LPSC/other abstract volumes
+    "absicon",            # AbSciCon
+    "lpsc",
+)
+
+# Preprint signals — treat as journal-track (pre-peer-review drafts of journal papers).
+PREPRINT_VENUE_SIGNALS = (
+    "preprint",
+    "research square",
+    "arxiv",
+    "essoar",
+    "biorxiv",
+    "medrxiv",
+)
+
+PREPRINT_URL_SIGNALS = (
+    "arxiv.org",
+    "essoar",
+    "researchsquare.com",
+    "biorxiv",
+    "medrxiv",
+)
 
 # ── Planet keyword SCORES (higher = stronger signal) ──────────────────────────
 # Earth/analog is checked with a scoring approach so that papers about
@@ -134,6 +179,41 @@ def parse_frontmatter(filepath):
 
 # ── Categorisation ────────────────────────────────────────────────────────────
 
+def _norm_venue(v):
+    """Lowercase, collapse whitespace, strip leading/trailing spaces."""
+    return re.sub(r"\s+", " ", (v or "").strip().lower())
+
+_JOURNAL_VENUES_NORM = {_norm_venue(v) for v in JOURNAL_VENUES}
+
+def classify_pub_type(venue, url=""):
+    """Classify a publication into 'journal' or 'conference'.
+
+    Priority:
+      1. Preprint signals (venue or URL) → 'journal' (preprints are journal-track).
+      2. Explicit journal whitelist match → 'journal'.
+      3. Conference/abstract/workshop signals → 'conference'.
+      4. Fallback: 'conference' (conservative default for missing venue).
+    """
+    v = _norm_venue(venue)
+    u = (url or "").lower()
+
+    # 1. Preprints (pre-peer-review journal drafts)
+    if any(sig in v for sig in PREPRINT_VENUE_SIGNALS):
+        return "journal"
+    if any(sig in u for sig in PREPRINT_URL_SIGNALS):
+        return "journal"
+
+    # 2. Known journals (case-insensitive, whitespace-normalised)
+    if v and v in _JOURNAL_VENUES_NORM:
+        return "journal"
+
+    # 3. Conference signals
+    if v and any(sig in v for sig in CONFERENCE_SIGNALS):
+        return "conference"
+
+    # 4. Default
+    return "conference"
+
 def score_dict(text, kw_dict):
     """Sum scores for all matching keywords in text."""
     low = text.lower()
@@ -201,44 +281,110 @@ def extract_doi(url):
         return url.strip()
     return None
 
-def fetch_citations_by_doi(doi):
-    # Keep DOI slashes intact — Semantic Scholar requires unencoded path separators
+def _title_key(s):
+    """Normalize a title for fuzzy comparison and as a cache key."""
+    s = re.sub(r"[^a-z0-9 ]+", " ", (s or "").lower())
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+def _titles_match(a, b, min_prefix=30):
+    """True if two titles plausibly refer to the same paper."""
+    na, nb = _title_key(a), _title_key(b)
+    if not na or not nb:
+        return False
+    # Strong signal: one starts with the other
+    if na.startswith(nb) or nb.startswith(na):
+        return True
+    # Or a long common prefix (at least 30 normalized chars)
+    n = min(len(na), len(nb))
+    if n >= min_prefix and na[:n] == nb[:n]:
+        return True
+    return False
+
+def fetch_citations_by_doi(doi, retries=2):
+    """Returns int citation count if paper is found in Semantic Scholar,
+    0 if S2 definitively does not have this DOI (404),
+    or None on transient errors (caller should not cache)."""
     encoded = urllib.parse.quote(doi, safe="/")
     url = f"https://api.semanticscholar.org/graph/v1/paper/DOI:{encoded}?fields=citationCount"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "personal-site-graph/1.0"})
-        with urllib.request.urlopen(req, timeout=10) as r:
-            data = json.loads(r.read())
-            return data.get("citationCount")
-    except urllib.error.HTTPError as e:
-        if e.code == 429:
-            print(f"    rate limited, waiting 10s...")
-            time.sleep(10)
-            return fetch_citations_by_doi(doi)  # one retry
-        return None
-    except Exception:
-        return None
-
-def fetch_citations_by_title(title):
-    query = urllib.parse.quote(title)
-    url = f"https://api.semanticscholar.org/graph/v1/paper/search?query={query}&fields=citationCount,title&limit=3"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "personal-site-graph/1.0"})
-        with urllib.request.urlopen(req, timeout=8) as r:
-            data = json.loads(r.read())
-            papers = data.get("data", [])
-            if not papers:
-                return None
-            # Verify the title roughly matches
-            title_low = title.lower()
-            for p in papers:
-                s2_title = p.get("title", "").lower()
-                # Require first 30 chars to match
-                if title_low[:30] in s2_title or s2_title[:30] in title_low:
-                    return p.get("citationCount")
+    for attempt in range(retries + 1):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "personal-site-graph/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                data = json.loads(r.read())
+                c = data.get("citationCount")
+                return int(c) if c is not None else 0
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return None  # unknown to S2 — let title/scholar try
+            if e.code == 429 and attempt < retries:
+                wait = 10 * (attempt + 1)
+                print(f"    [S2/doi] 429, waiting {wait}s...")
+                time.sleep(wait)
+                continue
             return None
-    except Exception:
+        except Exception:
+            return None
+    return None
+
+def fetch_citations_by_title(title, retries=2):
+    """Returns int citation count for a confident title match, or None."""
+    query = urllib.parse.quote(title)
+    url = f"https://api.semanticscholar.org/graph/v1/paper/search?query={query}&fields=citationCount,title&limit=5"
+    data = None
+    for attempt in range(retries + 1):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "personal-site-graph/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                data = json.loads(r.read())
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < retries:
+                wait = 10 * (attempt + 1)
+                print(f"    [S2/title] 429, waiting {wait}s...")
+                time.sleep(wait)
+                continue
+            return None
+        except Exception:
+            return None
+    if data is None:
         return None
+    papers = data.get("data", []) or []
+    if not papers:
+        return None
+    for p in papers:
+        if _titles_match(title, p.get("title", "")):
+            c = p.get("citationCount")
+            return int(c) if c is not None else 0
+    return None
+
+def fetch_scholar_citation_map():
+    """Fetch {normalized_title: citation_count} from Google Scholar for SCHOLAR_ID.
+
+    One bulk fetch per run, used as a fallback when Semantic Scholar can't resolve
+    a paper. Returns {} on any failure (scholarly missing, captcha, rate limit).
+    """
+    try:
+        from scholarly import scholarly as _scholarly
+    except ImportError:
+        print("[WARN] scholarly not installed — skipping Google Scholar fallback")
+        return {}
+    try:
+        print("Fetching Google Scholar citation counts (bulk)...")
+        author = _scholarly.search_author_id(SCHOLAR_ID)
+        author = _scholarly.fill(author, sections=["publications"])
+        out = {}
+        for pub in author.get("publications", []):
+            bib = pub.get("bib", {}) or {}
+            t = bib.get("title", "").strip()
+            if not t:
+                continue
+            out[_title_key(t)] = int(pub.get("num_citations", 0) or 0)
+        print(f"  → {len(out)} Scholar entries")
+        return out
+    except Exception as e:
+        print(f"[WARN] Google Scholar fetch failed ({type(e).__name__}: {e})")
+        return {}
 
 def load_cache():
     if CACHE_FILE.exists():
@@ -252,22 +398,65 @@ def save_cache(cache):
     CACHE_FILE.parent.mkdir(exist_ok=True)
     CACHE_FILE.write_text(json.dumps(cache, indent=2))
 
-def get_citation_count(title, doi_url, cache, force=False):
+def _scholar_lookup(scholar_map, title):
+    """Return Scholar citation count for a title, matching normalised prefixes."""
+    if not scholar_map:
+        return None
+    key = _title_key(title)
+    if key in scholar_map:
+        return scholar_map[key]
+    # Fuzzy prefix match (Scholar titles sometimes truncate or differ slightly)
+    for sk, sv in scholar_map.items():
+        if _titles_match(key, sk):
+            return sv
+    return None
+
+def get_citation_count(title, doi_url, cache, scholar_map=None, force=False):
+    """Best-effort citation count. Caches only confirmed values so transient
+    API failures don't get frozen as 0.
+
+    Resolution order:
+      1. Google Scholar bulk map (fetched once upfront — no rate limit concern).
+      2. Semantic Scholar by DOI (if DOI present and Scholar missed).
+      3. Semantic Scholar by title (only if nothing else resolved).
+    The max of any resolved values is used. S2 title search is the last resort
+    because it's rate-limited and error-prone.
+    """
     doi = extract_doi(doi_url)
-    cache_key = doi or title
+    cache_key = doi or f"title:{_title_key(title)}"
 
     if not force and cache_key in cache:
-        return cache[cache_key]
+        val = cache[cache_key]
+        if isinstance(val, int):
+            return val
+        # Non-int cache entry (legacy / corrupted) — ignore and refetch.
 
-    count = None
+    resolved = []
+
+    # 1. Scholar (free, already fetched in bulk)
+    c = _scholar_lookup(scholar_map, title)
+    if c is not None:
+        resolved.append(c)
+
+    # 2. Semantic Scholar by DOI
     if doi:
-        count = fetch_citations_by_doi(doi)
+        c = fetch_citations_by_doi(doi)
         time.sleep(API_DELAY)
-    if count is None:
-        count = fetch_citations_by_title(title)
-        time.sleep(API_DELAY)
+        if c is not None:
+            resolved.append(c)
 
-    count = count or 0
+    # 3. Semantic Scholar by title (only if still unresolved — it's slow and flaky)
+    if not resolved:
+        c = fetch_citations_by_title(title)
+        time.sleep(API_DELAY)
+        if c is not None:
+            resolved.append(c)
+
+    if not resolved:
+        # Unknown — do NOT cache 0. Next run will try again.
+        return 0
+
+    count = max(resolved)
     cache[cache_key] = count
     save_cache(cache)
     return count
@@ -288,6 +477,7 @@ def main():
     if args.force_citations:
         print("--force-citations: ignoring citation cache")
         cache = {}
+    scholar_map = fetch_scholar_citation_map()
     nodes, docs = [], []
 
     print(f"Processing {len(pub_files)} publications...")
@@ -305,10 +495,14 @@ def main():
 
         text          = f"{title} {excerpt}"
         planet, topic = categorize(text)
-        pub_type      = "journal" if venue in JOURNAL_VENUES else "conference"
+        pub_type      = classify_pub_type(venue, url)
 
         print(f"  {'[cite]':7} {planet:8} {pub_type:10} {title[:55]}")
-        citations = get_citation_count(title, url, cache, force=args.force_citations)
+        citations = get_citation_count(
+            title, url, cache,
+            scholar_map=scholar_map,
+            force=args.force_citations,
+        )
         print(f"  {str(citations)+' cites':7} {planet:8} {pub_type:10} {title[:55]}")
 
         nodes.append({
