@@ -57,7 +57,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 6,
+      "citations": 0,
       "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning."
     },
     {
@@ -81,7 +81,7 @@
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -117,7 +117,7 @@
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 2,
+      "citations": 0,
       "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
     },
     {
@@ -129,7 +129,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": "Spectroscopic detection and analysis of plagioclase in ancient crustal rocks of northern Hellas region on Mars."
     },
     {
@@ -141,7 +141,7 @@
       "planet": "multi",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -165,7 +165,7 @@
       "planet": "earth",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -177,7 +177,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 6,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -237,7 +237,7 @@
       "planet": "earth",
       "topic": "mineralogy",
       "pub_type": "journal",
-      "citations": 6,
+      "citations": 4,
       "excerpt": "Multispectral and 3D analysis of mining impacts and environmental changes at Cerro de Pasco using remote sensing techniques."
     },
     {
@@ -249,7 +249,7 @@
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "journal",
-      "citations": 1,
+      "citations": 0,
       "excerpt": "Strategic assessment of current knowledge gaps and future research priorities for Mars biosignature detection."
     },
     {
@@ -273,7 +273,7 @@
       "planet": "mercury",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -309,7 +309,7 @@
       "planet": "multi",
       "topic": "remote_sensing",
       "pub_type": "journal",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -321,7 +321,7 @@
       "planet": "mercury",
       "topic": "astrobiology",
       "pub_type": "journal",
-      "citations": 19,
+      "citations": 16,
       "excerpt": "Comprehensive analysis of Mercury's enigmatic hollow features, evaluating volatile phases and proposing a novel formation mechanism."
     },
     {
@@ -333,7 +333,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": "Regional analysis of surface composition around major impact basins on Mars using orbital spectroscopy data."
     },
     {
@@ -345,7 +345,7 @@
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 5,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -477,7 +477,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "journal",
-      "citations": 21,
+      "citations": 19,
       "excerpt": "Discovery of extensive feldspathic crust around the northern Hellas basin rim, providing insights into Mars' primary crustal formation and early differentiation."
     },
     {
@@ -525,7 +525,7 @@
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 5,
+      "citations": 4,
       "excerpt": ""
     },
     {
@@ -549,7 +549,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "journal",
-      "citations": 13,
+      "citations": 8,
       "excerpt": "Identification and characterization of salt constructs in ancient lake basins as priority targets for astrobiology investigations and biosignature preservation."
     },
     {
@@ -561,7 +561,7 @@
       "planet": "earth",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -585,7 +585,7 @@
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -597,7 +597,7 @@
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 2,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -609,7 +609,7 @@
       "planet": "earth",
       "topic": "remote_sensing",
       "pub_type": "journal",
-      "citations": 19,
+      "citations": 14,
       "excerpt": "Multi-scale framework combining orbital remote sensing with ground observations to identify and predict biosignature patterns in Mars analog environments."
     },
     {
@@ -633,7 +633,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "journal",
-      "citations": 5,
+      "citations": 3,
       "excerpt": "First comprehensive analysis of CRISM hyperspectral mapping data from Mawrth Vallis, Mars, revealing detailed mineralogical compositions."
     },
     {
@@ -789,7 +789,7 @@
       "planet": "multi",
       "topic": "remote_sensing",
       "pub_type": "conference",
-      "citations": 2,
+      "citations": 0,
       "excerpt": "Development of Python software for processing and analyzing hyperspectral image cubes in planetary science."
     },
     {
@@ -813,7 +813,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 1,
+      "citations": 0,
       "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications."
     },
     {
@@ -885,7 +885,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "journal",
-      "citations": 1,
+      "citations": 0,
       "excerpt": "Discovery of widespread ancient anorthosite in Mars' lower crust, providing new insights into early planetary differentiation and crustal evolution."
     },
     {
