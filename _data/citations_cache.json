@@ -1,13 +1,13 @@
 {
-  "title:inferring molecular complexity from mass spectrometry data using machine learning": 1,
-  "title:a thermal model and the hermean hollows constraints on plausible volatiles involved in hollow formation on mercury": 0,
-  "title:regional compositional mapping using crism multispectral mapping data": 1,
+  "title:thresholds of detectability for habitable environments in the atacama desert with implications for mars exploration": 1,
+  "title:thresholds of detection and identification of halite nodule habitats in the atacama desert using remote imaging": 0,
   "10.1016/j.scitotenv.2019.135640": 4,
+  "title:convolutional neural network image classification of mars analog terrain preliminary results and implications for the search for life on mars": 0,
   "10.3847/25c2cfeb.85a374e2": 0,
   "10.1016/j.icarus.2021.114306": 16,
   "10.3389/fspas.2021.797591": 12,
   "10.1130/G50341.1": 19,
-  "10.1089/ast.2022.0014": 4,
+  "10.1089/ast.2022.0014": 5,
   "title:using machine learning to optimize the search for biosignatures": 1,
   "10.3390/rs15020314": 8,
   "10.1038/s41550-022-01882-x": 14,
@@ -15,7 +15,9 @@
   "10.1002/esp.5692": 1,
   "10.3897/aca.6.e108253": 0,
   "10.3847/PSJ/ad55f4": 5,
-  "title:a novel theoretical approach to predict the interannual variability of sulfur in mercury s exosphere and subsurface": 3,
+  "title:hypyrameter a python toolbox to calculate spectral parameters from hyperspectral reflectance data": 1,
   "10.1038/s43247-025-03004-7": 2,
-  "10.1029/2025GL118112": 0
+  "10.1029/2025GL118112": 0,
+  "title:craterbench r instance level crater retrieval for planetary scale": 0,
+  "10.22541/essoar.175096334.47976141/v2": 2
 }

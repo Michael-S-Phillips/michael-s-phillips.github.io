@@ -45,7 +45,7 @@
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -177,7 +177,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -213,7 +213,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -525,7 +525,7 @@
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 4,
+      "citations": 5,
       "excerpt": ""
     },
     {
@@ -813,7 +813,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 0,
+      "citations": 1,
       "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications."
     },
     {
@@ -825,7 +825,7 @@
       "planet": "mercury",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 3,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -945,7 +945,7 @@
       "planet": "mars",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 0,
+      "citations": 2,
       "excerpt": ""
     }
   ],
