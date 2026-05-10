@@ -57,7 +57,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 2,
       "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning."
     },
     {
@@ -117,7 +117,7 @@
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 2,
       "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
     },
     {
@@ -213,7 +213,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -813,7 +813,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 1,
+      "citations": 0,
       "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications."
     },
     {
@@ -909,7 +909,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "journal",
-      "citations": 2,
+      "citations": 3,
       "excerpt": "Discovery of widespread ancient anorthosite in Mars' lower crust, providing new insights into early planetary differentiation and crustal evolution."
     },
     {
@@ -945,7 +945,7 @@
       "planet": "mars",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 2,
+      "citations": 0,
       "excerpt": ""
     }
   ],
