@@ -57,7 +57,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 2,
+      "citations": 0,
       "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning."
     },
     {
@@ -117,7 +117,7 @@
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 2,
+      "citations": 0,
       "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
     },
     {
@@ -129,7 +129,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": "Spectroscopic detection and analysis of plagioclase in ancient crustal rocks of northern Hellas region on Mars."
     },
     {
@@ -141,7 +141,7 @@
       "planet": "multi",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -537,7 +537,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -549,7 +549,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "journal",
-      "citations": 8,
+      "citations": 9,
       "excerpt": "Identification and characterization of salt constructs in ancient lake basins as priority targets for astrobiology investigations and biosignature preservation."
     },
     {
@@ -813,7 +813,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 0,
+      "citations": 1,
       "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications."
     },
     {
@@ -825,7 +825,7 @@
       "planet": "mercury",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 3,
       "excerpt": ""
     },
     {
