@@ -21,7 +21,7 @@
       "planet": "mercury",
       "topic": "remote_sensing",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -129,7 +129,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": "Spectroscopic detection and analysis of plagioclase in ancient crustal rocks of northern Hellas region on Mars."
     },
     {
@@ -141,7 +141,7 @@
       "planet": "multi",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -177,7 +177,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -237,7 +237,7 @@
       "planet": "earth",
       "topic": "mineralogy",
       "pub_type": "journal",
-      "citations": 4,
+      "citations": 5,
       "excerpt": "Multispectral and 3D analysis of mining impacts and environmental changes at Cerro de Pasco using remote sensing techniques."
     },
     {
@@ -645,7 +645,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "journal",
-      "citations": 3,
+      "citations": 4,
       "excerpt": "First comprehensive analysis of CRISM hyperspectral mapping data from Mawrth Vallis, Mars, revealing detailed mineralogical compositions."
     },
     {
@@ -981,7 +981,7 @@
       "planet": "mars",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 0,
+      "citations": 2,
       "excerpt": ""
     },
     {
