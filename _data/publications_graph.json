@@ -177,7 +177,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -549,7 +549,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -621,7 +621,7 @@
       "planet": "earth",
       "topic": "remote_sensing",
       "pub_type": "journal",
-      "citations": 14,
+      "citations": 15,
       "excerpt": "Multi-scale framework combining orbital remote sensing with ground observations to identify and predict biosignature patterns in Mars analog environments."
     },
     {
