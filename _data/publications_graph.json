@@ -57,7 +57,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 2,
       "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning."
     },
     {
@@ -141,7 +141,7 @@
       "planet": "multi",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -177,7 +177,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 2,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -621,7 +621,7 @@
       "planet": "earth",
       "topic": "remote_sensing",
       "pub_type": "journal",
-      "citations": 16,
+      "citations": 17,
       "excerpt": "Multi-scale framework combining orbital remote sensing with ground observations to identify and predict biosignature patterns in Mars analog environments."
     },
     {
@@ -981,7 +981,7 @@
       "planet": "mars",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 0,
+      "citations": 3,
       "excerpt": ""
     },
     {
