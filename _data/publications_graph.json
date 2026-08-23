@@ -21,7 +21,7 @@
       "planet": "mercury",
       "topic": "remote_sensing",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -45,7 +45,7 @@
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -57,7 +57,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 2,
+      "citations": 0,
       "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning."
     },
     {
@@ -141,7 +141,7 @@
       "planet": "multi",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
