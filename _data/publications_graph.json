@@ -21,7 +21,7 @@
       "planet": "mercury",
       "topic": "remote_sensing",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -45,7 +45,7 @@
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -921,7 +921,7 @@
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "journal",
-      "citations": 5,
+      "citations": 6,
       "excerpt": "Discovery of widespread ancient anorthosite in Mars' lower crust, providing new insights into early planetary differentiation and crustal evolution."
     },
     {
