@@ -45,7 +45,7 @@
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -177,7 +177,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 3,
       "excerpt": ""
     },
     {
