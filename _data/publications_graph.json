@@ -21,7 +21,7 @@
       "planet": "mercury",
       "topic": "remote_sensing",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -45,7 +45,7 @@
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -117,7 +117,7 @@
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 2,
       "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
     },
     {
@@ -141,7 +141,7 @@
       "planet": "multi",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 1,
       "excerpt": ""
     },
     {
@@ -177,7 +177,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
-      "citations": 3,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -837,7 +837,7 @@
       "planet": "mercury",
       "topic": "other",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 4,
       "excerpt": ""
     },
     {
@@ -981,7 +981,7 @@
       "planet": "mars",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 0,
+      "citations": 3,
       "excerpt": ""
     },
     {
