@@ -11,6 +11,8 @@ locale                   : "en-US"
 site_theme               : "dark"
 title                    : "Michael Phillips - Planetary Scientist & Mars Researcher"
 title_separator          : "-"
+masthead_title           : "Michael S. Phillips"   # short wordmark shown in the nav bar
+banner_default           : "/assets/images/banners/map-utopia.jpg"   # page banner used when a page sets none
 name                     : &name "Michael Phillips"
 description              : "Planetary scientist specializing in Mars geology, astrobiology, and AI applications for planetary exploration. Research focus on ancient Martian crustal composition, hydrothermal systems, and biosignature detection."
 url                      : "https://michael-s-phillips.github.io"

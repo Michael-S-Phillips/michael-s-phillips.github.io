@@ -17,11 +17,14 @@ main:
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Mentorship"
+    url: /mentorship/
 
   - title: "CV"
     url: /cv/
+
+  - title: "Blog"
+    url: /year-archive/
 
   # - title: "CV"
   #   url: /cv-json/

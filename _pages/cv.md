@@ -1,8 +1,14 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: false
+banner:
+  image: /assets/images/banners/field-pajonales-salar.jpg
+  eyebrow: "Michael S. Phillips"
+  subtitle: "Research Scientist · Lunar & Planetary Laboratory · The University of Arizona"
+  position: "center 42%"
+  caption: "Salar de Pajonales, Chile · 2018"
 ---
 
 <style>
@@ -466,13 +472,12 @@ author_profile: false
 
   <!-- ─── Hero ─────────────────────────────────────────────── -->
 
-  <div class="cv-hero">
-    <div class="cv-hero-title">Michael S. Phillips</div>
-    <div class="cv-hero-subtitle">Planetary Scientist · Mars Geology &amp; Astrobiology</div>
+  <div class="cv-hero cv-hero--links">
     <div class="cv-hero-links">
       <a class="cv-hero-link" href="https://orcid.org/0000-0001-8873-2238"><i class="ai ai-orcid" style="margin-right:0.4em"></i>ORCID</a>
-      <a class="cv-hero-link" href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ"><i class="ai ai-google-scholar" style="margin-right:0.4em"></i>Google Scholar</a>
+      <a class="cv-hero-link" href="https://scholar.google.com/citations?user=1DCuzasAAAAJ&hl=en"><i class="ai ai-google-scholar" style="margin-right:0.4em"></i>Google Scholar</a>
       <a class="cv-hero-link" href="https://github.com/Michael-S-Phillips"><i class="fab fa-github" style="margin-right:0.4em"></i>GitHub</a>
+      <a class="cv-hero-link" href="mailto:phillipsm@arizona.edu"><i class="fas fa-envelope" style="margin-right:0.4em"></i>Email</a>
     </div>
   </div>
 
@@ -711,6 +716,55 @@ author_profile: false
         <a class="cv-software-link" href="https://github.com/Michael-S-Phillips">github.com/Michael-S-Phillips</a>
       </div>
     </div>
+
+  </div>
+
+  <!-- ─── Mentoring & Advising ──────────────────────────────── -->
+
+  <div class="cv-section">
+    <div class="cv-section-label">Mentoring &amp; Advising</div>
+
+    <div class="cv-position">
+      <div class="cv-position-year">Undergrad</div>
+      <div class="cv-position-body">
+        <h3>NASA PDART — Undergraduate Researchers</h3>
+        <p>University of Arizona · Choe Billet, Alexander Burchuladze, Patricio Santos, Luke Meyer, Lenny Druelle</p>
+      </div>
+    </div>
+
+    <div class="cv-position" style="margin-top:1.6em">
+      <div class="cv-position-year">Undergrad</div>
+      <div class="cv-position-body">
+        <h3>TIMESTEP Program</h3>
+        <p>University of Arizona · Jessie Larson</p>
+      </div>
+    </div>
+
+    <div class="cv-position" style="margin-top:1.6em">
+      <div class="cv-position-year">High School</div>
+      <div class="cv-position-body">
+        <h3>Vail Internship Program (VIP)</h3>
+        <p>High School Research Intern · Lily Becker</p>
+      </div>
+    </div>
+
+    <div class="cv-position" style="margin-top:1.6em">
+      <div class="cv-position-year">Research</div>
+      <div class="cv-position-body">
+        <h3>NASA MDAP</h3>
+        <p>Mars Data Analysis Program · Linae Larson</p>
+      </div>
+    </div>
+
+    <div class="cv-position" style="margin-top:1.6em">
+      <div class="cv-position-year">Ph.D.</div>
+      <div class="cv-position-body">
+        <h3>Doctoral Committees</h3>
+        <p>University of Tennessee, Knoxville · Udit Basu, Andrew Foerder</p>
+      </div>
+    </div>
+
+    <p style="font-size:0.8em;color:var(--global-text-color-light,#6b7a96);margin-top:1.8em;line-height:1.6">See the <a href="/mentorship/" style="color:var(--mars-ochre,#e07b39)">Mentorship page</a> for details.</p>
 
   </div>
 

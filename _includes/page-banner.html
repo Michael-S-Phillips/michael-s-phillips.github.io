@@ -1,0 +1,47 @@
+{% include base_path %}
+{% comment %}
+  Full-bleed page banner. Per-page options (front matter):
+    banner:
+      image: /assets/images/banners/map-hellas.jpg   # defaults to site.banner_default
+      eyebrow: "Small label above the title"
+      title: "Override title"                         # defaults to page.title
+      subtitle: "One-line description"
+      position: "center 70%"                          # optional background-position
+  include.compact = true gives the shorter variant used on individual items.
+{% endcomment %}
+
+{% assign b_img = page.banner.image | default: site.banner_default %}
+{% assign b_title = page.banner.title | default: page.title %}
+
+{% assign b_eyebrow = page.banner.eyebrow %}
+{% unless b_eyebrow %}
+  {% case page.collection %}
+    {% when 'publications' %}{% assign b_eyebrow = 'Publication' %}
+    {% when 'talks' %}{% assign b_eyebrow = 'Talk' %}
+    {% when 'teaching' %}{% assign b_eyebrow = 'Teaching' %}
+    {% when 'portfolio' %}{% assign b_eyebrow = 'Portfolio' %}
+    {% when 'posts' %}{% assign b_eyebrow = 'Blog' %}
+  {% endcase %}
+{% endunless %}
+
+{% assign b_sub = page.banner.subtitle %}
+{% unless b_sub %}
+  {% if page.collection == 'publications' and page.venue and page.venue != '' %}
+    {% capture b_sub %}{{ page.venue }} · {{ page.date | date: "%Y" }}{% endcapture %}
+  {% elsif page.collection == 'talks' %}
+    {% capture b_sub %}{% if page.venue %}{{ page.venue }}{% endif %}{% if page.date %} · {{ page.date | date: "%B %Y" }}{% endif %}{% endcapture %}
+  {% elsif page.collection == 'teaching' %}
+    {% capture b_sub %}{{ page.type }} · {{ page.venue }}{% endcapture %}
+  {% elsif page.collection == 'posts' and page.date %}
+    {% capture b_sub %}{{ page.date | date: "%B %d, %Y" }}{% endcapture %}
+  {% endif %}
+{% endunless %}
+
+<header class="page-banner{% if include.compact %} page-banner--compact{% endif %}" style="--banner-img: url('{{ base_path }}{{ b_img }}');{% if page.banner.position %} --banner-pos: {{ page.banner.position }};{% endif %}">
+  <div class="page-banner__inner">
+    {% if b_eyebrow %}<p class="page-banner__eyebrow">{{ b_eyebrow }}</p>{% endif %}
+    <h1 class="page-banner__title" itemprop="headline">{{ b_title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</h1>
+    {% if b_sub and b_sub != '' %}<p class="page-banner__subtitle">{{ b_sub | strip }}</p>{% endif %}
+  </div>
+  {% if page.banner.caption %}<p class="page-banner__caption">{{ page.banner.caption }}</p>{% endif %}
+</header>

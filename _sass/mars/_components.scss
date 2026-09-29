@@ -1,0 +1,201 @@
+/* ============================================================
+   MARS — Interior page components (talks, teaching, publications)
+   ============================================================ */
+
+.archive--wide {
+  a { text-decoration: none !important; }
+
+  > h2 {
+    margin: 3.2rem 0 1.4rem !important;
+    padding-bottom: 0.5rem;
+    font-size: 1.9rem !important;
+    font-weight: 300 !important;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  > hr { display: none; }
+}
+
+.page-lede {
+  max-width: 46rem;
+  margin: 0 0 2.4rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--global-text-color);
+}
+
+/* ---------- Item cards (talks, teaching) -------------------- */
+
+.item-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.item-card {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: 1.6rem;
+  padding: 1.5rem 1.7rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  background: rgba(16, 19, 26, 0.55);
+  color: inherit !important;
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+
+  &:hover {
+    border-color: rgba(224, 123, 57, 0.4);
+    background: rgba(16, 19, 26, 0.8);
+    transform: translateY(-2px);
+  }
+
+  &__date {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: var(--mars-ochre);
+    padding-top: 0.15rem;
+
+    span {
+      display: block;
+      margin-bottom: 0.2rem;
+      font-size: 0.66rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--global-text-color-light);
+    }
+  }
+
+  &__meta {
+    margin: 0 0 0.35rem !important;
+    font-size: 0.68rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--space-blue);
+  }
+
+  &__title {
+    margin: 0 0 0.35rem !important;
+    font-family: var(--font-display) !important;
+    font-size: 1.4rem !important;
+    font-weight: 400 !important;
+    line-height: 1.3 !important;
+    color: var(--parchment) !important;
+    border: 0 !important;
+
+    a { color: var(--parchment) !important; }
+    a:hover { color: var(--mars-ochre) !important; }
+  }
+
+  &__venue {
+    margin: 0 !important;
+    font-size: 0.92rem !important;
+    font-style: italic;
+    color: var(--global-text-color-light);
+  }
+
+  &__excerpt {
+    margin: 0.7rem 0 0 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+    color: var(--global-text-color);
+  }
+}
+
+/* ---------- Publication list items -------------------------- */
+
+.main--wide .list__item {
+  .archive__item {
+    display: flex;
+    gap: 1.7rem;
+    align-items: flex-start;
+    margin: 0 0 1rem !important;
+    padding: 1.5rem 1.7rem;
+    border: 1px solid var(--global-border-color);
+    border-radius: 6px;
+    background: rgba(16, 19, 26, 0.55);
+    transition: border-color 0.3s ease, background 0.3s ease;
+
+    &:hover {
+      border-color: rgba(224, 123, 57, 0.35);
+      background: rgba(16, 19, 26, 0.8);
+    }
+  }
+
+  .archive__item-teaser {
+    flex: 0 0 220px !important;
+    max-width: 220px !important;
+    margin: 0 !important;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+  }
+
+  .archive__item-content { flex: 1; min-width: 0; }
+
+  .archive__item-title {
+    margin: 0 0 0.4rem !important;
+    font-size: 1.3rem !important;
+    line-height: 1.3 !important;
+  }
+
+  p {
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--global-text-color-light);
+
+    i { color: var(--global-text-color); }
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.92rem !important;
+    color: var(--global-text-color) !important;
+  }
+}
+
+/* publications page view toggle sits a bit tighter under the lede */
+.pub-view-toggle { margin-top: 0.4rem !important; }
+
+/* ---------- CV + Mentorship pages inside the wide column ----- */
+
+.cv-wrap, .mentor-wrap {
+  max-width: 900px !important;
+  margin: 0 !important;
+  padding: 0.5rem 0 2rem !important;
+}
+
+.cv-hero--links {
+  margin-bottom: 3em !important;
+  padding-bottom: 2em !important;
+}
+
+.mentor-intro {
+  font-size: 1.08rem !important;
+}
+
+/* ---------- Responsive -------------------------------------- */
+
+@media (max-width: 700px) {
+  .item-card {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    padding: 1.2rem 1.25rem;
+
+    &__date { display: flex; gap: 0.5rem; align-items: baseline; font-size: 0.95rem;
+      span { margin: 0; }
+    }
+  }
+
+  .main--wide .list__item {
+    .archive__item { flex-direction: column; padding: 1.2rem 1.25rem; }
+    .archive__item-teaser { flex: 0 0 auto !important; max-width: 100% !important; width: 100%; }
+  }
+}

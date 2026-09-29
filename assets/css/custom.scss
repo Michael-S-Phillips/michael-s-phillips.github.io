@@ -17,8 +17,8 @@
   --global-footer-bg-color:          #090b10;
   --global-border-color:             #1e2330;
   --global-dark-border-color:        #2e3548;
-  --global-text-color:               #ccc5bc;
-  --global-text-color-light:         #6b7a96;
+  --global-text-color:               #d6cfc6;
+  --global-text-color-light:         #8b98b2;
   --global-base-color:               #6b7a96;
   --global-link-color:               #e07b39;
   --global-link-color-hover:         #f0a060;
@@ -54,7 +54,7 @@ html {
 
 body {
   font-family: var(--font-ui);
-  font-weight: 300;
+  font-weight: 400;
   background-color: var(--global-bg-color);
   color: var(--global-text-color);
   letter-spacing: 0.01em;
@@ -86,15 +86,15 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.2;
 }
 
-h1 { font-size: 2.6em; }
-h2 { font-size: 1.9em; }
-h3 { font-size: 1.45em; }
-h4 { font-size: 1.15em; }
+h1 { font-size: 2.8em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.45em; font-weight: 400; }
+h4 { font-size: 1.15em; font-weight: 500; }
 
 p, li, td, th, label {
   font-family: var(--font-ui);
-  font-weight: 300;
-  line-height: 1.8;
+  font-weight: 400;
+  line-height: 1.75;
 }
 
 a {
@@ -290,8 +290,8 @@ blockquote {
 
   a {
     font-family: var(--font-ui) !important;
-    font-size: 0.8em !important;
-    font-weight: 300 !important;
+    font-size: 0.95em !important;
+    font-weight: 400 !important;
     color: var(--global-text-color) !important;
     display: flex;
     align-items: center;
@@ -520,7 +520,7 @@ blockquote {
   footer {
     font-family: var(--font-ui) !important;
     font-size: 0.72em !important;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
     letter-spacing: 0.06em !important;
     color: var(--global-text-color-light) !important;
   }
@@ -763,8 +763,8 @@ html[data-theme="dark"] {
   --global-bg-color:              #0d0f14;
   --global-footer-bg-color:       #090b10;
   --global-border-color:          #1e2330;
-  --global-text-color:            #ccc5bc;
-  --global-text-color-light:      #6b7a96;
+  --global-text-color:            #d6cfc6;
+  --global-text-color-light:      #8b98b2;
   --global-link-color:            #e07b39;
   --global-link-color-hover:      #f0a060;
   --global-masthead-link-color:   #ccc5bc;
@@ -827,3 +827,12 @@ html[data-theme="dark"] {
   animation: emote-float 1.5s ease-in forwards;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
 }
+
+/* ============================================================
+   2026 redesign — hero homepage, page banners, unified cards
+   (partials live in _sass/mars/)
+   ============================================================ */
+
+@import "mars/layout";
+@import "mars/home";
+@import "mars/components";

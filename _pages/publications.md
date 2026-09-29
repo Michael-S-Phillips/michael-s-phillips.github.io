@@ -2,7 +2,13 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
+banner:
+  image: /assets/images/banners/field-eltatio-channels.jpg
+  eyebrow: "Research output"
+  subtitle: "Journal articles, conference abstracts, and open-source software"
+  position: "center 50%"
+  caption: "Hot-spring outflow channels, El Tatio geyser field, Chile · drone, 61 m"
 ---
 
 <style>

@@ -2,11 +2,31 @@
 layout: archive
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+author_profile: false
+banner:
+  image: /assets/images/banners/field-lejia-volcano.jpg
+  eyebrow: "Courses"
+  subtitle: "Courses taught at the University of Arizona's Lunar & Planetary Laboratory"
+  position: "center 30%"
+  caption: "Volcanic slopes above Laguna Lejía, Chile · 2018"
 ---
 
 {% include base_path %}
 
+<p class="page-lede">I teach graduate and undergraduate courses on planetary surfaces, remote sensing, and machine learning at the University of Arizona's Lunar &amp; Planetary Laboratory.</p>
+
+<div class="item-list">
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% assign mm = post.date | date: "%m" %}
+  {% case mm %}{% when "01", "02", "03", "04", "05" %}{% assign term = "Spring" %}{% when "06", "07" %}{% assign term = "Summer" %}{% else %}{% assign term = "Fall" %}{% endcase %}
+  <a class="item-card" href="{{ base_path }}{{ post.url }}">
+    <div class="item-card__date"><span>{{ term }}</span>{{ post.date | date: "%Y" }}</div>
+    <div class="item-card__body">
+      <p class="item-card__meta">{{ post.type }}</p>
+      <h2 class="item-card__title">{{ post.title }}</h2>
+      {% if post.venue %}<p class="item-card__venue">{{ post.venue }}</p>{% endif %}
+      {% if post.excerpt %}<p class="item-card__excerpt">{{ post.excerpt | markdownify | strip_html | strip }}</p>{% endif %}
+    </div>
+  </a>
 {% endfor %}
+</div>

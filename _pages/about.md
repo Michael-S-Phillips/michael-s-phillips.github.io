@@ -1,178 +1,186 @@
 ---
 permalink: /
+layout: home
 title: "Planetary Scientist & Mars Exploration Researcher"
-author_profile: true
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
+hero:
+  image: /assets/images/banners/hero-primordial.jpg          # swap for a field photo, e.g. /assets/images/field/band-lejia-reflection.jpg
+  image_small: /assets/images/banners/hero-primordial-sm.jpg
+  eyebrow: "Lunar & Planetary Laboratory · University of Arizona"
+  title: "Michael S. Phillips"
+  tagline: "Planetary scientist reading the oldest rocks on Mars — its ancient crust, its water, and its potential for life — with orbital spectroscopy and machine learning."
 ---
 
-<style>
-.banner-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-}
-
-.research-section {
-  margin: 30px 0;
-}
-
-.research-item {
-  margin-bottom: 30px;
-}
-
-.research-item h4 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 1.1em;
-  color: inherit;
-}
-
-.research-content {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.research-image {
-  flex: 0 0 350px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.research-image img,
-.research-image video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.research-text {
-  flex: 1;
-}
-
-.video-embed {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 8px;
-  margin: 20px 0;
-}
-
-.video-embed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-@media (max-width: 768px) {
-  .research-content {
-    flex-direction: column;
-  }
-
-  .research-image {
-    flex: 0 0 auto;
-  }
-}
-</style>
-
-I am a planetary scientist at the University of Arizona's Lunar & Planetary Laboratory, specializing in Mars geology, astrobiology, and the application of artificial intelligence to planetary exploration. My research focuses on understanding the ancient history of Mars through orbital remote sensing, with particular emphasis on crustal composition, hydrothermal systems, and the search for biosignatures.
-
-## Featured Research Overview
-
-<img src="/assets/images/mars_art_map.webp" alt="Mars geological map and composition analysis" class="banner-image">
-
-## Research Focus
-
-My work sits at the intersection of planetary geology, remote sensing, and data science. I use hyperspectral imaging data from NASA's Mars Reconnaissance Orbiter to investigate the mineralogical and geochemical composition of Mars' ancient crust, seeking to understand the planet's early differentiation, aqueous alteration history, and potential for past habitability.
-
-### Key Research Areas
-
-<div class="research-section">
-  <div class="research-item">
-    <h4>Ancient Martian Crust & Planetary Evolution</h4>
-    <div class="research-content">
-      <div class="research-text">
-        I investigate the composition and evolution of Mars' oldest terrains, including the recent discovery of widespread anorthosites in the planet's lower crust. This work provides fundamental insights into early planetary differentiation processes and the geological evolution of terrestrial planets.
-      </div>
-      <div class="research-image">
-        <video controls autoplay muted loop>
-          <source src="/assets/images/primordial_mars_art.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+<!-- ─── About ─────────────────────────────────────────────── -->
+<section id="about" class="home-section home-about reveal">
+  <div class="home-wrap home-about__grid">
+    <figure class="home-about__photo">
+      <img src="/images/profile-640.jpg" alt="Michael Phillips" loading="lazy" width="640" height="636">
+    </figure>
+    <div class="home-about__text">
+      <p class="section-kicker">About</p>
+      <h2 class="section-title">Planetary geology, remote sensing &amp; data science</h2>
+      <p>I am a planetary scientist at the University of Arizona's Lunar &amp; Planetary Laboratory, specializing in Mars geology, astrobiology, and the application of artificial intelligence to planetary exploration. My research focuses on understanding the ancient history of Mars through orbital remote sensing, with particular emphasis on crustal composition, hydrothermal systems, and the search for biosignatures.</p>
+      <p>I use hyperspectral imaging data from NASA's Mars Reconnaissance Orbiter to investigate the mineralogy and geochemistry of Mars' ancient crust, and I combine that work with terrestrial analog field studies and open-source tool development.</p>
+      <dl class="home-facts">
+        <div><dt>Now</dt><dd>Research Scientist, Lunar &amp; Planetary Laboratory, University of Arizona</dd></div>
+        <div><dt>2021–23</dt><dd>Postdoctoral Fellow, Johns Hopkins University Applied Physics Laboratory</dd></div>
+        <div><dt>Ph.D.</dt><dd>Geology, The University of Tennessee, Knoxville</dd></div>
+      </dl>
     </div>
   </div>
+</section>
 
-  <div class="research-item">
-    <h4>Mars Astrobiology & Biosignature Detection</h4>
-    <div class="research-content">
-      <div class="research-image">
-        <img src="/assets/images/biosigs_orbit2ground.png" alt="Orbit to ground biosignature framework">
+<!-- ─── Research areas ────────────────────────────────────── -->
+<section id="research" class="home-section reveal">
+  <div class="home-wrap">
+    <p class="section-kicker">Research</p>
+    <h2 class="section-title">Key research areas</h2>
+    <div class="research-grid">
+      <a class="research-card" href="/publication/2025-11-22-ancient-anorthosites-mars-2025">
+        <div class="research-card__media"><img src="/assets/images/cards/crust.jpg" alt="HiRISE view of an ancient crustal massif in northern Hellas" loading="lazy"></div>
+        <div class="research-card__body">
+          <h3>Ancient Martian crust &amp; planetary evolution</h3>
+          <p>The composition and evolution of Mars' oldest terrains, including widespread anorthosites in the planet's lower crust, and what they reveal about early planetary differentiation.</p>
+          <span class="research-card__more">Featured paper · Nature Comms Earth &amp; Environment</span>
+        </div>
+      </a>
+      <a class="research-card" href="/publication/2023-04-01-orbit-to-ground-biosignature-framework-2023">
+        <div class="research-card__media"><img src="/assets/images/cards/astrobiology-mats.jpg" alt="Orange microbial mats in a hot-spring outflow at El Tatio, Chile" loading="lazy"></div>
+        <div class="research-card__body">
+          <h3>Mars astrobiology &amp; biosignature detection</h3>
+          <p>AI and machine-learning methods that improve the detection of potential biosignatures and identify high-priority targets for astrobiology investigations.</p>
+          <span class="research-card__more">Featured paper · Nature Astronomy</span>
+        </div>
+      </a>
+      <a class="research-card" href="/publication/2023-10-01-basin-related-alteration-early-mars-2023">
+        <div class="research-card__media"><img src="/assets/images/cards/hydrothermal-pool.jpg" alt="Drone view of a hot pool and outflow channels at the El Tatio geyser field, Chile" loading="lazy"></div>
+        <div class="research-card__body">
+          <h3>Hydrothermal systems &amp; aqueous alteration</h3>
+          <p>Ancient hydrothermal environments in Martian impact basins, and the mineral assemblages that record past water–rock interaction, habitability, and biosignature preservation.</p>
+          <span class="research-card__more">Basin-related alteration on early Mars</span>
+        </div>
+      </a>
+      <a class="research-card" href="/publication/2024-11-01-hypyrameter-python-toolbox-2024">
+        <div class="research-card__media"><img src="/assets/images/cards/hyperspectral.jpg" alt="False-color spectral parameter image from the Spectral Cube Analysis Tool" loading="lazy"></div>
+        <div class="research-card__body">
+          <h3>Hyperspectral data processing &amp; analysis</h3>
+          <p>Computational tools and pipelines for CRISM hyperspectral data, including automated detection algorithms and spectral analysis frameworks for large-scale compositional mapping.</p>
+          <span class="research-card__more">Featured paper · The Planetary Science Journal</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Interlude band ────────────────────────────────────── -->
+<section class="home-band" style="--band-img: url('/assets/images/banners/map-band.jpg');" aria-label="Mars">
+  <div class="home-band__inner reveal">
+    <p class="home-band__quote">What did the first crust of a rocky planet look like — and was it ever habitable?</p>
+  </div>
+</section>
+
+<!-- ─── Current work ──────────────────────────────────────── -->
+<section id="projects" class="home-section reveal">
+  <div class="home-wrap">
+    <p class="section-kicker">Current work</p>
+    <h2 class="section-title">NASA-funded projects</h2>
+    <div class="project-grid">
+      <article class="project-card"><span class="role-badge role-badge--pi">PI</span><h3>From Olivine to Feldspar: Tracing Martian Crustal Evolution with CRISM Mapping Data</h3><p>Mapping the compositional evolution of Mars' ancient crust with CRISM hyperspectral data.</p></article>
+      <article class="project-card"><span class="role-badge role-badge--pi">PI</span><h3>Spectral Cube Analysis Tool</h3><p>A Python graphical interface for analyzing hyperspectral imaging data from planetary missions.</p></article>
+      <article class="project-card"><span class="role-badge role-badge--pi">PI</span><h3>Digital Terrain Models from HiRISE Stereo Pairs</h3><p>High-resolution topographic data products from Mars Reconnaissance Orbiter imagery.</p></article>
+      <article class="project-card"><span class="role-badge">Co-I</span><h3>Geologic Context of Unique Basin-Related Alteration Environments</h3><p>Ancient aqueous alteration in Martian impact basins and its astrobiological implications. <em>Johns Hopkins University</em></p></article>
+      <article class="project-card"><span class="role-badge">Co-I</span><h3>Light-Toned Units in Southern Sinus Meridiani</h3><p>Spectral and geologic analyses of sedimentary and altered outcrops in equatorial Mars. <em>SUNY</em></p></article>
+      <article class="project-card"><span class="role-badge role-badge--team">Team</span><h3>Planetary Data Training Workshops</h3><p>Training the next generation of planetary scientists in data analysis techniques. <em>Arizona State University</em></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ─── In the field ──────────────────────────────────────── -->
+<section id="field" class="home-section home-field reveal">
+  <div class="home-wrap">
+    <p class="section-kicker">In the field</p>
+    <h2 class="section-title">Mars on Earth</h2>
+    <p class="home-field__lede">Much of my work pairs orbital data with Mars-analog field campaigns: drone and ground surveys of salars and hydrothermal fields in Chile's Atacama Desert and Altiplano, where extreme environments help us learn how to search for habitats and biosignatures on Mars.</p>
+  </div>
+  <figure class="field-wide">
+    <img src="/assets/images/field/band-lejia-reflection.jpg" alt="Snow-capped volcanoes reflected in Laguna Lejía, Chile" loading="lazy">
+    <figcaption>Laguna Lejía, Chilean Altiplano · 2018</figcaption>
+  </figure>
+  <div class="home-wrap">
+    <div class="field-grid">
+      <figure class="field-tile field-tile--wide"><img src="/assets/images/field/pajonales-camp.jpg" alt="Drone view of a field camp below a volcano at Salar de Pajonales" loading="lazy"><figcaption>Field camp, Salar de Pajonales · 2018</figcaption></figure>
+      <figure class="field-tile"><img src="/assets/images/field/eltatio-mats.jpg" alt="Orange microbial mats over white sinter at El Tatio" loading="lazy"><figcaption>Microbial mats in hot-spring outflow, El Tatio · 2018</figcaption></figure>
+      <figure class="field-tile"><img src="/assets/images/field/eltatio-pool-61m.jpg" alt="Turquoise hot pool and outflow channels seen from a drone" loading="lazy"><figcaption>El Tatio geyser field from 61 m · 2016</figcaption></figure>
+      <figure class="field-tile"><img src="/assets/images/field/eltatio-hexacopter.jpg" alt="Hexacopter survey drone on a landing pad in front of a volcano" loading="lazy"><figcaption>Survey hexacopter, El Tatio · 2018</figcaption></figure>
+      <figure class="field-tile"><img src="/assets/images/field/salar-grande-halite-10m.jpg" alt="Ochre halite crust seen from a drone at 10 m" loading="lazy"><figcaption>Halite crust, Salar Grande, from 10 m · 2016</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Tools + video ─────────────────────────────────────── -->
+<section id="tools" class="home-section home-section--alt reveal">
+  <div class="home-wrap media-split">
+    <div>
+      <p class="section-kicker">Open-source tools</p>
+      <h2 class="section-title">Software for spectral data</h2>
+      <div class="tool-item">
+        <h3><a href="https://github.com/Michael-S-Phillips/HyPyRameter">HyPyRameter</a></h3>
+        <p>A Python toolbox for calculating spectral parameters from hyperspectral reflectance data, developed for CRISM and Mars analog datasets.</p>
       </div>
-      <div class="research-text">
-        I develop and apply AI/machine learning techniques to improve the detection of potential biosignatures and identify high-priority targets for astrobiology investigations. My work addresses critical knowledge gaps in understanding Mars' habitability through time.
+      <div class="tool-item">
+        <h3><a href="https://github.com/Michael-S-Phillips">Spectral Cube Analysis Tool</a></h3>
+        <p>A Python program for analyzing multi- and hyperspectral image cubes, presented at LPSC 2024.</p>
       </div>
+      <a class="text-link" href="https://github.com/Michael-S-Phillips">All code on GitHub →</a>
     </div>
-  </div>
-
-  <div class="research-item">
-    <div class="video-embed">
-      <iframe src="https://www.youtube.com/embed/72FFi2Hdxdg" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </div>
-
-  <div class="research-item">
-    <h4>Hydrothermal Systems & Aqueous Alteration</h4>
-    <p>My research characterizes ancient hydrothermal environments in Martian impact basins, investigating mineral assemblages that record past water-rock interactions and their implications for habitability and preservation of biosignatures.</p>
-    <div class="research-image" style="max-width: 100%; margin: 20px 0;">
-      <img src="/assets/images/viviano-phillips-alteration.webp" alt="Hydrothermal alteration in Martian impact basins">
-    </div>
-  </div>
-
-  <div class="research-item">
-    <h4>Hyperspectral Data Processing & Analysis</h4>
-    <p>I develop computational tools and processing pipelines for analyzing CRISM (Compact Reconnaissance Imaging Spectrometer for Mars) hyperspectral data, including automated detection algorithms and spectral analysis frameworks that enable large-scale compositional mapping.</p>
-    <div style="margin-top: 20px;">
-      <video width="100%" controls style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <figure class="media-frame">
+      <video controls muted playsinline preload="none" poster="/assets/images/spectral-cube-analysis-tool-poster.jpg">
         <source src="/assets/images/spectral-cube-analysis-tool.mp4" type="video/mp4">
-        Your browser does not support the video tag.
       </video>
-    </div>
+      <figcaption>Spectral Cube Analysis Tool in use: band combinations and spectral plots from a hyperspectral cube.</figcaption>
+    </figure>
   </div>
-</div>
+</section>
 
-## Current Work
+<section id="watch" class="home-section reveal">
+  <div class="home-wrap media-split media-split--reverse">
+    <div>
+      <p class="section-kicker">Watch</p>
+      <h2 class="section-title">Can AI help find life on Mars?</h2>
+      <p>A SETI Institute video on how artificial intelligence can guide the search for life on Mars and icy worlds — the theme behind my work on biosignature prediction in Mars-analog terrain.</p>
+    </div>
+    <figure class="media-frame">
+      <button class="yt-lite" type="button" data-yt="72FFi2Hdxdg" aria-label="Play video: Can Artificial Intelligence help find life on Mars or Icy Worlds?" style="background-image:url('https://i.ytimg.com/vi/72FFi2Hdxdg/hqdefault.jpg')"><span class="yt-lite__play" aria-hidden="true"></span></button>
+      <figcaption>SETI Institute · “Can Artificial Intelligence help find life on Mars or Icy Worlds?”</figcaption>
+    </figure>
+  </div>
+</section>
 
-I currently lead and contribute to multiple NASA-funded research projects investigating Mars through orbital remote sensing and data analysis. My active projects include:
+<!-- ─── Closing ───────────────────────────────────────────── -->
+<section class="home-section home-cta reveal">
+  <div class="home-wrap home-cta__grid">
+    <a class="cta-card" href="/publications/"><span class="cta-card__label">Publications</span><span class="cta-card__text">Journal articles, conference abstracts, and an interactive publication graph.</span></a>
+    <a class="cta-card" href="/mentorship/"><span class="cta-card__label">Mentorship</span><span class="cta-card__text">Students I mentor and advise, from high school interns to doctoral candidates.</span></a>
+    <a class="cta-card" href="mailto:phillipsm@arizona.edu"><span class="cta-card__label">Get in touch</span><span class="cta-card__text">phillipsm@arizona.edu</span></a>
+  </div>
+</section>
 
-- **From Olivine to Feldspar: Tracing Martian Crustal Evolution with CRISM Mapping Data** (PI) - Using CRISM hyperspectral data to map and understand the compositional evolution of Mars' ancient crust.
-
-- **Spectral Cube Analysis Tool** (PI) - Developing a Python-based graphical user interface for analyzing hyperspectral imaging data from planetary missions.
-
-- **Production of Digital Terrain Models from HiRISE Stereo Pairs** (PI) - Creating high-resolution topographic data products from Mars Reconnaissance Orbiter imagery.
-
-- **Geologic Context of Unique Basin-Related Alteration Environments** (Co-I, Johns Hopkins University) - Characterizing ancient aqueous alteration in Martian impact basins and their astrobiological implications.
-
-- **Spectral and Geologic Analyses of Light-Toned Units in Southern Sinus Meridiani** (Co-I, SUNY) - Investigating sedimentary and altered outcrops in equatorial Mars regions.
-
-- **Planetary Data Training Workshops** (Team Member, Arizona State University) - Training the next generation of planetary scientists in data analysis techniques.
-
-My research combines detailed spectral analysis of Mars' surface with computational tool development and terrestrial analog studies to advance our understanding of the planet's geological history and astrobiological potential.
-
-## Approach
-
-My research is fundamentally interdisciplinary, integrating planetary geology, remote sensing, data science, and field work. I combine detailed spectral analysis of Martian surfaces with terrestrial analog studies in extreme environments, developing computational tools that advance both our scientific understanding and our technical capabilities for planetary exploration.
-
----
-
-For more information about my research, see my [publications](/publications/) and [recent talks](/talks/). You can also find me on [Google Scholar](https://scholar.google.com/citations?user=1DCuzasAAAAJ&hl=en), [ORCID](https://orcid.org/0000-0001-8873-2238), and [ResearchGate](https://www.researchgate.net/profile/Michael-Phillips-23).
+<script>
+(function () {
+  var els = document.querySelectorAll('.yt-lite');
+  Array.prototype.forEach.call(els, function (btn) {
+    btn.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + btn.getAttribute('data-yt') + '?autoplay=1&rel=0';
+      f.title = btn.getAttribute('aria-label');
+      f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+      f.allowFullscreen = true;
+      btn.replaceWith(f);
+    });
+  });
+}());
+</script>

@@ -40,12 +40,13 @@
   }
 
   function _updateCatBtn() {
-    var btn = document.getElementById('cat-toggle-btn');
-    if (!btn) { return; }
     var on = !!_cats;
-    btn.setAttribute('aria-pressed', String(on));
-    btn.style.opacity = on ? '1' : '0.4';
-    btn.title = on ? 'Send cats home' : 'Release the cats';
+    var btns = document.querySelectorAll('#cat-toggle-btn, [data-cat-toggle]');
+    Array.prototype.forEach.call(btns, function (btn) {
+      btn.setAttribute('aria-pressed', String(on));
+      btn.style.opacity = on ? '1' : '0.4';
+      btn.title = on ? 'Send cats home' : 'Release the cats';
+    });
   }
 
   window.toggleCats = function () {
@@ -97,6 +98,35 @@
     var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     _syncThemeIcons(isDark);
   });
+}());
+</script>
+
+<script>
+/* Homepage: masthead turns solid once the hero scrolls away.
+   All pages: sections marked .reveal fade in as they enter the viewport. */
+(function () {
+  var mh = document.querySelector('.masthead--overlay');
+  if (mh) {
+    var onScroll = function () {
+      mh.classList.toggle('is-scrolled', window.scrollY > 40);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  var items = document.querySelectorAll('.reveal');
+  if (!items.length) { return; }
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    Array.prototype.forEach.call(items, function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  Array.prototype.forEach.call(items, function (el) { io.observe(el); });
 }());
 </script>
 

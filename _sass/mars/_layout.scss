@@ -1,0 +1,314 @@
+/* ============================================================
+   MARS — Layout: masthead, page banners, sidebar-free columns, footer
+   ============================================================ */
+
+$mars-wrap: 1160px;
+
+/* ---------- Masthead ---------------------------------------- */
+
+.masthead__inner-wrap {
+  max-width: $mars-wrap + 80px !important;
+  padding: 0.35em 1.75em !important;
+}
+
+.greedy-nav .visible-links li.masthead__menu-item--lg {
+  white-space: nowrap;
+  text-wrap: nowrap;
+}
+
+.site-wordmark {
+  display: inline-flex !important;
+  white-space: nowrap;
+  align-items: center;
+  font-family: var(--font-display) !important;
+  font-size: 1.4em !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.03em !important;
+  color: var(--parchment) !important;
+  text-transform: none !important;
+
+  &::after, &::before { display: none !important; }
+}
+
+.site-wordmark__mark {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  margin-right: 0.55em;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 32%, #f7b27a 0%, #e07b39 32%, #b5390f 64%, #4a1405 100%);
+  box-shadow: 0 0 12px rgba(224, 123, 57, 0.55);
+  flex: 0 0 auto;
+}
+
+.masthead__menu-item.is-active > a {
+  color: var(--parchment) !important;
+  &::after { width: 100% !important; }
+}
+
+/* cat + theme toggles share the persist-tail item */
+.greedy-nav .visible-links #theme-toggle {
+  white-space: nowrap;
+
+  a {
+    display: inline-flex !important;
+    width: auto !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0.9rem !important;
+    cursor: pointer;
+    &::before, &::after { display: none !important; }
+  }
+}
+
+.nav-cat-toggle {
+  font-size: 1.05rem !important;
+  line-height: 1;
+  filter: saturate(0.85);
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+  &:hover, &:focus-visible { transform: scale(1.15); }
+}
+
+/* Transparent masthead over the homepage hero */
+body.is-home { padding-top: 0 !important; }
+
+.masthead--overlay {
+  background: linear-gradient(180deg, rgba(7, 9, 14, 0.75) 0%, rgba(7, 9, 14, 0) 100%) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: background 0.35s ease;
+
+  &::after { opacity: 0; transition: opacity 0.35s ease; }
+
+  .greedy-nav,
+  .masthead__menu-item { background: transparent !important; }
+
+  &.is-scrolled {
+    background: rgba(10, 12, 18, 0.9) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    &::after { opacity: 1; }
+  }
+}
+
+.greedy-nav { background: transparent !important; }
+.masthead__menu-item { background: transparent !important; }
+
+/* ---------- Page banner ------------------------------------- */
+
+.page-banner {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: flex-end;
+  min-height: clamp(280px, 40vh, 440px);
+  background: #07090e var(--banner-img) center / cover no-repeat;
+  background-position: var(--banner-pos, center);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(90deg, rgba(7, 9, 14, 0.72) 0%, rgba(7, 9, 14, 0.3) 48%, rgba(7, 9, 14, 0) 100%),
+      linear-gradient(180deg, rgba(7, 9, 14, 0.3) 0%, rgba(7, 9, 14, 0) 38%, rgba(13, 15, 20, 0.82) 90%, var(--global-bg-color) 100%);
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: $mars-wrap;
+    margin: 0 auto;
+    padding: 4rem 1.75rem 2.4rem;
+    animation: fadeUp 0.7s ease both;
+  }
+
+  &__eyebrow {
+    margin: 0 0 0.6rem;
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--mars-ochre);
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 22ch;
+    font-family: var(--font-display) !important;
+    font-size: clamp(2.3rem, 5vw, 3.8rem) !important;
+    font-weight: 300 !important;
+    line-height: 1.05 !important;
+    letter-spacing: 0.01em;
+    color: var(--parchment);
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.6);
+  }
+
+  &__subtitle {
+    margin: 0.9rem 0 0;
+    max-width: 44rem;
+    font-size: 1.02rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(228, 221, 212, 0.82);
+  }
+
+  &__caption {
+    position: absolute;
+    right: 1.4rem;
+    bottom: 0.9rem;
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+    color: rgba(228, 221, 212, 0.55);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  &--compact {
+    min-height: clamp(220px, 30vh, 320px);
+
+    .page-banner__title {
+      max-width: 34ch;
+      font-size: clamp(1.7rem, 3.2vw, 2.5rem) !important;
+      line-height: 1.15 !important;
+    }
+  }
+}
+
+/* ---------- Sidebar-free content columns -------------------- */
+
+#main.main--wide {
+  max-width: $mars-wrap;
+  margin-top: 2.5rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.main--wide .archive,
+.main--wide .page {
+  float: none !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.main--wide .page { max-width: 820px; margin-left: 0 !important; }
+.main--wide .page .page__content { font-size: 1.04rem; }
+
+.main--wide .list__item { padding-right: 0 !important; }
+
+/* the banner already carries the title / venue for these */
+.collection--publications .page__inner-wrap > header,
+.collection--teaching .page__inner-wrap > header { display: none; }
+
+.page__inner-wrap header::after { display: none; }
+
+/* ---------- Footer ------------------------------------------ */
+
+/* footer sits in normal flow (the theme's absolute "sticky footer" only
+   reserved 9em, which the taller footer overflowed) */
+body { padding-bottom: 0 !important; }
+
+.page__footer {
+  position: relative !important;
+  bottom: auto !important;
+  float: none !important;
+  margin-top: 5rem;
+
+  footer {
+    max-width: $mars-wrap !important;
+    margin: 0 auto !important;
+    padding: 2.8rem 1.75rem 2.2rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 3rem;
+  padding-bottom: 1.8rem;
+  margin-bottom: 1.4rem;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    letter-spacing: 0.03em;
+    color: var(--parchment);
+
+    small {
+      display: block;
+      margin-top: 0.15rem;
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--global-text-color-light);
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45em;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--global-text-color) !important;
+
+      i { color: var(--mars-ochre); }
+      &:hover { color: var(--mars-ochre) !important; }
+    }
+  }
+}
+
+.page__footer-copyright {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--global-text-color-light);
+  line-height: 1.8;
+}
+
+.page__footer-follow { display: none; }
+
+/* ---------- Scroll reveal ----------------------------------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  &.is-visible { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---------- Responsive -------------------------------------- */
+
+@media (max-width: 768px) {
+  .masthead__inner-wrap { padding: 0.3em 1.1em !important; }
+  .site-wordmark { font-size: 1.2em !important; }
+  #main.main--wide { padding-left: 1.2rem; padding-right: 1.2rem; margin-top: 1.5rem; }
+  .page-banner__inner { padding: 3rem 1.2rem 1.8rem; }
+  .page-banner { min-height: 240px; }
+}

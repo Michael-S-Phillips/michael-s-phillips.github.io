@@ -1,8 +1,14 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks & Presentations"
 permalink: /talks/
-author_profile: true
+author_profile: false
+banner:
+  image: /assets/images/banners/field-lejia-clouds.jpg
+  eyebrow: "Presentations"
+  subtitle: "Conference talks and invited presentations"
+  position: "center 62%"
+  caption: "Laguna Lejía, Chilean Altiplano · 2018"
 ---
 
 {% if site.talkmap_link == true %}
@@ -11,6 +17,8 @@ author_profile: true
 
 {% endif %}
 
+<div class="item-list">
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
+</div>
