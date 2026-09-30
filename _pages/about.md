@@ -90,7 +90,7 @@ hero:
     <h2 class="section-title">NASA-funded projects</h2>
     <div class="project-grid">
       <article class="project-card"><span class="role-badge role-badge--pi">PI</span><h3>From Olivine to Feldspar: Tracing Martian Crustal Evolution with CRISM Mapping Data</h3><p>Mapping the compositional evolution of Mars' ancient crust with CRISM hyperspectral data.</p></article>
-      <article class="project-card"><span class="role-badge role-badge--pi">PI</span><h3>Spectral Cube Analysis Tool</h3><p>A Python graphical interface for analyzing hyperspectral imaging data from planetary missions.</p></article>
+      <article class="project-card"><span class="role-badge role-badge--pi">PI</span><h3>Varda: Visualization and Analysis of Raster Data</h3><p>An open-source Python application for multi- and hyperspectral image analysis, and the successor to the Spectral Cube Analysis Tool. <em>NASA HPOSS</em></p></article>
       <article class="project-card"><span class="role-badge role-badge--pi">PI</span><h3>Digital Terrain Models from HiRISE Stereo Pairs</h3><p>High-resolution topographic data products from Mars Reconnaissance Orbiter imagery.</p></article>
       <article class="project-card"><span class="role-badge">Co-I</span><h3>Geologic Context of Unique Basin-Related Alteration Environments</h3><p>Ancient aqueous alteration in Martian impact basins and its astrobiological implications. <em>Johns Hopkins University</em></p></article>
       <article class="project-card"><span class="role-badge">Co-I</span><h3>Light-Toned Units in Southern Sinus Meridiani</h3><p>Spectral and geologic analyses of sedimentary and altered outcrops in equatorial Mars. <em>SUNY</em></p></article>
@@ -132,8 +132,8 @@ hero:
         <p>A Python toolbox for calculating spectral parameters from hyperspectral reflectance data, developed for CRISM and Mars analog datasets.</p>
       </div>
       <div class="tool-item">
-        <h3><a href="https://github.com/Michael-S-Phillips">Spectral Cube Analysis Tool</a></h3>
-        <p>A Python program for analyzing multi- and hyperspectral image cubes, presented at LPSC 2024.</p>
+        <h3><a href="https://github.com/Michael-S-Phillips/Varda"><img class="tool-logo" src="/assets/images/varda-logo.svg" alt="" width="26" height="26">Varda</a></h3>
+        <p>Visualization and Analysis of Raster Data: an open-source Python application for multi- and hyperspectral images and an alternative to proprietary tools like ENVI. It reads 160+ image formats, links two images by pixel or map location, and offers ROI tools and interactive spectral plots. Varda is the successor to the Spectral Cube Analysis Tool and is in active development.</p>
       </div>
       <a class="text-link" href="https://github.com/Michael-S-Phillips">All code on GitHub →</a>
     </div>
@@ -141,7 +141,7 @@ hero:
       <video controls muted playsinline preload="none" poster="/assets/images/spectral-cube-analysis-tool-poster.jpg">
         <source src="/assets/images/spectral-cube-analysis-tool.mp4" type="video/mp4">
       </video>
-      <figcaption>Spectral Cube Analysis Tool in use: band combinations and spectral plots from a hyperspectral cube.</figcaption>
+      <figcaption>Varda's predecessor, the Spectral Cube Analysis Tool, in use: band combinations and spectral plots from a hyperspectral cube.</figcaption>
     </figure>
   </div>
 </section>

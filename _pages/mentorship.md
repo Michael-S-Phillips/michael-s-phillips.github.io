@@ -119,6 +119,18 @@ banner:
   white-space: nowrap;
 }
 
+.mentor-group-title {
+  font-family: 'Crimson Pro', Georgia, serif !important;
+  font-size: 2em !important;
+  font-weight: 300 !important;
+  color: var(--parchment, #e4ddd4);
+  margin: 0.2em 0 1.4em !important;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--global-border-color, #1e2330);
+}
+
+.mentor-group-title ~ .mentor-group-title { margin-top: 2.5em !important; }
+
 @media (max-width: 600px) {
   .mentor-item { flex-wrap: wrap; }
   .mentor-role { margin-left: 1.6em; text-align: left; }
@@ -128,15 +140,17 @@ banner:
 <div class="mentor-wrap">
 
   <div class="mentor-intro">
-    Mentorship is central to how I do science. I work with students at every stage — from high school interns to doctoral candidates — training the next generation of planetary scientists in remote sensing, data analysis, and computational tool development. Below are the students I currently mentor or advise, organized by program.
+    Mentorship is central to how I do science. I work with students at every stage — from high school interns to doctoral candidates — training the next generation of planetary scientists in remote sensing, data analysis, and computational tool development. Below are the students I mentor and advise, current and former, organized by program.
   </div>
+
+  <h2 class="mentor-group-title">Current students</h2>
 
   <!-- ─── NASA PDART ─────────────────────────────────────────── -->
   <div class="mentor-program">
     <div class="mentor-program-label">NASA PDART · University of Arizona</div>
-    <div class="mentor-program-name">Planetary Data Archiving, Restoration, and Tools</div>
+    <div class="mentor-program-name">HiRISE Digital Terrain Models</div>
     <div class="mentor-program-desc">
-      Undergraduate researchers contributing to NASA-funded development of data products and analysis tools for planetary hyperspectral datasets.
+      Undergraduate researchers producing high-resolution digital terrain models from HiRISE stereo images at LPL, supported by NASA's Planetary Data Archiving, Restoration, and Tools program (2025–present).
     </div>
     <ul class="mentor-list">
       <li class="mentor-item"><span class="mentor-name">Choe Billet</span><span class="mentor-role">Undergraduate Researcher</span></li>
@@ -171,18 +185,6 @@ banner:
     </ul>
   </div>
 
-  <!-- ─── NASA MDAP ──────────────────────────────────────────── -->
-  <div class="mentor-program">
-    <div class="mentor-program-label">NASA MDAP</div>
-    <div class="mentor-program-name">Mars Data Analysis Program</div>
-    <div class="mentor-program-desc">
-      Student research supported through NASA's Mars Data Analysis Program, analyzing orbital datasets to understand Martian surface geology.
-    </div>
-    <ul class="mentor-list">
-      <li class="mentor-item"><span class="mentor-name">Linae Larson</span><span class="mentor-role">Research Student</span></li>
-    </ul>
-  </div>
-
   <!-- ─── Doctoral Committees ────────────────────────────────── -->
   <div class="mentor-program">
     <div class="mentor-program-label">Doctoral Committees</div>
@@ -193,6 +195,35 @@ banner:
     <ul class="mentor-list">
       <li class="mentor-item"><span class="mentor-name">Udit Basu</span><span class="mentor-role">University of Tennessee, Knoxville</span></li>
       <li class="mentor-item"><span class="mentor-name">Andrew Foerder</span><span class="mentor-role">University of Tennessee, Knoxville</span></li>
+    </ul>
+  </div>
+
+
+  <h2 class="mentor-group-title">Former students</h2>
+
+  <!-- ─── NASA HPOSS (former) ────────────────────────────────── -->
+  <div class="mentor-program">
+    <div class="mentor-program-label">NASA HPOSS · University of Arizona · 2024–2026</div>
+    <div class="mentor-program-name">Varda (formerly Spectral Cube Analysis Tool)</div>
+    <div class="mentor-program-desc">
+      Students who helped build Varda, an open-source Python application for multi- and hyperspectral image analysis, funded by NASA's High Priority Open-Source Science program.
+    </div>
+    <ul class="mentor-list">
+      <li class="mentor-item"><span class="mentor-name">Jesse Oved</span><span class="mentor-role">Student Researcher</span></li>
+      <li class="mentor-item"><span class="mentor-name">Emma Elliot</span><span class="mentor-role">Student Researcher</span></li>
+      <li class="mentor-item"><span class="mentor-name">Hamad Ayaz</span><span class="mentor-role">Student Researcher</span></li>
+    </ul>
+  </div>
+
+  <!-- ─── NASA MDAP ──────────────────────────────────────────── -->
+  <div class="mentor-program">
+    <div class="mentor-program-label">NASA MDAP</div>
+    <div class="mentor-program-name">Mars Data Analysis Program</div>
+    <div class="mentor-program-desc">
+      Research on the composition and evolution of Mars' ancient crust using CRISM data (NASA MDAP, "From olivine to feldspar").
+    </div>
+    <ul class="mentor-list">
+      <li class="mentor-item"><span class="mentor-name">Linae Larson</span><span class="mentor-role">Student Researcher</span></li>
     </ul>
   </div>
 

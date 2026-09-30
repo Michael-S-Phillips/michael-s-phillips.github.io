@@ -738,3 +738,12 @@
   .field-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
   .field-tile--wide { grid-column: auto; grid-row: auto; }
 }
+
+.tool-logo {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.55em;
+  vertical-align: -0.4em;
+  border-radius: 5px;
+}

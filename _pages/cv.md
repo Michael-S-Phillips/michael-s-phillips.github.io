@@ -711,9 +711,9 @@ banner:
     <div class="cv-software-item">
       <div class="cv-software-icon"><i class="fab fa-github"></i></div>
       <div>
-        <div class="cv-software-name">Spectral Cube Analysis Tool</div>
-        <div class="cv-software-desc">Python program for analyzing multi- and hyperspectral image cubes. Presented at LPSC 2024.</div>
-        <a class="cv-software-link" href="https://github.com/Michael-S-Phillips">github.com/Michael-S-Phillips</a>
+        <div class="cv-software-name">Varda</div>
+        <div class="cv-software-desc">Visualization and Analysis of Raster Data: open-source Python application for multi- and hyperspectral image analysis (160+ formats, linked dual-image views, ROI tools, interactive spectral plots). Successor to the Spectral Cube Analysis Tool (LPSC 2024); funded by NASA HPOSS.</div>
+        <a class="cv-software-link" href="https://github.com/Michael-S-Phillips/Varda">github.com/Michael-S-Phillips/Varda</a>
       </div>
     </div>
 
@@ -727,8 +727,8 @@ banner:
     <div class="cv-position">
       <div class="cv-position-year">Undergrad</div>
       <div class="cv-position-body">
-        <h3>NASA PDART — Undergraduate Researchers</h3>
-        <p>University of Arizona · Choe Billet, Alexander Burchuladze, Patricio Santos, Luke Meyer, Lenny Druelle</p>
+        <h3>NASA PDART — HiRISE DTM Undergraduate Researchers</h3>
+        <p>University of Arizona · 2025–present · Choe Billet, Alexander Burchuladze, Patricio Santos, Luke Meyer, Lenny Druelle</p>
       </div>
     </div>
 
@@ -749,18 +749,26 @@ banner:
     </div>
 
     <div class="cv-position" style="margin-top:1.6em">
-      <div class="cv-position-year">Research</div>
-      <div class="cv-position-body">
-        <h3>NASA MDAP</h3>
-        <p>Mars Data Analysis Program · Linae Larson</p>
-      </div>
-    </div>
-
-    <div class="cv-position" style="margin-top:1.6em">
       <div class="cv-position-year">Ph.D.</div>
       <div class="cv-position-body">
         <h3>Doctoral Committees</h3>
         <p>University of Tennessee, Knoxville · Udit Basu, Andrew Foerder</p>
+      </div>
+    </div>
+
+    <div class="cv-position" style="margin-top:2.6em">
+      <div class="cv-position-year">Former</div>
+      <div class="cv-position-body">
+        <h3>NASA HPOSS — Varda (Spectral Cube Analysis Tool)</h3>
+        <p>University of Arizona · 2024–2026 · Jesse Oved, Emma Elliot, Hamad Ayaz</p>
+      </div>
+    </div>
+
+    <div class="cv-position" style="margin-top:1.6em">
+      <div class="cv-position-year">Former</div>
+      <div class="cv-position-body">
+        <h3>NASA MDAP — Student Researcher</h3>
+        <p>Mars Data Analysis Program · Linae Larson</p>
       </div>
     </div>
 
