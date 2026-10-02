@@ -72,10 +72,14 @@ banner:
 
 <section class="fw-section">
   <p class="fw-meta">Roosevelt Hot Springs, Utah · August 2024</p>
-  <h2 class="fw-title">An active geothermal field</h2>
-  <p class="fw-text">Steaming ground and hydrothermally altered rock in the geothermal area near Roosevelt Hot Springs in southwestern Utah.</p>
-  <div class="field-grid field-grid--two">
-    <figure class="field-tile"><a class="image-popup" href="/assets/images/fieldwork/roosevelt-hot-springs.jpg" title="Steaming ground near Roosevelt Hot Springs, Utah · Aug 2024"><img src="/assets/images/fieldwork/roosevelt-hot-springs.jpg" alt="Steam rising from pale altered ground in a hilly geothermal area" loading="lazy"></a><figcaption>Steaming altered ground</figcaption></figure>
-    <figure class="field-tile"><a class="image-popup" href="/assets/images/fieldwork/roosevelt-hot-springs-channel.jpg" title="Altered channel and steam vents near Roosevelt Hot Springs, Utah · Aug 2024"><img src="/assets/images/fieldwork/roosevelt-hot-springs-channel.jpg" alt="A pale altered channel with steam vents between low hills" loading="lazy"></a><figcaption>Altered channel and vents</figcaption></figure>
+  <h2 class="fw-title">Sampling an active geothermal field</h2>
+  <p class="fw-text">Gridded sampling across steaming ground, colorful hydrothermal deposits, and altered rock in the geothermal area near Roosevelt Hot Springs in southwestern Utah.</p>
+  <div class="field-grid">
+    <figure class="field-tile field-tile--wide"><a class="image-popup" href="/assets/images/fieldwork/utah-sampling-grid.jpg" title="Field team sampling within a flagged grid, Roosevelt Hot Springs, Utah · Aug 2024"><img src="/assets/images/fieldwork/utah-sampling-grid.jpg" alt="Field team kneeling to sample within a grid of orange flags on pale altered ground" loading="lazy"></a><figcaption>Sampling within a flagged grid</figcaption></figure>
+    <figure class="field-tile"><a class="image-popup" href="/assets/images/fieldwork/utah-banded-deposits.jpg" title="Red, orange, and green banding in hydrothermal deposits, Roosevelt Hot Springs · Aug 2024"><img src="/assets/images/fieldwork/utah-banded-deposits.jpg" alt="Close view of red, orange, and green banded hydrothermal deposits" loading="lazy"></a><figcaption>Banded hydrothermal deposits</figcaption></figure>
+    <figure class="field-tile"><a class="image-popup" href="/assets/images/fieldwork/utah-green-terraces.jpg" title="Green crusted terraces on altered ground, Roosevelt Hot Springs · Aug 2024"><img src="/assets/images/fieldwork/utah-green-terraces.jpg" alt="Green crusted terraces edged by pale altered rock" loading="lazy"></a><figcaption>Green crusted terraces</figcaption></figure>
+    <figure class="field-tile"><a class="image-popup" href="/assets/images/fieldwork/utah-steaming-valley.jpg" title="Steaming ground in the geothermal valley, Roosevelt Hot Springs · Aug 2024"><img src="/assets/images/fieldwork/utah-steaming-valley.jpg" alt="Steam rising from pale altered ground in a valley under bright sun" loading="lazy"></a><figcaption>Steaming valley floor</figcaption></figure>
+    <figure class="field-tile"><a class="image-popup" href="/assets/images/fieldwork/utah-dark-channel.jpg" title="Dark crust in an outflow channel, Roosevelt Hot Springs · Aug 2024"><img src="/assets/images/fieldwork/utah-dark-channel.jpg" alt="A dark crust filling a channel cut into pale altered ground" loading="lazy"></a><figcaption>Dark-crusted channel</figcaption></figure>
+    <figure class="field-tile field-tile--full"><a class="image-popup" href="/assets/images/fieldwork/utah-steam-channel.jpg" title="Steam vents along an altered channel, Roosevelt Hot Springs · Aug 2024"><img src="/assets/images/fieldwork/utah-steam-channel.jpg" alt="Steam vents along a pale channel with a vehicle and cumulus clouds beyond" loading="lazy"></a><figcaption>Steam vents along the channel</figcaption></figure>
   </div>
 </section>
