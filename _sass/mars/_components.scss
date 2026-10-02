@@ -199,3 +199,54 @@
     .archive__item-teaser { flex: 0 0 auto !important; max-width: 100% !important; width: 100%; }
   }
 }
+
+/* ---------- Fieldwork page ---------------------------------- */
+
+.fw-section { margin: 0 0 4.5rem; }
+
+.fw-meta {
+  margin: 0 0 0.5rem !important;
+  font-family: var(--font-mono);
+  font-size: 0.72rem !important;
+  letter-spacing: 0.06em;
+  color: var(--mars-ochre);
+}
+
+.fw-title {
+  margin: 0 0 0.6rem !important;
+  font-family: var(--font-display) !important;
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  line-height: 1.2 !important;
+  color: var(--parchment);
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.fw-text {
+  max-width: 46rem;
+  margin: 0 0 1.6rem !important;
+  font-size: 1rem;
+  color: var(--global-text-color);
+}
+
+.field-tile--tall { grid-row: span 2; }
+.field-tile--wide-short { grid-column: span 2; }
+.field-tile--full { grid-column: 1 / -1; }
+.field-tile--full img { object-position: center 60%; }
+.field-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 240px; }
+.field-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 300px; }
+
+.field-tile > a { display: block; width: 100%; height: 100%; }
+.field-tile > a:hover { text-decoration: none; }
+
+@media (max-width: 900px) {
+  .field-tile--tall { grid-row: span 2; }
+  .field-tile--wide-short, .field-tile--full { grid-column: 1 / -1; }
+  .field-grid--three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .field-tile--tall { grid-row: auto; }
+  .field-grid--three, .field-grid--two { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+}

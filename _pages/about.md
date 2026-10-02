@@ -118,6 +118,7 @@ hero:
       <figure class="field-tile"><img src="/assets/images/field/eltatio-hexacopter.jpg" alt="Hexacopter survey drone on a landing pad in front of a volcano" loading="lazy"><figcaption>Survey hexacopter, El Tatio · 2018</figcaption></figure>
       <figure class="field-tile"><img src="/assets/images/field/salar-grande-halite-10m.jpg" alt="Ochre halite crust seen from a drone at 10 m" loading="lazy"><figcaption>Halite crust, Salar Grande, from 10 m · 2016</figcaption></figure>
     </div>
+    <a class="text-link" href="/fieldwork/">More from the field: Iceland, Chile, and Utah →</a>
   </div>
 </section>
 
