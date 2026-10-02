@@ -45,7 +45,7 @@ hero:
         <div class="research-card__body">
           <h3>Ancient Martian crust &amp; planetary evolution</h3>
           <p>The composition and evolution of Mars' oldest terrains, including widespread anorthosites in the planet's lower crust, and what they reveal about early planetary differentiation.</p>
-          <span class="research-card__more">Featured paper · Nature Comms Earth &amp; Environment</span>
+          <span class="research-card__more">Featured paper · Communications Earth &amp; Environment</span>
         </div>
       </a>
       <a class="research-card" href="/publication/2023-04-01-orbit-to-ground-biosignature-framework-2023">

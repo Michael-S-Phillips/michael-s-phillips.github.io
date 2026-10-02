@@ -532,92 +532,297 @@ banner:
   </div>
 
   <!-- ─── Peer-Reviewed Publications ───────────────────────── -->
+  <!-- Generated from verified _publications/ entries (pubtype journal|chapter). -->
 
   <div class="cv-section">
-    <div class="cv-section-label">Peer-Reviewed Publications</div>
+    <div class="cv-section-label">Peer-Reviewed Publications (18)</div>
     <ul class="cv-pub-list">
 
       <li class="cv-pub-item">
-        <div class="cv-pub-num">5</div>
+        <div class="cv-pub-num">18</div>
         <div>
-          <div class="cv-pub-title">
-            <a href="https://linkinghub.elsevier.com/retrieve/pii/S0019103523002890">A first look at CRISM hyperspectral mapping mosaicked data: Results from Mawrth Vallis</a>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1029/2026JE009705">Visible to Near-Infrared Properties of Felsic Rocks: Plagioclase Detection Limits and Applications to Mars Orbital Spectra</a></div>
+          <div class="cv-pub-authors">Vannier, H., Horgan, B.H.N., <strong>Phillips, M.S.</strong>, Eddy, M., Greenberger, R., & Udry, A.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Journal of Geophysical Research: Planets</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2026</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">131(9), e2026JE009705</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1029/2026JE009705">10.1029/2026JE009705</a>
           </div>
-          <div class="cv-pub-authors"><strong>Phillips M</strong>, Murchie S, Seelos F, et al.</div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">17</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1038/s43247-026-03617-6">Proposed identification criteria of the Martian lower crust and mantle excavated by the Isidis impact</a></div>
+          <div class="cv-pub-authors">Trowbridge, A.J., Horgan, B., Weiss, B.P., & <strong>Phillips, M.S.</strong></div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Communications Earth &amp; Environment</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2026</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">7(1), 714</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1038/s43247-026-03617-6">10.1038/s43247-026-03617-6</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">16</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1029/2025JH000827">A Domain-Specific Vision Foundation Model for Mars: Self-Supervised Learning for Planetary-Scale Science Discovery</a></div>
+          <div class="cv-pub-authors">Fang, J., Luo, W., Huang, Q., Zhang, L., <strong>Phillips, M.S.</strong>, Seethi, V.D.R., & Giannakis, I.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Journal of Geophysical Research: Machine Learning and Computation</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2026</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">3, e2025JH000827</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1029/2025JH000827">10.1029/2025JH000827</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">15</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1029/2025GL118112">Mercury's Hollows: A Potential Signature of Sulfur Exosphere-Subsurface Transport</a></div>
+          <div class="cv-pub-authors">Verkercke, S., Leblanc, F., Chaufray, J.-Y., <strong>Phillips, M.S.</strong>, Munaretto, G., Caminiti, E., & Morrissey, L.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Geophysical Research Letters</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2025</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">52(24), e2025GL118112</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1029/2025GL118112">10.1029/2025GL118112</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">14</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1038/s43247-025-03004-7">Widespread ancient anorthosites in the lower crust of Mars</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong>, Viviano, C.E., Rogers, A.D., Larson, L., Tornabene, L., Trowbridge, A., Moersch, J.E., & McSween Jr, H.Y.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Communications Earth &amp; Environment</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2025</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">6, 1026</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1038/s43247-025-03004-7">10.1038/s43247-025-03004-7</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">13</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.3389/fspas.2025.1565830">A novel theoretical approach to predict the interannual variability of sulfur in Mercury’s exosphere and subsurface</a></div>
+          <div class="cv-pub-authors">Verkercke, S., Chaufray, J.Y., Leblanc, F., Georgiou, A., <strong>Phillips, M.S.</strong>, Munaretto, G., Lewis, J., Ricketts, A., & Morrissey, L.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Frontiers in Astronomy and Space Sciences</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2025</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">12, 1565830</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.3389/fspas.2025.1565830">10.3389/fspas.2025.1565830</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">12</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.3847/PSJ/ad81f8">HyPyRameter: A Python Toolbox to Calculate Spectral Parameters from Hyperspectral Reflectance Data</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong>, Tai Udovicic, C., Moersch, J.E., Basu, U., & Hamilton, C.W.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">The Planetary Science Journal</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2024</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">5(11), 258</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.3847/PSJ/ad81f8">10.3847/PSJ/ad81f8</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">11</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.3847/PSJ/ad55f4">Comparing Rover and Helicopter Planetary Mission Architectures in a Mars Analog Setting in Iceland</a></div>
+          <div class="cv-pub-authors">Gwizd, S., Stack, K.M., Francis, R., Calef, F., Carr, B.B., Langley, C., Graff, J., Kristinsson, Þ.H., …, <strong>Phillips, M.S.</strong>, et al.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">The Planetary Science Journal</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2024</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">5(8), 172</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.3847/PSJ/ad55f4">10.3847/PSJ/ad55f4</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">10</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1016/j.icarus.2023.115712">A first look at CRISM hyperspectral mapping mosaicked data: Results from Mawrth Vallis</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong>, Murchie, S.L., Seelos, F.P., Hancock, K.M., Selby, C., Poffenbarger, R.T., Stephens, D.C., & Kawamura, M.</div>
           <div class="cv-pub-meta">
             <span class="cv-pub-journal">Icarus</span>
             <span class="cv-pub-dot">·</span>
             <span class="cv-pub-year">2024</span>
             <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">419, 115712</span>
+            <span class="cv-pub-dot">·</span>
             <a class="cv-pub-doi" href="https://doi.org/10.1016/j.icarus.2023.115712">10.1016/j.icarus.2023.115712</a>
           </div>
         </div>
       </li>
-
       <li class="cv-pub-item">
-        <div class="cv-pub-num">4</div>
+        <div class="cv-pub-num">9</div>
         <div>
-          <div class="cv-pub-title">
-            <a href="https://www.nature.com/articles/s41550-022-01882-x">Orbit-to-ground framework to decode and predict biosignature patterns in terrestrial analogues</a>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1002/esp.5692">Gypsum-lined degassing holes in tumuli</a></div>
+          <div class="cv-pub-authors">Hofmann, M.H., Hinman, N.W., <strong>Phillips, M.S.</strong>, McInenly, M., Chong-Diaz, G., Warren-Rhodes, K., & Cabrol, N.A.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Earth Surface Processes and Landforms</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2023</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">48(15), 3220-3236</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1002/esp.5692">10.1002/esp.5692</a>
           </div>
-          <div class="cv-pub-authors">Warren-Rhodes K, Cabrol N, <strong>Phillips M</strong>, et al.</div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">8</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1038/s41550-022-01882-x">Orbit-to-ground framework to decode and predict biosignature patterns in terrestrial analogues</a></div>
+          <div class="cv-pub-authors">Warren-Rhodes, K., Cabrol, N.A., <strong>Phillips, M.S.</strong>, Tebes-Cayo, C., Kalaitzis, F., Ayma, D., Demergasso, C., Chong-Diaz, G., et al.</div>
           <div class="cv-pub-meta">
             <span class="cv-pub-journal">Nature Astronomy</span>
             <span class="cv-pub-dot">·</span>
             <span class="cv-pub-year">2023</span>
             <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">7, 406-422</span>
+            <span class="cv-pub-dot">·</span>
             <a class="cv-pub-doi" href="https://doi.org/10.1038/s41550-022-01882-x">10.1038/s41550-022-01882-x</a>
           </div>
         </div>
       </li>
-
       <li class="cv-pub-item">
-        <div class="cv-pub-num">3</div>
+        <div class="cv-pub-num">7</div>
         <div>
-          <div class="cv-pub-title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/36520604/">Planetary Mapping Using Deep Learning: A Method to Evaluate Feature Identification Confidence Applied to Habitats in Mars-Analog Terrain</a>
-          </div>
-          <div class="cv-pub-authors"><strong>Phillips MS</strong>, Moersch JE, Cabrol NA, et al.</div>
-          <div class="cv-pub-meta">
-            <span class="cv-pub-journal">Astrobiology</span>
-            <span class="cv-pub-dot">·</span>
-            <span class="cv-pub-year">2023</span>
-            <span class="cv-pub-dot">·</span>
-            <a class="cv-pub-doi" href="https://doi.org/10.1089/ast.2022.0014">10.1089/ast.2022.0014</a>
-          </div>
-        </div>
-      </li>
-
-      <li class="cv-pub-item">
-        <div class="cv-pub-num">2</div>
-        <div>
-          <div class="cv-pub-title">
-            <a href="https://www.mdpi.com/2072-4292/15/2/314">Salt Constructs in Paleo-Lake Basins as High-Priority Astrobiology Targets</a>
-          </div>
-          <div class="cv-pub-authors"><strong>Phillips M</strong>, McInenly M, Hofmann M, et al.</div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.3390/rs15020314">Salt Constructs in Paleo-Lake Basins as High-Priority Astrobiology Targets</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong>, McInenly, M., Hofmann, M.H., Hinman, N.W., Warren-Rhodes, K., Rivera-Valentín, E.G., & Cabrol, N.A.</div>
           <div class="cv-pub-meta">
             <span class="cv-pub-journal">Remote Sensing</span>
             <span class="cv-pub-dot">·</span>
             <span class="cv-pub-year">2023</span>
             <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">15(2), 314</span>
+            <span class="cv-pub-dot">·</span>
             <a class="cv-pub-doi" href="https://doi.org/10.3390/rs15020314">10.3390/rs15020314</a>
           </div>
         </div>
       </li>
-
       <li class="cv-pub-item">
-        <div class="cv-pub-num">1</div>
+        <div class="cv-pub-num">6</div>
         <div>
-          <div class="cv-pub-title">
-            <a href="https://pubs.geoscienceworld.org/geology/article/50/10/1182/615121/">Extensive and ancient feldspathic crust detected across north Hellas rim, Mars: Possible implications for primary crust formation</a>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1089/ast.2022.0014">Planetary Mapping Using Deep Learning: A Method to Evaluate Feature Identification Confidence Applied to Habitats in Mars-Analog Terrain</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong>, Moersch, J.E., Cabrol, N.A., Candela, A., Wettergreen, D., Warren-Rhodes, K., Hinman, N.W., & SETI Institute NAI Team</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Astrobiology</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2023</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">23(1), 76-93</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1089/ast.2022.0014">10.1089/ast.2022.0014</a>
           </div>
-          <div class="cv-pub-authors"><strong>Phillips M</strong>, Viviano C, Moersch J, et al.</div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">5</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1130/G50341.1">Extensive and ancient feldspathic crust detected across north Hellas rim, Mars: Possible implications for primary crust formation</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong>, Viviano, C.E., Moersch, J.E., Rogers, A.D., McSween, H.Y., & Seelos, F.P.</div>
           <div class="cv-pub-meta">
             <span class="cv-pub-journal">Geology</span>
             <span class="cv-pub-dot">·</span>
             <span class="cv-pub-year">2022</span>
             <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">50(10), 1182-1186</span>
+            <span class="cv-pub-dot">·</span>
             <a class="cv-pub-doi" href="https://doi.org/10.1130/G50341.1">10.1130/G50341.1</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">4</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.3389/fspas.2021.797591">Surface Morphologies in a Mars-Analog Ca-Sulfate Salar, High Andes, Northern Chile</a></div>
+          <div class="cv-pub-authors">Hinman, N.W., Hofmann, M.H., Warren-Rhodes, K., <strong>Phillips, M.S.</strong>, Noffke, N., Cabrol, N.A., Chong Diaz, G., Demergasso, C., et al.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Frontiers in Astronomy and Space Sciences</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2022</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">8, 797591</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.3389/fspas.2021.797591">10.3389/fspas.2021.797591</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">3</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1007/978-3-030-98415-1_9">Insights of Extreme Desert Ecology to the Habitats and Habitability of Mars</a></div>
+          <div class="cv-pub-authors">Warren-Rhodes, K., <strong>Phillips, M.S.</strong>, Davila, A., & McKay, C.P.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Microbiology of Hot Deserts (Ecological Studies, vol. 244), Springer Cham</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2022</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">Ecological Studies 244</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1007/978-3-030-98415-1_9">10.1007/978-3-030-98415-1_9</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">2</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1016/j.icarus.2021.114306">The lifecycle of hollows on Mercury: An evaluation of candidate volatile phases and a novel model of formation</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong>, Moersch, J.E., Viviano, C.E., & Emery, J.P.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Icarus</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2021</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">359, 114306</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1016/j.icarus.2021.114306">10.1016/j.icarus.2021.114306</a>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">1</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.1016/j.scitotenv.2019.135640">Temporal multispectral and 3D analysis of Cerro de Pasco, Peru</a></div>
+          <div class="cv-pub-authors">Melton, C.A., Hughes, D.C., Page, D.L., & <strong>Phillips, M.S.</strong></div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Science of the Total Environment</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2020</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">706, 135640</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.1016/j.scitotenv.2019.135640">10.1016/j.scitotenv.2019.135640</a>
           </div>
         </div>
       </li>
@@ -625,73 +830,113 @@ banner:
     </ul>
   </div>
 
-  <!-- ─── Conference & Other Products ──────────────────────── -->
+  <!-- ─── Other Products ──────────────────────────────────── -->
 
   <div class="cv-section">
-    <div class="cv-section-label">Conference Papers &amp; Other Products</div>
-    <ul class="cv-conf-list">
+    <div class="cv-section-label">Theses, Reports, Preprints, Software &amp; Data</div>
+    <ul class="cv-pub-list">
 
-      <li class="cv-conf-item">
-        <div class="cv-conf-num">5</div>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">7</div>
         <div>
-          <div class="cv-conf-title">Spectral Cube Analysis Tool: A Python Program for Analyzing Multi- and Hyperspectral Images</div>
-          <div class="cv-conf-meta">
-            <span class="cv-conf-venue">LPSC 2024</span>
-            &nbsp;·&nbsp; <em>Bibcode: 2024LPICo3040.2637P</em>
+          <div class="cv-pub-title"><a href="https://doi.org/10.48550/arXiv.2604.06245">CraterBench-R: Instance-Level Crater Retrieval for Planetary Scale</a></div>
+          <div class="cv-pub-authors">Fang, J., Zhang, L., <strong>Phillips, M.S.</strong>, & Luo, W.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">arXiv:2604.06245; accepted at EarthVision 2026 Workshop, CVPR 2026 (CVPRW)</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2026</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.48550/arXiv.2604.06245">10.48550/arXiv.2604.06245</a>
           </div>
         </div>
       </li>
-
-      <li class="cv-conf-item">
-        <div class="cv-conf-num">4</div>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">6</div>
         <div>
-          <div class="cv-conf-title">HyPyRameter: A Python Toolbox to Calculate Hyperspectral Reflectance Parameters</div>
-          <div class="cv-conf-meta">
-            <span class="cv-conf-venue">LPSC 2023</span>
-            &nbsp;·&nbsp; <em>with Moersch JE, Basu U, Hamilton CW &nbsp;·&nbsp; Bibcode: 2023LPICo2806.2245P</em>
+          <div class="cv-pub-title"><a href="https://doi.org/10.5287/ora-vyqqmdonx">SaganMC: A molecular complexity dataset with mass spectra</a></div>
+          <div class="cv-pub-authors">Baydin, A.G., Bell, A., Gebhard, T., Gong, J., Hastings, J., Fricke, M., <strong>Phillips, M.S.</strong>, Warren-Rhodes, K., et al.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">University of Oxford Research Archive (ORA) dataset; also on Hugging Face (oxai4science/sagan-mc, DOI 10.57967/hf/5637)</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2025</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.5287/ora-vyqqmdonx">10.5287/ora-vyqqmdonx</a>
           </div>
         </div>
       </li>
-
-      <li class="cv-conf-item">
-        <div class="cv-conf-num">3</div>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">5</div>
         <div>
-          <div class="cv-conf-title">
-            <a href="https://doi.org/10.5194/epsc2022-1200">What is that? Identification confidence of Mars analog habitats with Deep Learning</a>
-          </div>
-          <div class="cv-conf-meta">
-            <span class="cv-conf-venue">EPSC 2022</span>
+          <div class="cv-pub-title"><a href="https://doi.org/10.5281/zenodo.10801542">Michael-S-Phillips/HyPyRameter: HyPyRameter v0.2.0</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong> & Tai Udovicic, C.J.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Zenodo</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2024</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.5281/zenodo.10801542">10.5281/zenodo.10801542</a>
           </div>
         </div>
       </li>
-
-      <li class="cv-conf-item">
-        <div class="cv-conf-num">2</div>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">4</div>
         <div>
-          <div class="cv-conf-title">
-            <a href="https://linkinghub.elsevier.com/retrieve/pii/S0019103521000051">The lifecycle of hollows on Mercury: An evaluation of candidate volatile phases and a novel model of formation</a>
-          </div>
-          <div class="cv-conf-meta">
-            <span class="cv-conf-venue">Icarus</span>
-            &nbsp;·&nbsp; 2021 &nbsp;·&nbsp; with Moersch J, Viviano C, et al.
+          <div class="cv-pub-title"><a href="https://gbaydin.github.io/assets/pdf/bell-2022-molecules.pdf">Signatures of Life: Learning Features of Prebiotic and Biotic Molecules</a></div>
+          <div class="cv-pub-authors">Bell, A.C., Gebhard, T.D., Gong, J., Hastings, J.J.A., Baydin, A.G., Fricke, G.M., <strong>Phillips, M.S.</strong>, Warren-Rhodes, K., et al.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">NASA Frontier Development Lab (FDL) 2022 Astrobiology technical report</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2022</span>
           </div>
         </div>
       </li>
-
-      <li class="cv-conf-item">
-        <div class="cv-conf-num">1</div>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">3</div>
         <div>
-          <div class="cv-conf-title">
-            <a href="https://pubmed.ncbi.nlm.nih.gov/31862591/">Temporal multispectral and 3D analysis of Cerro de Pasco, Peru</a>
+          <div class="cv-pub-title"><a href="https://doi.org/10.3847/25c2cfeb.85a374e2">Planetary Geologic Mapping</a></div>
+          <div class="cv-pub-authors">Mouginis-Mark, P., Burr, D., Byrne, P., Coles, K., Crown, D.A., Patthoff, A., <strong>Phillips, M.S.</strong>, Prockter, L., et al.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Bulletin of the American Astronomical Society</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2021</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">53(4), 408</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.3847/25c2cfeb.85a374e2">10.3847/25c2cfeb.85a374e2</a>
           </div>
-          <div class="cv-conf-meta">
-            <span class="cv-conf-venue">Science of the Total Environment</span>
-            &nbsp;·&nbsp; 2020 &nbsp;·&nbsp; Melton CA, Hughes DC, Page DL, <strong>Phillips MS</strong>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">2</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://trace.tennessee.edu/utk_graddiss/6520/">Planetary processes active and ancient: Hollowing on Mercury, ancient crust formation on Mars, and identifying Mars-analog habitats</a></div>
+          <div class="cv-pub-authors"><strong>Phillips, M.S.</strong></div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">PhD Dissertation, University of Tennessee, Knoxville (advisor J.E. Moersch)</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2021</span>
+          </div>
+        </div>
+      </li>
+      <li class="cv-pub-item">
+        <div class="cv-pub-num">1</div>
+        <div>
+          <div class="cv-pub-title"><a href="https://doi.org/10.3847/25c2cfeb.0eed7a57">Addressing Strategic Knowledge Gaps in the Search for Biosignatures on Mars</a></div>
+          <div class="cv-pub-authors">Cabrol, N., Bishop, J., Cady, S.L., Demergasso, C., Hinman, N., Hoffman, M., Kanik, I., Moersch, J., …, <strong>Phillips, M.S.</strong>, et al.</div>
+          <div class="cv-pub-meta">
+            <span class="cv-pub-journal">Bulletin of the American Astronomical Society</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">2021</span>
+            <span class="cv-pub-dot">·</span>
+            <span class="cv-pub-year">53(4), 223</span>
+            <span class="cv-pub-dot">·</span>
+            <a class="cv-pub-doi" href="https://doi.org/10.3847/25c2cfeb.0eed7a57">10.3847/25c2cfeb.0eed7a57</a>
           </div>
         </div>
       </li>
 
     </ul>
+    <p style="font-size:0.85em;color:var(--global-text-color-light,#8b98b2);margin-top:1.6em;line-height:1.6">Plus 46 conference abstracts and presentations (19 as first author): see the <a href="/publications/" style="color:var(--mars-ochre,#e07b39)">Publications page</a> for the full list.</p>
   </div>
 
   <!-- ─── Software & Tools ──────────────────────────────────── -->

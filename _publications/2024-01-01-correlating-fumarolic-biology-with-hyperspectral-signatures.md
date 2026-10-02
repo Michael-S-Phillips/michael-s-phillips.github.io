@@ -7,6 +7,8 @@ date: 2024-01-01
 venue: ''
 paperurl: ''
 citation: 'Phillips, M.S., et al. (2024). &quot;Correlating Fumarolic Biology with Hyperspectral Signatures to Determine Critical Spatial Resolution Thresholds.&quot;'
+published: false
+exclude_reason: "UNVERIFIED: no primary record found; confirm before re-publishing."
 ---
 <!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
 

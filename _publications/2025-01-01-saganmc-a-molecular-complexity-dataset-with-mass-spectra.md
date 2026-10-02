@@ -4,12 +4,10 @@ collection: publications
 permalink: /publication/2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra
 excerpt: ''
 date: 2025-01-01
-venue: ''
-paperurl: ''
-citation: 'Phillips, M.S., et al. (2025). &quot;SaganMC: A molecular complexity dataset with mass spectra.&quot;'
+venue: "University of Oxford Research Archive (ORA) dataset; also on Hugging Face (oxai4science/sagan-mc, DOI 10.57967/hf/5637)"
+paperurl: "https://doi.org/10.5287/ora-vyqqmdonx"
+citation: "Baydin, A.G., Bell, A., Gebhard, T., Gong, J., Hastings, J., Fricke, M., <b>Phillips, M.S.</b>, Warren-Rhodes, K., et al. (2025). &quot;SaganMC: A molecular complexity dataset with mass spectra.&quot; <i>University of Oxford Research Archive (ORA) dataset; also on Hugging Face (oxai4science/sagan-mc, DOI 10.57967/hf/5637)</i>."
+pubtype: dataset
 ---
-<!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
-
 SaganMC: A molecular complexity dataset with mass spectra
 
-Recommended citation: Phillips, M.S., et al. (2025). "SaganMC: A molecular complexity dataset with mass spectra." <i></i>.

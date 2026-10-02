@@ -7,6 +7,8 @@ date: 2015-01-01
 venue: ''
 paperurl: ''
 citation: 'Phillips, M.S., et al. (2015). &quot;Using pattern recognition and neuroimaging to decode present and future symptom severity in behaviorally and emotionally dysregulated youth.&quot;'
+published: false
+exclude_reason: "Not authored by Michael S. Phillips (child psychiatry paper by a different M. Phillips)."
 ---
 <!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
 

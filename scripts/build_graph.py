@@ -485,6 +485,9 @@ def main():
         fm = parse_frontmatter(f)
         if not fm.get("title"):
             continue
+        # Entries hidden after verification (not his, duplicates, unverified) never appear.
+        if fm.get("published", "").lower() == "false":
+            continue
 
         title   = fm.get("title", "")
         excerpt = fm.get("excerpt", "")
@@ -495,7 +498,16 @@ def main():
 
         text          = f"{title} {excerpt}"
         planet, topic = categorize(text)
-        pub_type      = classify_pub_type(venue, url)
+        # Prefer the verified `pubtype` field; fall back to venue heuristics.
+        ptype_fm      = fm.get("pubtype", "")
+        if ptype_fm in ("journal", "chapter"):
+            pub_type = "journal"
+        elif ptype_fm == "conference":
+            pub_type = "conference"
+        elif ptype_fm:
+            pub_type = ptype_fm
+        else:
+            pub_type = classify_pub_type(venue, url)
 
         print(f"  {'[cite]':7} {planet:8} {pub_type:10} {title[:55]}")
         citations = get_citation_count(

@@ -7,6 +7,8 @@ date: 2025-06-26
 venue: ''
 paperurl: 'https://doi.org/10.22541/essoar.175096334.47976141/v1'
 citation: 'Phillips, M.S., et al. (2025). &quot;A Domain-Specific Foundation Model for Mars: Self-Supervised Learning for New Science Discovery.&quot;'
+published: false
+exclude_reason: "ESS Open Archive preprint of Fang et al. 2026, JGR: Machine Learning and Computation (duplicate)."
 ---
 <!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
 

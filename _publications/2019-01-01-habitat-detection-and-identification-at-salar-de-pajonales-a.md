@@ -7,6 +7,8 @@ date: 2019-01-01
 venue: ''
 paperurl: ''
 citation: 'Phillips, M.S., et al. (2019). &quot;Habitat Detection and Identification at Salar de Pajonales, a Mars Analog Environment.&quot;'
+published: false
+exclude_reason: "UNVERIFIED: no primary record found; confirm before re-publishing."
 ---
 <!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
 

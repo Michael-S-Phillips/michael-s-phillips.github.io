@@ -1,23 +1,11 @@
 {
   "nodes": [
     {
-      "id": "2015-01-01-using-pattern-recognition-and-neuroimaging-to-decode-present",
-      "title": "Using pattern recognition and neuroimaging to decode present and future symptom severity in behaviorally and emotionally dysregulated youth",
-      "year": 2015,
-      "venue": "",
-      "url": "",
-      "planet": "multi",
-      "topic": "other",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
       "id": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
       "title": "Hollows on Mercury: No Geographic Trends in Reflectance",
       "year": 2016,
-      "venue": "47th Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "47th Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016LPI....47.2178P/abstract",
       "planet": "mercury",
       "topic": "remote_sensing",
       "pub_type": "conference",
@@ -29,7 +17,7 @@
       "title": "Composition and Distribution of Northern Hellas Massifs: Preliminary Results",
       "year": 2016,
       "venue": "AGU Fall Meeting Abstracts",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AGUFM.P11E..04P/abstract",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -40,8 +28,8 @@
       "id": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
       "title": "Thresholds of Detectability for Habitable Environments in the Atacama Desert, with Implications for Mars Exploration",
       "year": 2017,
-      "venue": "48th Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "48th Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2017LPI....48.2042P/abstract",
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
@@ -52,8 +40,8 @@
       "id": "2018-03-01-astrobiology-fdl-partnership-2018",
       "title": "Advancing Astrobiology Through Public/Private Partnership: The FDL Model",
       "year": 2018,
-      "venue": "49th Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "49th Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2018LPI....49.1275C/abstract",
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
@@ -65,7 +53,7 @@
       "title": "Feldspathic Rock in Ancient Crust, N. Hellas, Mars: Implications for Early Mantle Conditions",
       "year": 2018,
       "venue": "Differentiation: Building the Internal Architecture of Planets",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2018LPICo2084.4026P/abstract",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -76,8 +64,8 @@
       "id": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
       "title": "Thresholds of Detection and Identification of Halite Nodule Habitats in the Atacama Desert Using Remote Imaging",
       "year": 2018,
-      "venue": "49th Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "49th Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2018LPI....49.1289P/abstract",
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
@@ -89,7 +77,7 @@
       "title": "Hydrothermal alteration in association with large impact basins on Mars",
       "year": 2018,
       "venue": "European Planetary Science Congress",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2018EPSC...12..781V/abstract",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -97,23 +85,11 @@
       "excerpt": "Study of hydrothermal processes and mineral alteration patterns around major Martian impact basins."
     },
     {
-      "id": "2019-01-01-habitat-detection-and-identification-at-salar-de-pajonales-a",
-      "title": "Habitat Detection and Identification at Salar de Pajonales, a Mars Analog Environment",
-      "year": 2019,
-      "venue": "",
-      "url": "",
-      "planet": "earth",
-      "topic": "astrobiology",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
       "id": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
       "title": "Hydrothermal Alteration and Large Impact Basins on Mars",
       "year": 2019,
-      "venue": "50th Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "50th Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019LPI....50.2824V/abstract",
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "conference",
@@ -124,8 +100,8 @@
       "id": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
       "title": "Plagioclase in Primary Mineralogy of Ancient Crust, Northern Hellas, Mars",
       "year": 2019,
-      "venue": "50th Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "50th Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019LPI....50.2137P/abstract",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -137,7 +113,7 @@
       "title": "Hydrothermal Alteration Related to Large Impact Basins",
       "year": 2019,
       "venue": "Ninth International Conference on Mars",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019LPICo2089.6359V/abstract",
       "planet": "multi",
       "topic": "other",
       "pub_type": "conference",
@@ -148,8 +124,8 @@
       "id": "2019-07-01-microbial-communities-salar-pajonales-2019",
       "title": "Landscape Ecology of Microbial Communities in the Mars Analog Salar de Pajonales, Chile",
       "year": 2019,
-      "venue": "The Astrobiology Science Conference (AbSciCon) 2019",
-      "url": "",
+      "venue": "Astrobiology Science Conference (AbSciCon) 2019",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019absc.conf41169W/abstract",
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
@@ -158,10 +134,10 @@
     },
     {
       "id": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
-      "title": "A New Community Resource for Terrestrial Analog Field Research: A Visible to Shortwave Infrared (400-2500 nm) Drone-and Ground-Based Hyperspectral Imager for High Resolution \u2026",
+      "title": "A New Community Resource for Terrestrial Analog Field Research: A Visible to Shortwave Infrared (400–2500 nm) Drone- and Ground-based Hyperspectral Imager for High Resolution Compositional Mapping",
       "year": 2020,
-      "venue": "",
-      "url": "",
+      "venue": "51st Lunar and Planetary Science Conference, Abstract #1865",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2020/pdf/1865.pdf",
       "planet": "earth",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -171,9 +147,9 @@
     {
       "id": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
       "title": "Inferring molecular complexity from mass spectrometry data using machine learning",
-      "year": 2020,
-      "venue": "",
-      "url": "",
+      "year": 2022,
+      "venue": "Machine Learning and the Physical Sciences Workshop, NeurIPS 2022",
+      "url": "https://timothygebhard.de/publications/2022/inferring-molecular-complexity-from-mass-spectrometry-data-using-machine-learning/paper.pdf",
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -182,13 +158,13 @@
     },
     {
       "id": "2020-01-01-michael-s-phillips-hypyrameter-hypyrameter-v0-2-0",
-      "title": "Michael-S-Phillips/HyPyRameter: HyPyRameter v0. 2.0",
-      "year": 2020,
-      "venue": "",
-      "url": "",
+      "title": "Michael-S-Phillips/HyPyRameter: HyPyRameter v0.2.0",
+      "year": 2024,
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.10801542",
       "planet": "multi",
       "topic": "other",
-      "pub_type": "conference",
+      "pub_type": "software",
       "citations": 0,
       "excerpt": ""
     },
@@ -196,8 +172,8 @@
       "id": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
       "title": "A Thermal Model and the Hermean Hollows: Constraints on Plausible Volatiles Involved in Hollow Formation on Mercury",
       "year": 2020,
-      "venue": "51st Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "51st Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2020LPI....51.2442P/abstract",
       "planet": "mercury",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -208,8 +184,8 @@
       "id": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
       "title": "Regional Compositional Mapping Using CRISM Multispectral Mapping Data",
       "year": 2020,
-      "venue": "51st Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "51st Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2020LPI....51.1485V/abstract",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -220,8 +196,8 @@
       "id": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
       "title": "Remote Detection and Identification of Microbial Habitats in the Altiplano of Chile, a Mars Analog",
       "year": 2020,
-      "venue": "51st Annual Lunar and Planetary Science Conference",
-      "url": "",
+      "venue": "51st Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2020LPI....51.2378P/abstract",
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
@@ -233,7 +209,7 @@
       "title": "Temporal multispectral and 3D analysis of Cerro de Pasco, Peru",
       "year": 2020,
       "venue": "Science of the Total Environment",
-      "url": "http://dx.doi.org/10.1016/j.scitotenv.2019.135640",
+      "url": "https://doi.org/10.1016/j.scitotenv.2019.135640",
       "planet": "earth",
       "topic": "mineralogy",
       "pub_type": "journal",
@@ -242,22 +218,22 @@
     },
     {
       "id": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
-      "title": "Addressing strategic knowledge gaps in the search for biosignatures on Mars",
+      "title": "Addressing Strategic Knowledge Gaps in the Search for Biosignatures on Mars",
       "year": 2021,
       "venue": "Bulletin of the American Astronomical Society",
-      "url": "",
+      "url": "https://doi.org/10.3847/25c2cfeb.0eed7a57",
       "planet": "mars",
       "topic": "astrobiology",
-      "pub_type": "journal",
+      "pub_type": "report",
       "citations": 0,
       "excerpt": "Strategic assessment of current knowledge gaps and future research priorities for Mars biosignature detection."
     },
     {
       "id": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
-      "title": "Composition of> 4.1 GA Crustal Blocks Northern Hellas, Mars",
+      "title": "Composition of >4.1 Ga Crustal Blocks Northern Hellas, Mars",
       "year": 2021,
-      "venue": "",
-      "url": "",
+      "venue": "GSA Connects 2021, Portland, Oregon, Paper No. 240-1 (Geological Society of America Abstracts with Programs, Vol. 53, No. 6)",
+      "url": "https://doi.org/10.1130/abs/2021AM-365446",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -268,11 +244,11 @@
       "id": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
       "title": "Planetary processes active and ancient: Hollowing on Mercury, ancient crust formation on Mars, and identifying Mars-analog habitats.",
       "year": 2021,
-      "venue": "",
-      "url": "",
+      "venue": "PhD Dissertation, University of Tennessee, Knoxville (advisor J.E. Moersch)",
+      "url": "https://trace.tennessee.edu/utk_graddiss/6520/",
       "planet": "mercury",
       "topic": "mineralogy",
-      "pub_type": "conference",
+      "pub_type": "thesis",
       "citations": 0,
       "excerpt": ""
     },
@@ -281,7 +257,7 @@
       "title": "Convolutional Neural Network Image Classification of Mars-Analog Terrain: Preliminary Results and Implications for the Search for Life on Mars",
       "year": 2021,
       "venue": "52nd Lunar and Planetary Science Conference",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021LPI....52.2510P/abstract",
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -293,7 +269,7 @@
       "title": "Unique Basin-Related Alteration on Early Mars",
       "year": 2021,
       "venue": "52nd Lunar and Planetary Science Conference",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021LPI....52.1675V/abstract",
       "planet": "mars",
       "topic": "other",
       "pub_type": "conference",
@@ -308,7 +284,7 @@
       "url": "https://doi.org/10.3847/25c2cfeb.85a374e2",
       "planet": "multi",
       "topic": "remote_sensing",
-      "pub_type": "journal",
+      "pub_type": "report",
       "citations": 0,
       "excerpt": ""
     },
@@ -329,7 +305,7 @@
       "title": "Regional compositional trends in the circum-Isidis and Hellas regions",
       "year": 2021,
       "venue": "AGU Fall Meeting Abstracts",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021AGUFM.P54A..05V/abstract",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -338,13 +314,13 @@
     },
     {
       "id": "2022-01-01-insights-of-extreme-desert-ecology-to-the-habitats-and-habit",
-      "title": "Insights of extreme desert ecology to the habitats and habitability of Mars",
+      "title": "Insights of Extreme Desert Ecology to the Habitats and Habitability of Mars",
       "year": 2022,
-      "venue": "",
-      "url": "",
+      "venue": "Microbiology of Hot Deserts (Ecological Studies, vol. 244), Springer Cham",
+      "url": "https://doi.org/10.1007/978-3-030-98415-1_9",
       "planet": "mars",
       "topic": "astrobiology",
-      "pub_type": "conference",
+      "pub_type": "journal",
       "citations": 0,
       "excerpt": ""
     },
@@ -352,11 +328,11 @@
       "id": "2022-01-01-signatures-of-life-learning-features-of-prebiotic-and-biotic",
       "title": "Signatures of Life: Learning Features of Prebiotic and Biotic Molecules",
       "year": 2022,
-      "venue": "",
-      "url": "",
+      "venue": "NASA Frontier Development Lab (FDL) 2022 Astrobiology technical report",
+      "url": "https://gbaydin.github.io/assets/pdf/bell-2022-molecules.pdf",
       "planet": "multi",
       "topic": "astrobiology",
-      "pub_type": "conference",
+      "pub_type": "report",
       "citations": 0,
       "excerpt": ""
     },
@@ -373,23 +349,11 @@
       "excerpt": "Characterization of surface morphologies in a high-altitude calcium sulfate salar, providing insights into Mars analog environments and sulfate formation processes."
     },
     {
-      "id": "2022-04-01-automated-detection-mars-analog-2022",
-      "title": "Automated Detection and Machine Learning Classification of Mars Analog Habitats",
-      "year": 2022,
-      "venue": "The Astrobiology Science Conference (AbSciCon) 2022",
-      "url": "",
-      "planet": "earth",
-      "topic": "ai_ml",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": "Machine learning algorithms for automated detection and classification of potential habitable environments in Mars analog settings."
-    },
-    {
       "id": "2022-04-01-gypsum-habitability-zones-2022",
       "title": "Gypsum Habit Demarcates Zones of Habitability at Decameter to Millimeter Scales",
       "year": 2022,
-      "venue": "The Astrobiology Science Conference (AbSciCon) 2022",
-      "url": "",
+      "venue": "Astrobiology Science Conference (AbSciCon) 2022",
+      "url": "https://ui.adsabs.harvard.edu/abs/2022absc.conf24203H/abstract",
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
@@ -401,7 +365,7 @@
       "title": "CRISM Hyperspectral Mapping Data Preliminary Empirical Radiometric Reconciliation",
       "year": 2022,
       "venue": "53rd Lunar and Planetary Science Conference",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2022LPICo2678.1487P/abstract",
       "planet": "mars",
       "topic": "remote_sensing",
       "pub_type": "conference",
@@ -410,10 +374,10 @@
     },
     {
       "id": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
-      "title": "Decoding the Patterns of Life: Towards Predictive Search and Biosignature Detection in the Salar de Pajonales (Chile), A Blueprint for Mars and Beyond.",
+      "title": "Decoding the Patterns of Life: Towards Predictive Search and Biosignature Detection in the Salar de Pajonales (Chile), A Blueprint for Mars and Beyond",
       "year": 2022,
-      "venue": "The Astrobiology Science Conference (AbSciCon) 2022",
-      "url": "",
+      "venue": "Astrobiology Science Conference (AbSciCon) 2022",
+      "url": "https://ui.adsabs.harvard.edu/abs/2022absc.conf20301W/abstract",
       "planet": "earth",
       "topic": "astrobiology",
       "pub_type": "conference",
@@ -421,23 +385,11 @@
       "excerpt": ""
     },
     {
-      "id": "2022-06-01-astrobiological-mars-exploration-2022",
-      "title": "Addressing the Astrobiological Exploration of Mars Through an Integrated Earth-Mars Approach",
-      "year": 2022,
-      "venue": "Frontiers in Astronomy and Space Sciences",
-      "url": "",
-      "planet": "earth",
-      "topic": "astrobiology",
-      "pub_type": "journal",
-      "citations": 0,
-      "excerpt": "Comprehensive framework for astrobiology research combining Earth analog studies with Mars exploration strategies."
-    },
-    {
       "id": "2022-06-01-mars-analog-deep-learning-2022",
       "title": "What is that? Identification confidence of Mars analog habitats with Deep Learning",
       "year": 2022,
-      "venue": "Copernicus Meetings",
-      "url": "",
+      "venue": "European Planetary Science Congress",
+      "url": "https://doi.org/10.5194/epsc2022-1200",
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -448,25 +400,13 @@
       "id": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
       "title": "Mars uplifted massifs: unique and extensive samples of ancient crust",
       "year": 2022,
-      "venue": "Copernicus Meetings",
-      "url": "",
+      "venue": "European Planetary Science Congress",
+      "url": "https://doi.org/10.5194/epsc2022-736",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
       "excerpt": "Analysis of uplifted massifs on Mars as windows into ancient crustal composition and early planetary processes."
-    },
-    {
-      "id": "2022-06-27-supplemental-material-extensive-and-ancient-feldspathic-crus",
-      "title": "Supplemental Material: Extensive and ancient feldspathic crust detected across north Hellas rim, Mars: Possible implications for primary crust formation",
-      "year": 2022,
-      "venue": "",
-      "url": "https://doi.org/10.1130/GEOL.S.20164298.v1",
-      "planet": "mars",
-      "topic": "mineralogy",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
     },
     {
       "id": "2022-10-01-feldspathic-crust-hellas-geology-2022",
@@ -485,7 +425,7 @@
       "title": "Modeling Molecular Complexity: Building a Novel Multidisciplinary Machine Learning Framework to Understand Molecular Synthesis and Signatures",
       "year": 2022,
       "venue": "AGU Fall Meeting Abstracts",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2022AGUFMIN22D0334H/abstract",
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -497,33 +437,9 @@
       "title": "Molecular Complexity to Biosignatures: A Machine Learning Pipeline that Connects Mass Spectrometry to Molecular Synthesis and Reaction Networks",
       "year": 2022,
       "venue": "AGU Fall Meeting Abstracts",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2022AGUFM.P25A..75G/abstract",
       "planet": "multi",
       "topic": "astrobiology",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
-      "id": "2023-01-01-from-olivine-to-feldspar-tracing-martian-crustal-evolution-w",
-      "title": "From Olivine to Feldspar: Tracing Martian Crustal Evolution with CRISM Mapping Data",
-      "year": 2023,
-      "venue": "",
-      "url": "",
-      "planet": "mars",
-      "topic": "mineralogy",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
-      "id": "2023-01-01-outcomes-of-autologous-transplant-allogeneic-transplant-and",
-      "title": "OUTCOMES OF AUTOLOGOUS TRANSPLANT, ALLOGENEIC TRANSPLANT, AND CAR T CELL THERAPY IN TP53 ALTERED MANTLE CELL LYMPHOMA: A MULTI\u2010INSTITUTION RETROSPECTIVE ANALYSIS",
-      "year": 2023,
-      "venue": "",
-      "url": "",
-      "planet": "multi",
-      "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
       "excerpt": ""
@@ -541,20 +457,8 @@
       "excerpt": ""
     },
     {
-      "id": "2023-01-01-using-machine-learning-to-optimize-the-search-for-biosignatu",
-      "title": "Using machine learning to optimize the search for biosignatures",
-      "year": 2023,
-      "venue": "",
-      "url": "",
-      "planet": "multi",
-      "topic": "astrobiology",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
       "id": "2023-02-01-salt-constructs-astrobiology-targets-2023",
-      "title": "Salt constructs in paleo-lake basins as high-priority astrobiology targets",
+      "title": "Salt Constructs in Paleo-Lake Basins as High-Priority Astrobiology Targets",
       "year": 2023,
       "venue": "Remote Sensing",
       "url": "https://doi.org/10.3390/rs15020314",
@@ -569,7 +473,7 @@
       "title": "Correlating Aerial and Ground-Based Hyperspectral Data with Microbial Composition and Diversity in a Mars Analog Hydrothermal System in Iceland",
       "year": 2023,
       "venue": "54th Lunar and Planetary Science Conference",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023LPICo2806.1840B/abstract",
       "planet": "earth",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -581,7 +485,7 @@
       "title": "A Processing Pipeline for CRISM Hyperspectral Mapping Data",
       "year": 2023,
       "venue": "54th Lunar and Planetary Science Conference",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023LPICo2806.2260P/abstract",
       "planet": "mars",
       "topic": "remote_sensing",
       "pub_type": "conference",
@@ -593,7 +497,7 @@
       "title": "Evaluating the Use of Unoccupied Aircraft Systems (UAS) for Planetary Surface Exploration in Analog Terrain",
       "year": 2023,
       "venue": "54th Lunar and Planetary Science Conference",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023LPICo2806.1732S/abstract",
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -605,7 +509,7 @@
       "title": "Rover-Aerial Vehicle Exploration Network (RAVEN): Mission Planning, Implementation, and Results from the 2022 Rover-Only Field Campaign at Holuhraun, Iceland",
       "year": 2023,
       "venue": "54th Lunar and Planetary Science Conference",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023LPICo2806.1748G/abstract",
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -629,7 +533,7 @@
       "title": "Automated Vectorization of Spectral Parameter Raster Products",
       "year": 2023,
       "venue": "6th Planetary Data Workshop",
-      "url": "",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023LPICo2991.7042C/abstract",
       "planet": "multi",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -639,7 +543,7 @@
     {
       "id": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
       "title": "A first look at CRISM hyperspectral mapping mosaicked data: Results from Mawrth Vallis",
-      "year": 2023,
+      "year": 2024,
       "venue": "Icarus",
       "url": "https://doi.org/10.1016/j.icarus.2023.115712",
       "planet": "mars",
@@ -664,11 +568,11 @@
       "id": "2023-10-01-ai-search-for-life-2023",
       "title": "Using AI to Fine Tune the Search for Life",
       "year": 2023,
-      "venue": "ARPHA Conference Abstracts",
-      "url": "http://dx.doi.org/10.3897/aca.6.e108253",
+      "venue": "2nd Joint Symposium of Environmental Biogeochemistry and Subsurface Microbiology; ARPHA Conference Abstracts 6",
+      "url": "https://doi.org/10.3897/aca.6.e108253",
       "planet": "multi",
       "topic": "astrobiology",
-      "pub_type": "journal",
+      "pub_type": "conference",
       "citations": 0,
       "excerpt": "Application of artificial intelligence techniques to improve biosignature detection and astrobiology research methodologies."
     },
@@ -676,8 +580,8 @@
       "id": "2023-10-01-basin-related-alteration-early-mars-2023",
       "title": "Unraveling the context of unique basin-related alteration on early Mars",
       "year": 2023,
-      "venue": "AAS/Division for Planetary Sciences Meeting Abstracts",
-      "url": "",
+      "venue": "55th Annual Meeting of the Division for Planetary Sciences",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023DPS....5530006V/abstract",
       "planet": "mars",
       "topic": "other",
       "pub_type": "conference",
@@ -688,46 +592,10 @@
       "id": "2024-01-01-a-prediction-of-the-inter-annual-variability-of-sulfur-in-me",
       "title": "A Prediction of the Inter-Annual Variability of Sulfur in Mercury's Exosphere and Subsurface",
       "year": 2024,
-      "venue": "",
-      "url": "",
+      "venue": "Europlanet Science Congress 2024, EPSC2024-664",
+      "url": "https://doi.org/10.5194/epsc2024-664",
       "planet": "mercury",
       "topic": "other",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
-      "id": "2024-01-01-ai-and-the-coevolution-of-life-and-its-environment-from-sear",
-      "title": "AI and the Coevolution of Life and its Environment: From Searching for Life in the Universe to Mission to Planet Earth",
-      "year": 2024,
-      "venue": "",
-      "url": "",
-      "planet": "earth",
-      "topic": "astrobiology",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
-      "id": "2024-01-01-correlating-fumarolic-biology-with-hyperspectral-signatures",
-      "title": "Correlating Fumarolic Biology with Hyperspectral Signatures to Determine Critical Spatial Resolution Thresholds",
-      "year": 2024,
-      "venue": "",
-      "url": "",
-      "planet": "multi",
-      "topic": "mineralogy",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
-      "id": "2024-01-01-explore-the-intersection-of-artificial-intelligence-ai-and-n",
-      "title": "Explore the intersection of Artificial Intelligence (AI) and novel biosignatures discovery. I Oral",
-      "year": 2024,
-      "venue": "",
-      "url": "",
-      "planet": "multi",
-      "topic": "ai_ml",
       "pub_type": "conference",
       "citations": 0,
       "excerpt": ""
@@ -736,8 +604,8 @@
       "id": "2024-01-01-pattern-recognition-and-analysis-in-planetary-contexts-re-ex",
       "title": "Pattern Recognition and Analysis in Planetary Contexts: Re-examining the Effects of Imaging Conditions and Environments on Spatial Metric Computations",
       "year": 2024,
-      "venue": "",
-      "url": "",
+      "venue": "Astrobiology Science Conference 2024 (AbSciCon24), Providence, RI, abstract 212-04 (eLightning)",
+      "url": "https://agu.confex.com/agu/abscicon24/meetingapp.cgi/Paper/1500806",
       "planet": "multi",
       "topic": "other",
       "pub_type": "conference",
@@ -748,8 +616,8 @@
       "id": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
       "title": "Bottlenecks and Next Steps in the Integration of AI/ML into Astrobiology and the Search for Life Beyond Earth",
       "year": 2024,
-      "venue": "The Astrobiology Science Conference (AbSciCon) 2024",
-      "url": "",
+      "venue": "Astrobiology Science Conference 2024 (AbSciCon24), Providence, RI, abstract 202-03 (Oral)",
+      "url": "https://agu.confex.com/agu/abscicon24/meetingapp.cgi/Paper/1499409",
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -760,8 +628,8 @@
       "id": "2024-03-01-new-views-pre-noachian-mars-2024",
       "title": "New Views into Pre-Noachian Mars",
       "year": 2024,
-      "venue": "LPI Contributions",
-      "url": "",
+      "venue": "Tenth International Conference on Mars",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024LPICo3007.3501V/abstract",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -772,8 +640,8 @@
       "id": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
       "title": "Interpreting Plagioclase Detections in Igneous Rock Spectra: Felsic Rocks and Plagioclase-Rich Basalts are Similar to Mars Detections",
       "year": 2024,
-      "venue": "LPI Contributions",
-      "url": "",
+      "venue": "Tenth International Conference on Mars",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024LPICo3007.3548V/abstract",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -784,8 +652,8 @@
       "id": "2024-03-01-space-imagery-center-arizona-2024",
       "title": "The Space Imagery Center at the University of Arizona's Lunar and Planetary Laboratory",
       "year": 2024,
-      "venue": "LPI Contributions",
-      "url": "",
+      "venue": "55th Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024LPICo3040.2628P/abstract",
       "planet": "multi",
       "topic": "remote_sensing",
       "pub_type": "conference",
@@ -796,8 +664,8 @@
       "id": "2024-03-01-spectral-cube-analysis-tool-2024",
       "title": "Spectral Cube Analysis Tool: A Python Program for Analyzing Multi- and Hyperspectral Images",
       "year": 2024,
-      "venue": "LPI Contributions",
-      "url": "",
+      "venue": "55th Lunar and Planetary Science Conference",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024LPICo3040.2637P/abstract",
       "planet": "multi",
       "topic": "remote_sensing",
       "pub_type": "conference",
@@ -809,7 +677,7 @@
       "title": "Comparing Rover and Helicopter Planetary Mission Architectures in a Mars Analog Setting in Iceland",
       "year": 2024,
       "venue": "The Planetary Science Journal",
-      "url": "http://dx.doi.org/10.3847/PSJ/ad55f4",
+      "url": "https://doi.org/10.3847/PSJ/ad55f4",
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "journal",
@@ -821,7 +689,7 @@
       "title": "HyPyRameter: A Python Toolbox to Calculate Spectral Parameters from Hyperspectral Reflectance Data",
       "year": 2024,
       "venue": "The Planetary Science Journal",
-      "url": "",
+      "url": "https://doi.org/10.3847/PSJ/ad81f8",
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "journal",
@@ -830,13 +698,13 @@
     },
     {
       "id": "2025-01-01-a-novel-theoretical-approach-to-predict-the-interannual-vari",
-      "title": "A novel theoretical approach to predict the interannual variability of sulfur in Mercury\u2019s exosphere and subsurface",
+      "title": "A novel theoretical approach to predict the interannual variability of sulfur in Mercury’s exosphere and subsurface",
       "year": 2025,
-      "venue": "",
-      "url": "",
+      "venue": "Frontiers in Astronomy and Space Sciences",
+      "url": "https://doi.org/10.3389/fspas.2025.1565830",
       "planet": "mercury",
       "topic": "other",
-      "pub_type": "conference",
+      "pub_type": "journal",
       "citations": 0,
       "excerpt": ""
     },
@@ -844,8 +712,8 @@
       "id": "2025-01-01-alteration-of-pre-noachian-mars",
       "title": "Alteration of Pre-Noachian Mars",
       "year": 2025,
-      "venue": "",
-      "url": "",
+      "venue": "56th Lunar and Planetary Science Conference, abstract #1579 (LPI Contrib. 3090)",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025LPICo3090.1579V/abstract",
       "planet": "mars",
       "topic": "other",
       "pub_type": "conference",
@@ -856,8 +724,8 @@
       "id": "2025-01-01-mars-analog-field-testing-reveals-key-operational-strategies",
       "title": "Mars Analog Field Testing Reveals Key Operational Strategies for Planetary Exploration Using Unoccupied Aircraft Systems (UAS)",
       "year": 2025,
-      "venue": "",
-      "url": "",
+      "venue": "AGU Fall Meeting 2025, abstract P21C-265",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025AGUFMP21C..265H/abstract",
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -868,8 +736,8 @@
       "id": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
       "title": "Plagioclase-Rich Crust on Mars Revealed in Argyre Basin Massifs",
       "year": 2025,
-      "venue": "",
-      "url": "",
+      "venue": "56th Lunar and Planetary Science Conference, abstract #1653",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/1653.pdf",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -880,35 +748,11 @@
       "id": "2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra",
       "title": "SaganMC: A molecular complexity dataset with mass spectra",
       "year": 2025,
-      "venue": "",
-      "url": "",
+      "venue": "University of Oxford Research Archive (ORA) dataset; also on Hugging Face (oxai4science/sagan-mc, DOI 10.57967/hf/5637)",
+      "url": "https://doi.org/10.5287/ora-vyqqmdonx",
       "planet": "multi",
       "topic": "mineralogy",
-      "pub_type": "conference",
-      "citations": 0,
-      "excerpt": ""
-    },
-    {
-      "id": "2025-06-01-ancient-anorthosites-mars-2025",
-      "title": "Ancient Anorthosites on Mars: Widespread in the Lower Crust",
-      "year": 2025,
-      "venue": "Research Square (Preprint)",
-      "url": "http://dx.doi.org/10.21203/rs.3.rs-6823461/v1",
-      "planet": "mars",
-      "topic": "mineralogy",
-      "pub_type": "journal",
-      "citations": 0,
-      "excerpt": "Discovery of widespread ancient anorthosite in Mars' lower crust, providing new insights into early planetary differentiation and crustal evolution."
-    },
-    {
-      "id": "2025-06-26-a-domain-specific-foundation-model-for-mars-self-supervised",
-      "title": "A Domain-Specific Foundation Model for Mars: Self-Supervised Learning for New Science Discovery",
-      "year": 2025,
-      "venue": "",
-      "url": "https://doi.org/10.22541/essoar.175096334.47976141/v1",
-      "planet": "mars",
-      "topic": "ai_ml",
-      "pub_type": "journal",
+      "pub_type": "dataset",
       "citations": 0,
       "excerpt": ""
     },
@@ -916,7 +760,7 @@
       "id": "2025-11-22-ancient-anorthosites-mars-2025",
       "title": "Widespread ancient anorthosites in the lower crust of Mars",
       "year": 2025,
-      "venue": "Nature Communications Earth & Environment",
+      "venue": "Communications Earth & Environment",
       "url": "https://doi.org/10.1038/s43247-025-03004-7",
       "planet": "mars",
       "topic": "mineralogy",
@@ -926,7 +770,7 @@
     },
     {
       "id": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
-      "title": "Mercury's Hollows: A Potential Signature of Sulfur Exosphere\u2010Subsurface Transport",
+      "title": "Mercury's Hollows: A Potential Signature of Sulfur Exosphere-Subsurface Transport",
       "year": 2025,
       "venue": "Geophysical Research Letters",
       "url": "https://doi.org/10.1029/2025GL118112",
@@ -940,11 +784,11 @@
       "id": "2026-01-01-craterbench-r-instance-level-crater-retrieval-for-planetary",
       "title": "CraterBench-R: Instance-Level Crater Retrieval for Planetary Scale",
       "year": 2026,
-      "venue": "",
-      "url": "",
+      "venue": "arXiv:2604.06245; accepted at EarthVision 2026 Workshop, CVPR 2026 (CVPRW)",
+      "url": "https://doi.org/10.48550/arXiv.2604.06245",
       "planet": "multi",
       "topic": "other",
-      "pub_type": "conference",
+      "pub_type": "preprint",
       "citations": 0,
       "excerpt": ""
     },
@@ -952,8 +796,8 @@
       "id": "2026-01-01-diversity-distribution-and-petrogenesis-of-spectrally-feldsp",
       "title": "Diversity, Distribution, and Petrogenesis of Spectrally Feldspathic Outcrops on Mars",
       "year": 2026,
-      "venue": "",
-      "url": "",
+      "venue": "57th Lunar and Planetary Science Conference, abstract #1828",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1828.pdf",
       "planet": "mars",
       "topic": "mineralogy",
       "pub_type": "conference",
@@ -964,8 +808,8 @@
       "id": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
       "title": "Visualization and Analysis of Raster Data with an Open-Source Python GUI",
       "year": 2026,
-      "venue": "",
-      "url": "",
+      "venue": "57th Lunar and Planetary Science Conference, abstract #1972 (LPI Contrib. 3160)",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026LPICo3160.1972O/abstract",
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "conference",
@@ -976,8 +820,8 @@
       "id": "2026-01-06-a-domain-specific-vision-foundation-model-for-mars-self-supe",
       "title": "A Domain-Specific Vision Foundation Model for Mars: Self-Supervised Learning for Planetary-Scale Science Discovery",
       "year": 2026,
-      "venue": "",
-      "url": "https://doi.org/10.22541/essoar.175096334.47976141/v2",
+      "venue": "Journal of Geophysical Research: Machine Learning and Computation",
+      "url": "https://doi.org/10.1029/2025JH000827",
       "planet": "mars",
       "topic": "ai_ml",
       "pub_type": "journal",
@@ -992,13 +836,13 @@
       "url": "https://doi.org/10.1038/s43247-026-03617-6",
       "planet": "mars",
       "topic": "mineralogy",
-      "pub_type": "conference",
+      "pub_type": "journal",
       "citations": 0,
       "excerpt": ""
     },
     {
       "id": "2026-09-01-visible-to-near-infrared-properties-of-felsic-rocks-plagiocl",
-      "title": "Visible to Near\u2010Infrared Properties of Felsic Rocks: Plagioclase Detection Limits and Applications to Mars Orbital Spectra",
+      "title": "Visible to Near-Infrared Properties of Felsic Rocks: Plagioclase Detection Limits and Applications to Mars Orbital Spectra",
       "year": 2026,
       "venue": "Journal of Geophysical Research: Planets",
       "url": "https://doi.org/10.1029/2026JE009705",
@@ -1010,21 +854,6 @@
     }
   ],
   "links": [
-    {
-      "source": "2025-06-01-ancient-anorthosites-mars-2025",
-      "target": "2025-11-22-ancient-anorthosites-mars-2025",
-      "weight": 1.0
-    },
-    {
-      "source": "2025-06-26-a-domain-specific-foundation-model-for-mars-self-supervised",
-      "target": "2026-01-06-a-domain-specific-vision-foundation-model-for-mars-self-supe",
-      "weight": 0.87
-    },
-    {
-      "source": "2022-06-27-supplemental-material-extensive-and-ancient-feldspathic-crus",
-      "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
-      "weight": 0.787
-    },
     {
       "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
       "target": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
@@ -1096,11 +925,6 @@
       "weight": 0.418
     },
     {
-      "source": "2019-01-01-habitat-detection-and-identification-at-salar-de-pajonales-a",
-      "target": "2019-07-01-microbial-communities-salar-pajonales-2019",
-      "weight": 0.415
-    },
-    {
       "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
       "target": "2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra",
       "weight": 0.413
@@ -1134,11 +958,6 @@
       "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
       "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
       "weight": 0.381
-    },
-    {
-      "source": "2022-04-01-automated-detection-mars-analog-2022",
-      "target": "2022-06-01-mars-analog-deep-learning-2022",
-      "weight": 0.377
     },
     {
       "source": "2023-03-01-rover-aerial-vehicle-exploration-network-raven-mission-plann",
@@ -1222,11 +1041,6 @@
     },
     {
       "source": "2022-10-01-feldspathic-crust-hellas-geology-2022",
-      "target": "2025-06-01-ancient-anorthosites-mars-2025",
-      "weight": 0.284
-    },
-    {
-      "source": "2022-10-01-feldspathic-crust-hellas-geology-2022",
       "target": "2025-11-22-ancient-anorthosites-mars-2025",
       "weight": 0.284
     },
@@ -1236,19 +1050,9 @@
       "weight": 0.283
     },
     {
-      "source": "2019-01-01-habitat-detection-and-identification-at-salar-de-pajonales-a",
-      "target": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
-      "weight": 0.281
-    },
-    {
       "source": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
       "target": "2022-06-01-mars-analog-deep-learning-2022",
       "weight": 0.276
-    },
-    {
-      "source": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
-      "target": "2023-01-01-from-olivine-to-feldspar-tracing-martian-crustal-evolution-w",
-      "weight": 0.272
     },
     {
       "source": "2023-03-01-crism-processing-pipeline-2023",
@@ -1281,19 +1085,9 @@
       "weight": 0.264
     },
     {
-      "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
-      "target": "2022-06-27-supplemental-material-extensive-and-ancient-feldspathic-crus",
-      "weight": 0.263
-    },
-    {
       "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
       "target": "2021-03-01-unique-basin-related-alteration-on-early-mars",
       "weight": 0.261
-    },
-    {
-      "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
-      "target": "2025-06-01-ancient-anorthosites-mars-2025",
-      "weight": 0.257
     },
     {
       "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
@@ -1306,24 +1100,9 @@
       "weight": 0.256
     },
     {
-      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
-      "target": "2022-06-27-supplemental-material-extensive-and-ancient-feldspathic-crus",
-      "weight": 0.255
-    },
-    {
-      "source": "2019-01-01-habitat-detection-and-identification-at-salar-de-pajonales-a",
-      "target": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
-      "weight": 0.255
-    },
-    {
       "source": "2022-04-01-gypsum-habitability-zones-2022",
       "target": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
       "weight": 0.255
-    },
-    {
-      "source": "2022-12-01-molecular-complexity-to-biosignatures-a-machine-learning-pip",
-      "target": "2023-01-01-using-machine-learning-to-optimize-the-search-for-biosignatu",
-      "weight": 0.251
     },
     {
       "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
@@ -1332,28 +1111,13 @@
     },
     {
       "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
-      "target": "2025-06-01-ancient-anorthosites-mars-2025",
-      "weight": 0.24
-    },
-    {
-      "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
       "target": "2025-11-22-ancient-anorthosites-mars-2025",
       "weight": 0.24
-    },
-    {
-      "source": "2022-04-01-automated-detection-mars-analog-2022",
-      "target": "2023-01-01-using-machine-learning-to-optimize-the-search-for-biosignatu",
-      "weight": 0.237
     },
     {
       "source": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
       "target": "2023-03-01-crism-processing-pipeline-2023",
       "weight": 0.233
-    },
-    {
-      "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
-      "target": "2022-06-27-supplemental-material-extensive-and-ancient-feldspathic-crus",
-      "weight": 0.228
     },
     {
       "source": "2023-10-01-basin-related-alteration-early-mars-2023",
@@ -1386,11 +1150,6 @@
       "weight": 0.22
     },
     {
-      "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
-      "target": "2023-01-01-using-machine-learning-to-optimize-the-search-for-biosignatu",
-      "weight": 0.219
-    },
-    {
       "source": "2023-03-01-crism-processing-pipeline-2023",
       "target": "2024-03-01-spectral-cube-analysis-tool-2024",
       "weight": 0.216
@@ -1406,24 +1165,9 @@
       "weight": 0.212
     },
     {
-      "source": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
-      "target": "2022-04-01-automated-detection-mars-analog-2022",
-      "weight": 0.211
-    },
-    {
-      "source": "2025-06-01-ancient-anorthosites-mars-2025",
-      "target": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
-      "weight": 0.208
-    },
-    {
       "source": "2025-11-22-ancient-anorthosites-mars-2025",
       "target": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
       "weight": 0.208
-    },
-    {
-      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
-      "target": "2025-06-01-ancient-anorthosites-mars-2025",
-      "weight": 0.207
     },
     {
       "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
@@ -1441,23 +1185,8 @@
       "weight": 0.201
     },
     {
-      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
-      "target": "2022-04-01-automated-detection-mars-analog-2022",
-      "weight": 0.199
-    },
-    {
-      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
-      "target": "2023-01-01-from-olivine-to-feldspar-tracing-martian-crustal-evolution-w",
-      "weight": 0.199
-    },
-    {
       "source": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
       "target": "2024-03-01-new-views-pre-noachian-mars-2024",
-      "weight": 0.198
-    },
-    {
-      "source": "2022-06-01-astrobiological-mars-exploration-2022",
-      "target": "2025-01-01-mars-analog-field-testing-reveals-key-operational-strategies",
       "weight": 0.198
     },
     {
@@ -1486,16 +1215,6 @@
       "weight": 0.193
     },
     {
-      "source": "2023-10-01-ai-search-for-life-2023",
-      "target": "2024-01-01-explore-the-intersection-of-artificial-intelligence-ai-and-n",
-      "weight": 0.191
-    },
-    {
-      "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
-      "target": "2022-04-01-automated-detection-mars-analog-2022",
-      "weight": 0.19
-    },
-    {
       "source": "2021-05-01-planetary-geologic-mapping",
       "target": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
       "weight": 0.19
@@ -1506,16 +1225,6 @@
       "weight": 0.188
     },
     {
-      "source": "2023-01-01-from-olivine-to-feldspar-tracing-martian-crustal-evolution-w",
-      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
-      "weight": 0.181
-    },
-    {
-      "source": "2019-01-01-habitat-detection-and-identification-at-salar-de-pajonales-a",
-      "target": "2022-06-01-mars-analog-deep-learning-2022",
-      "weight": 0.18
-    },
-    {
       "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
       "target": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
       "weight": 0.179
@@ -1523,11 +1232,6 @@
     {
       "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
       "target": "2024-03-01-new-views-pre-noachian-mars-2024",
-      "weight": 0.179
-    },
-    {
-      "source": "2022-06-01-astrobiological-mars-exploration-2022",
-      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
       "weight": 0.179
     },
     {
@@ -1554,26 +1258,6 @@
       "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
       "target": "2021-12-01-regional-composition-isidis-hellas-2021",
       "weight": 0.166
-    },
-    {
-      "source": "2023-01-01-from-olivine-to-feldspar-tracing-martian-crustal-evolution-w",
-      "target": "2023-03-01-crism-processing-pipeline-2023",
-      "weight": 0.166
-    },
-    {
-      "source": "2015-01-01-using-pattern-recognition-and-neuroimaging-to-decode-present",
-      "target": "2024-01-01-pattern-recognition-and-analysis-in-planetary-contexts-re-ex",
-      "weight": 0.165
-    },
-    {
-      "source": "2019-01-01-habitat-detection-and-identification-at-salar-de-pajonales-a",
-      "target": "2022-04-01-automated-detection-mars-analog-2022",
-      "weight": 0.165
-    },
-    {
-      "source": "2019-01-01-habitat-detection-and-identification-at-salar-de-pajonales-a",
-      "target": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
-      "weight": 0.164
     },
     {
       "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
@@ -1616,19 +1300,9 @@
       "weight": 0.159
     },
     {
-      "source": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
-      "target": "2024-01-01-correlating-fumarolic-biology-with-hyperspectral-signatures",
-      "weight": 0.158
-    },
-    {
       "source": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
       "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
       "weight": 0.157
-    },
-    {
-      "source": "2024-01-01-explore-the-intersection-of-artificial-intelligence-ai-and-n",
-      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
-      "weight": 0.155
     },
     {
       "source": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
@@ -1641,28 +1315,13 @@
       "weight": 0.153
     },
     {
-      "source": "2024-01-01-ai-and-the-coevolution-of-life-and-its-environment-from-sear",
-      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
-      "weight": 0.153
-    },
-    {
       "source": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",
       "target": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
       "weight": 0.152
     },
     {
-      "source": "2022-06-01-astrobiological-mars-exploration-2022",
-      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
-      "weight": 0.151
-    },
-    {
       "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
       "target": "2022-06-01-mars-analog-deep-learning-2022",
-      "weight": 0.15
-    },
-    {
-      "source": "2023-01-01-using-machine-learning-to-optimize-the-search-for-biosignatu",
-      "target": "2024-01-01-explore-the-intersection-of-artificial-intelligence-ai-and-n",
       "weight": 0.15
     },
     {
@@ -1686,16 +1345,6 @@
       "weight": 0.146
     },
     {
-      "source": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
-      "target": "2023-01-01-using-machine-learning-to-optimize-the-search-for-biosignatu",
-      "weight": 0.146
-    },
-    {
-      "source": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
-      "target": "2023-01-01-using-machine-learning-to-optimize-the-search-for-biosignatu",
-      "weight": 0.146
-    },
-    {
       "source": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
       "target": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
       "weight": 0.146
@@ -1706,19 +1355,9 @@
       "weight": 0.146
     },
     {
-      "source": "2022-01-01-signatures-of-life-learning-features-of-prebiotic-and-biotic",
-      "target": "2024-01-01-ai-and-the-coevolution-of-life-and-its-environment-from-sear",
-      "weight": 0.145
-    },
-    {
       "source": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
       "target": "2026-01-01-diversity-distribution-and-petrogenesis-of-spectrally-feldsp",
       "weight": 0.145
-    },
-    {
-      "source": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
-      "target": "2022-06-01-astrobiological-mars-exploration-2022",
-      "weight": 0.144
     },
     {
       "source": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
@@ -1736,11 +1375,6 @@
       "weight": 0.141
     },
     {
-      "source": "2021-05-01-planetary-geologic-mapping",
-      "target": "2023-01-01-from-olivine-to-feldspar-tracing-martian-crustal-evolution-w",
-      "weight": 0.14
-    },
-    {
       "source": "2022-01-01-signatures-of-life-learning-features-of-prebiotic-and-biotic",
       "target": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
       "weight": 0.137
@@ -1754,11 +1388,6 @@
       "source": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",
       "target": "2024-11-01-hypyrameter-python-toolbox-2024",
       "weight": 0.136
-    },
-    {
-      "source": "2022-06-01-astrobiological-mars-exploration-2022",
-      "target": "2024-01-01-ai-and-the-coevolution-of-life-and-its-environment-from-sear",
-      "weight": 0.135
     },
     {
       "source": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
@@ -1806,24 +1435,9 @@
       "weight": 0.13
     },
     {
-      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
-      "target": "2024-01-01-correlating-fumarolic-biology-with-hyperspectral-signatures",
-      "weight": 0.129
-    },
-    {
       "source": "2021-09-01-mercury-hollows-lifecycle-2021",
       "target": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
       "weight": 0.127
-    },
-    {
-      "source": "2023-01-01-from-olivine-to-feldspar-tracing-martian-crustal-evolution-w",
-      "target": "2024-03-01-new-views-pre-noachian-mars-2024",
-      "weight": 0.124
-    },
-    {
-      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
-      "target": "2024-01-01-ai-and-the-coevolution-of-life-and-its-environment-from-sear",
-      "weight": 0.123
     },
     {
       "source": "2022-05-01-crism-radiometric-reconciliation-2022",
@@ -1839,16 +1453,6 @@
       "source": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
       "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
       "weight": 0.121
-    },
-    {
-      "source": "2022-06-01-astrobiological-mars-exploration-2022",
-      "target": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
-      "weight": 0.12
-    },
-    {
-      "source": "2018-03-01-astrobiology-fdl-partnership-2018",
-      "target": "2025-06-26-a-domain-specific-foundation-model-for-mars-self-supervised",
-      "weight": 0.114
     },
     {
       "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
@@ -1871,11 +1475,6 @@
       "weight": 0.109
     },
     {
-      "source": "2023-10-01-ai-search-for-life-2023",
-      "target": "2024-01-01-ai-and-the-coevolution-of-life-and-its-environment-from-sear",
-      "weight": 0.109
-    },
-    {
       "source": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
       "target": "2024-11-01-hypyrameter-python-toolbox-2024",
       "weight": 0.108
@@ -1884,21 +1483,6 @@
       "source": "2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra",
       "target": "2026-09-01-visible-to-near-infrared-properties-of-felsic-rocks-plagiocl",
       "weight": 0.105
-    },
-    {
-      "source": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
-      "target": "2024-01-01-correlating-fumarolic-biology-with-hyperspectral-signatures",
-      "weight": 0.104
-    },
-    {
-      "source": "2022-01-01-signatures-of-life-learning-features-of-prebiotic-and-biotic",
-      "target": "2024-01-01-correlating-fumarolic-biology-with-hyperspectral-signatures",
-      "weight": 0.104
-    },
-    {
-      "source": "2022-06-27-supplemental-material-extensive-and-ancient-feldspathic-crus",
-      "target": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
-      "weight": 0.103
     },
     {
       "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
@@ -1926,29 +1510,14 @@
       "weight": 0.098
     },
     {
-      "source": "2024-01-01-ai-and-the-coevolution-of-life-and-its-environment-from-sear",
-      "target": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
-      "weight": 0.097
-    },
-    {
       "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
       "target": "2024-11-01-hypyrameter-python-toolbox-2024",
       "weight": 0.095
     },
     {
-      "source": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
-      "target": "2024-01-01-correlating-fumarolic-biology-with-hyperspectral-signatures",
-      "weight": 0.092
-    },
-    {
       "source": "2024-03-01-space-imagery-center-arizona-2024",
       "target": "2024-03-01-spectral-cube-analysis-tool-2024",
       "weight": 0.092
-    },
-    {
-      "source": "2022-06-27-supplemental-material-extensive-and-ancient-feldspathic-crus",
-      "target": "2026-01-01-diversity-distribution-and-petrogenesis-of-spectrally-feldsp",
-      "weight": 0.091
     },
     {
       "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
@@ -1971,11 +1540,6 @@
       "weight": 0.089
     },
     {
-      "source": "2024-01-01-explore-the-intersection-of-artificial-intelligence-ai-and-n",
-      "target": "2025-06-26-a-domain-specific-foundation-model-for-mars-self-supervised",
-      "weight": 0.082
-    },
-    {
       "source": "2022-01-01-insights-of-extreme-desert-ecology-to-the-habitats-and-habit",
       "target": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
       "weight": 0.081
@@ -1993,16 +1557,6 @@
     {
       "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
       "target": "2025-01-01-mars-analog-field-testing-reveals-key-operational-strategies",
-      "weight": 0.078
-    },
-    {
-      "source": "2022-12-01-molecular-complexity-to-biosignatures-a-machine-learning-pip",
-      "target": "2024-01-01-explore-the-intersection-of-artificial-intelligence-ai-and-n",
-      "weight": 0.078
-    },
-    {
-      "source": "2024-01-01-correlating-fumarolic-biology-with-hyperspectral-signatures",
-      "target": "2024-01-01-pattern-recognition-and-analysis-in-planetary-contexts-re-ex",
       "weight": 0.078
     },
     {
@@ -2039,16 +1593,6 @@
       "source": "2018-03-01-astrobiology-fdl-partnership-2018",
       "target": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
       "weight": 0.072
-    },
-    {
-      "source": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
-      "target": "2025-06-26-a-domain-specific-foundation-model-for-mars-self-supervised",
-      "weight": 0.072
-    },
-    {
-      "source": "2024-01-01-explore-the-intersection-of-artificial-intelligence-ai-and-n",
-      "target": "2026-01-06-a-domain-specific-vision-foundation-model-for-mars-self-supe",
-      "weight": 0.071
     },
     {
       "source": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",

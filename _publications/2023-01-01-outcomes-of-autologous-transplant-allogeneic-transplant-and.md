@@ -7,6 +7,8 @@ date: 2023-01-01
 venue: ''
 paperurl: ''
 citation: 'Phillips, M.S., et al. (2023). &quot;OUTCOMES OF AUTOLOGOUS TRANSPLANT, ALLOGENEIC TRANSPLANT, AND CAR T CELL THERAPY IN TP53 ALTERED MANTLE CELL LYMPHOMA: A MULTI‐INSTITUTION RETROSPECTIVE ANALYSIS.&quot;'
+published: false
+exclude_reason: "Not authored by Michael S. Phillips (oncology abstract by a different M.S. Phillips)."
 ---
 <!-- auto-synced from ORCID on 2026-06-07 — please fill in excerpt and verify citation -->
 

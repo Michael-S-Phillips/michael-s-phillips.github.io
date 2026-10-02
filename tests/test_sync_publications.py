@@ -362,3 +362,27 @@ def test_main_no_new_publications(tmp_path, capsys):
 
     captured = capsys.readouterr()
     assert "No new publications found" in captured.out
+
+
+def test_render_md_creates_unpublished_draft_without_author_claim():
+    """Auto-imported works must never claim first authorship or go live unreviewed."""
+    from sync_publications import render_md
+    work = {"title": "Someone Else's Paper", "venue": "Icarus",
+            "date": "2024-03-15", "doi": "10.1234/x", "source": "scholar"}
+    content = render_md(work, "someone-elses-paper", "2026-10-02")
+    assert "published: false" in content
+    assert "needs_review: true" in content
+    assert "Phillips, M.S., et al." not in content
+    assert "auto-synced from Google Scholar on 2026-10-02" in content
+
+
+def test_hidden_entries_block_reimport(tmp_path):
+    """A file kept with published: false must still count as 'existing'."""
+    from sync_publications import build_existing_index, create_new_publications
+    (tmp_path / "2023-01-01-not-mine.md").write_text(
+        "---\ntitle: \"Not My Paper\"\npaperurl: 'https://doi.org/10.1/abc'\n"
+        "published: false\nexclude_reason: \"different author\"\n---\n")
+    doi_idx, title_idx = build_existing_index(tmp_path)
+    works = [{"title": "Not My Paper", "venue": "", "date": "2023-01-01",
+              "doi": "10.1/abc", "source": "scholar"}]
+    assert create_new_publications(works, tmp_path, doi_idx, title_idx) == []

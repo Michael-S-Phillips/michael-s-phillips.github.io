@@ -4,12 +4,10 @@ collection: publications
 permalink: /publication/2026-01-01-craterbench-r-instance-level-crater-retrieval-for-planetary
 excerpt: ''
 date: 2026-01-01
-venue: ''
-paperurl: ''
-citation: 'Phillips, M.S., et al. (2026). &quot;CraterBench-R: Instance-Level Crater Retrieval for Planetary Scale.&quot;'
+venue: "arXiv:2604.06245; accepted at EarthVision 2026 Workshop, CVPR 2026 (CVPRW)"
+paperurl: "https://doi.org/10.48550/arXiv.2604.06245"
+citation: "Fang, J., Zhang, L., <b>Phillips, M.S.</b>, & Luo, W. (2026). &quot;CraterBench-R: Instance-Level Crater Retrieval for Planetary Scale.&quot; <i>arXiv:2604.06245; accepted at EarthVision 2026 Workshop, CVPR 2026 (CVPRW)</i>."
+pubtype: preprint
 ---
-<!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
-
 CraterBench-R: Instance-Level Crater Retrieval for Planetary Scale
 
-Recommended citation: Phillips, M.S., et al. (2026). "CraterBench-R: Instance-Level Crater Retrieval for Planetary Scale." <i></i>.

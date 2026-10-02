@@ -4,12 +4,10 @@ collection: publications
 permalink: /publication/2024-01-01-pattern-recognition-and-analysis-in-planetary-contexts-re-ex
 excerpt: ''
 date: 2024-01-01
-venue: ''
-paperurl: ''
-citation: 'Phillips, M.S., et al. (2024). &quot;Pattern Recognition and Analysis in Planetary Contexts: Re-examining the Effects of Imaging Conditions and Environments on Spatial Metric Computations.&quot;'
+venue: "Astrobiology Science Conference 2024 (AbSciCon24), Providence, RI, abstract 212-04 (eLightning)"
+paperurl: "https://agu.confex.com/agu/abscicon24/meetingapp.cgi/Paper/1500806"
+citation: "Gong, J., Warren-Rhodes, K., Garcia-Araya, J., <b>Phillips, M.S.</b>, Hofmann, M.H., & Baydin, A.G. (2024). &quot;Pattern Recognition and Analysis in Planetary Contexts: Re-examining the Effects of Imaging Conditions and Environments on Spatial Metric Computations.&quot; <i>Astrobiology Science Conference 2024 (AbSciCon24), Providence, RI, abstract 212-04 (eLightning)</i>."
+pubtype: conference
 ---
-<!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
-
 Pattern Recognition and Analysis in Planetary Contexts: Re-examining the Effects of Imaging Conditions and Environments on Spatial Metric Computations
 
-Recommended citation: Phillips, M.S., et al. (2024). "Pattern Recognition and Analysis in Planetary Contexts: Re-examining the Effects of Imaging Conditions and Environments on Spatial Metric Computations." <i></i>.

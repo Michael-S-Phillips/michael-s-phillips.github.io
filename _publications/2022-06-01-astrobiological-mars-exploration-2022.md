@@ -6,6 +6,8 @@ excerpt: 'Comprehensive framework for astrobiology research combining Earth anal
 date: 2022-06-01
 venue: 'Frontiers in Astronomy and Space Sciences'
 citation: 'Cabrol, N.A., Warren-Rhodes, K., Rowland, S., Steele, A., Benison, K.C., Hinman, N., Mogul, R., Phillips, M., et al. (2022). &quot;Addressing the Astrobiological Exploration of Mars Through an Integrated Earth-Mars Approach.&quot; <i>Frontiers in Astronomy and Space Sciences</i>. 8, 797591.'
+published: false
+exclude_reason: "No record of this paper found in Frontiers or elsewhere; likely erroneous entry."
 ---
 Comprehensive framework for astrobiology research combining Earth analog studies with Mars exploration strategies.
 

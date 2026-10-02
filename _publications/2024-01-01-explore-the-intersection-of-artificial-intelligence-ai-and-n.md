@@ -7,6 +7,8 @@ date: 2024-01-01
 venue: ''
 paperurl: ''
 citation: 'Phillips, M.S., et al. (2024). &quot;Explore the intersection of Artificial Intelligence (AI) and novel biosignatures discovery. I Oral.&quot;'
+published: false
+exclude_reason: "AbSciCon 2024 session co-convened (service), not a publication."
 ---
 <!-- auto-synced from ORCID on 2026-04-19 — please fill in excerpt and verify citation -->
 

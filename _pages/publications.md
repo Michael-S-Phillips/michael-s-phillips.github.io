@@ -159,7 +159,7 @@ banner:
 }
 </style>
 
-My research spans Mars geology, astrobiology, hyperspectral remote sensing, and the application of artificial intelligence to planetary exploration. I have published peer-reviewed articles in leading planetary science journals, developed open-source software tools for the community, and presented findings at major conferences.
+My research spans Mars geology, astrobiology, hyperspectral remote sensing, and the application of artificial intelligence to planetary exploration. Author lists below are verified against NASA ADS and publisher records; my name is shown in bold.
 
 For citation metrics and full publication list, see my [Google Scholar](https://scholar.google.com/citations?user=1DCuzasAAAAJ&hl=en) profile.
 
@@ -178,7 +178,11 @@ For citation metrics and full publication list, see my [Google Scholar](https://
 
 <div id="view-list">
 
-{% assign conf_keywords = "Lunar and Planetary Science,AbSciCon,Copernicus,AGU,LPI,AAS,ARPHA,European Planetary Science,Differentiation,Planetary Data Workshop,Conference on Mars" | split: "," %}
+{% comment %}
+  Entries are grouped by the verified `pubtype` front-matter field
+  (journal, chapter, conference, thesis, report, software, dataset, preprint).
+  Unverified or excluded entries carry `published: false` and never render.
+{% endcomment %}
 
 <h2>Featured Publications</h2>
 
@@ -193,39 +197,28 @@ For citation metrics and full publication list, see my [Google Scholar](https://
   {% endfor %}
 {% endfor %}
 
----
-
-<h2>Peer-Reviewed Journal Articles</h2>
+<h2>Peer-Reviewed Articles &amp; Book Chapters</h2>
 
 {% for post in site.publications reversed %}
-  {% if post.venue == '' or post.venue == nil %}{% continue %}{% endif %}
-  {% assign is_conf = false %}
-  {% for keyword in conf_keywords %}
-    {% if post.venue contains keyword %}
-      {% assign is_conf = true %}
-    {% endif %}
-  {% endfor %}
-  {% unless is_conf %}
-    {% unless post.venue contains "Preprint" or post.venue contains "Research Square" %}
-      {% include archive-single.html %}
-    {% endunless %}
-  {% endunless %}
-{% endfor %}
-
----
-
-<h2>Conference Proceedings &amp; Abstracts</h2>
-
-{% for post in site.publications reversed %}
-  {% assign is_conf = false %}
-  {% for keyword in conf_keywords %}
-    {% if post.venue contains keyword %}
-      {% assign is_conf = true %}
-    {% endif %}
-  {% endfor %}
-  {% if is_conf %}
+  {% if post.pubtype == 'journal' or post.pubtype == 'chapter' %}
     {% include archive-single.html %}
   {% endif %}
+{% endfor %}
+
+<h2>Conference Abstracts &amp; Presentations</h2>
+
+{% for post in site.publications reversed %}
+  {% if post.pubtype == 'conference' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Theses, Reports, Preprints, Software &amp; Data</h2>
+
+{% for post in site.publications reversed %}
+  {% unless post.pubtype == 'journal' or post.pubtype == 'chapter' or post.pubtype == 'conference' %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}
 
 </div><!-- #view-list -->

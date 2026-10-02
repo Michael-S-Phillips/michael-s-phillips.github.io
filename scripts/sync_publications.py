@@ -211,24 +211,31 @@ def make_slug(title):
 
 
 def render_md(work, slug, today_str):
-    """Return the full text content for a new _publications/*.md file."""
+    """Return the full text content for a new _publications/*.md file.
+
+    New entries are created as UNPUBLISHED drafts (``published: false``,
+    ``needs_review: true``). ORCID/Scholar summaries do not reliably provide
+    author lists, and Google Scholar sometimes attaches papers by other people
+    named M. Phillips, so nothing is shown on the site until a human verifies
+    authors/venue, sets ``pubtype`` and ``citation``, and removes
+    ``published: false``. Hidden files also act as an exclusion list: the
+    sync never re-creates a work whose DOI or title already has a file.
+    """
     raw_title = work["title"]
     title     = raw_title.replace('"', "&quot;").replace("'", "&apos;")
-    venue     = (work.get("venue") or "").replace("&", "&amp;")
+    venue     = (work.get("venue") or "").replace("&", "&amp;").replace("'", "&apos;")
     doi       = work.get("doi", "")
     doi_url   = f"https://doi.org/{doi}" if doi else ""
     date_str  = work.get("date", "2020-01-01")[:10]
     year      = date_str[:4]
+    source    = {"orcid": "ORCID", "scholar": "Google Scholar"}.get(work.get("source", ""), "ORCID")
 
     paper_url_line = f"paperurl: '{doi_url}'"
-    # Use HTML-escaped title in citation so apostrophes don't break YAML single-quoted strings
+    # Deliberately no author list: never assume first authorship.
     if venue:
-        citation = (
-            f"citation: 'Phillips, M.S., et al. ({year}). "
-            f"&quot;{title}.&quot; <i>{venue}</i>.'"
-        )
+        citation = f"citation: 'Authors to be verified ({year}). &quot;{title}.&quot; <i>{venue}</i>.'"
     else:
-        citation = f"citation: 'Phillips, M.S., et al. ({year}). &quot;{title}.&quot;'"
+        citation = f"citation: 'Authors to be verified ({year}). &quot;{title}.&quot;'"
 
     body_link = f"[{work['title']}]({doi_url})" if doi_url else work["title"]
 
@@ -242,12 +249,17 @@ def render_md(work, slug, today_str):
         f"venue: '{venue}'\n"
         f'{paper_url_line}\n'
         f'{citation}\n'
+        f'published: false\n'
+        f'needs_review: true\n'
+        f'sync_source: {work.get("source", "orcid")}\n'
         f'---\n'
-        f'<!-- auto-synced from ORCID on {today_str} —'
-        f' please fill in excerpt and verify citation -->\n\n'
-        f'{body_link}\n\n'
-        f'Recommended citation: Phillips, M.S., et al. ({year}). '
-        f'"{work["title"]}." <i>{venue}</i>.\n'
+        f'<!-- auto-synced from {source} on {today_str} — NOT PUBLISHED. '
+        f'Verify that Michael S. Phillips is an author and the author order, '
+        f'set `pubtype` (journal|chapter|conference|thesis|report|software|dataset|preprint) '
+        f'and a full `citation`, then delete `published: false` and `needs_review`. '
+        f'If this is not his work, keep the file with published: false and add an '
+        f'exclude_reason so the sync never re-adds it. -->\n\n'
+        f'{body_link}\n'
     )
 
 
