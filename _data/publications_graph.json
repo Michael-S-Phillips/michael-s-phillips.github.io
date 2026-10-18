@@ -93,7 +93,7 @@
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 2,
       "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
     },
     {
@@ -453,7 +453,7 @@
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 5,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -525,7 +525,7 @@
       "planet": "earth",
       "topic": "remote_sensing",
       "pub_type": "journal",
-      "citations": 17,
+      "citations": 18,
       "excerpt": "Multi-scale framework combining orbital remote sensing with ground observations to identify and predict biosignature patterns in Mars analog environments."
     },
     {
