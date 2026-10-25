@@ -93,7 +93,7 @@
       "planet": "mars",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 2,
+      "citations": 0,
       "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
     },
     {
@@ -297,7 +297,7 @@
       "planet": "mercury",
       "topic": "astrobiology",
       "pub_type": "journal",
-      "citations": 17,
+      "citations": 0,
       "excerpt": "Comprehensive analysis of Mercury's enigmatic hollow features, evaluating volatile phases and proposing a novel formation mechanism."
     },
     {
@@ -453,7 +453,7 @@
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 0,
+      "citations": 5,
       "excerpt": ""
     },
     {
@@ -681,7 +681,7 @@
       "planet": "earth",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 6,
+      "citations": 0,
       "excerpt": "Field study comparing rover and helicopter mission architectures for planetary exploration using Mars analog terrain in Iceland."
     },
     {
@@ -693,7 +693,7 @@
       "planet": "multi",
       "topic": "ai_ml",
       "pub_type": "journal",
-      "citations": 1,
+      "citations": 0,
       "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications."
     },
     {
@@ -705,7 +705,7 @@
       "planet": "mercury",
       "topic": "other",
       "pub_type": "journal",
-      "citations": 4,
+      "citations": 0,
       "excerpt": ""
     },
     {
@@ -777,7 +777,7 @@
       "planet": "mercury",
       "topic": "other",
       "pub_type": "journal",
-      "citations": 1,
+      "citations": 0,
       "excerpt": ""
     },
     {
