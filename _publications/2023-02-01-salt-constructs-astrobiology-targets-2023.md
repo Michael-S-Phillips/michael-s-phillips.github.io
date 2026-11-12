@@ -14,3 +14,5 @@ Identification and characterization of salt constructs in ancient lake basins as
 
 [Download paper here](https://doi.org/10.3390/rs15020314)
 
+The animations for Figure 5 and Figure A1 are archived on Zenodo: [10.5281/zenodo.7468700](https://doi.org/10.5281/zenodo.7468700).
+

@@ -14,3 +14,5 @@ Multi-scale framework combining orbital remote sensing with ground observations 
 
 [Download paper here](https://doi.org/10.1038/s41550-023-01901-z)
 
+The images and labels used to train the convolutional neural network are archived on Zenodo: [10.5281/zenodo.7384287](https://doi.org/10.5281/zenodo.7384287).
+

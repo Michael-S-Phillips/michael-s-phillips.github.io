@@ -130,13 +130,14 @@ hero:
       <h2 class="section-title">Software for spectral data</h2>
       <div class="tool-item">
         <h3><a href="https://github.com/Michael-S-Phillips/HyPyRameter">HyPyRameter</a></h3>
-        <p>A Python toolbox for calculating spectral parameters from hyperspectral reflectance data, developed for CRISM and Mars analog datasets.</p>
+        <p>A Python toolbox for calculating spectral parameters from hyperspectral reflectance data, developed for CRISM and Mars analog datasets. Releases are archived on Zenodo (<a href="https://doi.org/10.5281/zenodo.10801541">doi:10.5281/zenodo.10801541</a>).</p>
       </div>
       <div class="tool-item">
         <h3><a href="https://github.com/Michael-S-Phillips/Varda"><img class="tool-logo" src="/assets/images/varda-logo.svg" alt="" width="26" height="26">Varda</a></h3>
-        <p>Visualization and Analysis of Raster Data: an open-source Python application for multi- and hyperspectral images and an alternative to proprietary tools like ENVI. It reads 160+ image formats, links two images by pixel or map location, and offers ROI tools and interactive spectral plots. Varda is the successor to the Spectral Cube Analysis Tool and is in active development.</p>
+        <p>Visualization and Analysis of Raster Data: an open-source Python application for multi- and hyperspectral images and an alternative to proprietary tools like ENVI. It reads 160+ image formats, links two images by pixel or map location, and offers ROI tools and interactive spectral plots. Varda is the successor to the Spectral Cube Analysis Tool and is in active development. Releases are archived on Zenodo (<a href="https://doi.org/10.5281/zenodo.23447208">doi:10.5281/zenodo.23447208</a>).</p>
       </div>
-      <a class="text-link" href="https://github.com/Michael-S-Phillips">All code on GitHub →</a>
+      <a class="text-link" href="https://github.com/Michael-S-Phillips">All code on GitHub →</a><br>
+      <a class="text-link" href="/publications/#software-data">Software and data on Zenodo →</a>
     </div>
     <figure class="media-frame">
       <video controls muted playsinline preload="none" poster="/assets/images/spectral-cube-analysis-tool-poster.jpg">

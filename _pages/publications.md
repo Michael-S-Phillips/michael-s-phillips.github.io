@@ -213,10 +213,20 @@ For citation metrics and full publication list, see my [Google Scholar](https://
   {% endif %}
 {% endfor %}
 
-<h2>Theses, Reports, Preprints, Software &amp; Data</h2>
+<h2 id="software-data">Software &amp; Data</h2>
+
+<p>Code and datasets archived on Zenodo and other repositories. Each DOI link resolves to the latest version of the record.</p>
 
 {% for post in site.publications reversed %}
-  {% unless post.pubtype == 'journal' or post.pubtype == 'chapter' or post.pubtype == 'conference' %}
+  {% if post.pubtype == 'software' or post.pubtype == 'dataset' %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Theses, Reports &amp; Preprints</h2>
+
+{% for post in site.publications reversed %}
+  {% unless post.pubtype == 'journal' or post.pubtype == 'chapter' or post.pubtype == 'conference' or post.pubtype == 'software' or post.pubtype == 'dataset' %}
     {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
