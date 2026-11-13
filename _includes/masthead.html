@@ -18,15 +18,10 @@
             <li class="masthead__menu-item{% if page.url == link.url %} is-active{% endif %}"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
           {% comment %}
-            The cat toggle lives inside the theme-toggle item because the greedy-nav
-            script supports only one "persist tail" item. stopPropagation keeps a
-            paw click from also toggling the theme (bound to #theme-toggle).
+            The cats are controlled by the draggable cat house (assets/js/cat-kennel.js),
+            which replaced the paw button that used to sit here.
           {% endcomment %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a class="nav-cat-toggle" role="button" tabindex="0" data-cat-toggle
-               onclick="event.stopPropagation(); toggleCats();"
-               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();toggleCats();}"
-               title="Send cats home" aria-label="Toggle cats" aria-pressed="true">&#x1F43E;</a>
             <a class="nav-theme-toggle" title="Toggle theme"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></a>
           </li>
         </ul>

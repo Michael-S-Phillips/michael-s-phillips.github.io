@@ -1,71 +1,12 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 <script src="{{ base_path }}/assets/js/oneko.js"></script>
 <script>
-(function () {
-  var mouseX = window.innerWidth  / 2;
-  var mouseY = window.innerHeight / 2;
-
-  if ('ontouchstart' in window) {
-    document.addEventListener('touchmove', function (e) {
-      mouseX = e.touches[0].clientX;
-      mouseY = e.touches[0].clientY;
-    }, { passive: true });
-  } else {
-    document.addEventListener('mousemove', function (e) { mouseX = e.clientX; mouseY = e.clientY; });
-  }
-
-  var _cats = null;
-
-  function _releaseCats() {
-    if (_cats) { return; }
-    var orange = createCat({
-      spriteUrl: '{{ base_path }}/assets/images/oneko-orange.gif',
-      targetFn:  function () { return { x: mouseX, y: mouseY }; },
-      spawnX: 80,
-      spawnY: window.innerHeight - 80
-    });
-    var black = createCat({
-      spriteUrl: '{{ base_path }}/assets/images/oneko-black.gif',
-      targetFn:  function () { return orange.position(); },
-      spawnX: 20,
-      spawnY: window.innerHeight - 40
-    });
-    _cats = [orange, black];
-  }
-
-  function _sendCatsHome() {
-    if (!_cats) { return; }
-    _cats.forEach(function (c) { c.destroy(); });
-    _cats = null;
-  }
-
-  function _updateCatBtn() {
-    var on = !!_cats;
-    var btns = document.querySelectorAll('#cat-toggle-btn, [data-cat-toggle]');
-    Array.prototype.forEach.call(btns, function (btn) {
-      btn.setAttribute('aria-pressed', String(on));
-      btn.style.opacity = on ? '1' : '0.4';
-      btn.title = on ? 'Send cats home' : 'Release the cats';
-    });
-  }
-
-  window.toggleCats = function () {
-    if (_cats) {
-      _sendCatsHome();
-      localStorage.setItem('oneko-cats', 'off');
-    } else {
-      _releaseCats();
-      localStorage.setItem('oneko-cats', 'on');
-    }
-    _updateCatBtn();
+  window.ONEKO_SPRITES = {
+    orange: '{{ base_path }}/assets/images/oneko-orange.gif',
+    black:  '{{ base_path }}/assets/images/oneko-black.gif'
   };
-
-  if (localStorage.getItem('oneko-cats') !== 'off') {
-    _releaseCats();
-  }
-  _updateCatBtn();
-}());
 </script>
+<script src="{{ base_path }}/assets/js/cat-kennel.js"></script>
 
 <script>
 /* Sidebar theme toggle — mirrors the masthead sun/moon button.

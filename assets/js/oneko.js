@@ -1,6 +1,8 @@
 /* Oneko pixel cat — factory function.
    Creates a cat div that wanders toward whatever targetFn() returns.
-   Returns { position, destroy } so other cats can follow it and it can be removed. */
+   Returns { position, destroy, goHome, stayOut } so other cats can follow it,
+   the kennel can call it home (it walks to the door, then disappears), and a
+   call home can be cancelled. */
 function createCat(options) {
   var CAT_SPEED = 5;
   var catX = options.spawnX;
@@ -18,6 +20,9 @@ function createCat(options) {
   /* Emote state */
   var emoteCooldown = 0;
   var _wasIdling = false;
+
+  /* Called-home state: { targetFn, cb, speed, ticks } while walking home */
+  var home = null;
 
   var spriteSets = {
     idle:        [[-3, -3]],
@@ -115,8 +120,45 @@ function createCat(options) {
     wpTimer = 30 + Math.floor(Math.random() * 50);
   }
 
+  function place() {
+    el.style.left = (catX - 16) + 'px';
+    el.style.top  = (catY - 16) + 'px';
+  }
+
+  function direction(dx, dy, dist) {
+    var d = '';
+    if (dy / dist > 0.5)  { d += 'N'; }
+    if (dy / dist < -0.5) { d += 'S'; }
+    if (dx / dist > 0.5)  { d += 'W'; }
+    if (dx / dist < -0.5) { d += 'E'; }
+    return d;
+  }
+
+  /* Walk straight to the kennel door, then go inside. Gives up after
+     12 seconds (for example, if the kennel is dragged away mid-walk). */
+  function walkHome() {
+    var h = home.targetFn();
+    var dx = catX - h.x;
+    var dy = catY - h.y;
+    var dist = Math.sqrt(dx * dx + dy * dy);
+    home.ticks++;
+    if (dist <= home.speed || home.ticks > 120) {
+      var cb = home.cb;
+      home = null;
+      destroy();
+      if (cb) { cb(); }
+      return;
+    }
+    frameCount++;
+    setSprite(direction(dx, dy, dist) || 'idle', frameCount % 2);
+    catX -= (dx / dist) * home.speed;
+    catY -= (dy / dist) * home.speed;
+    place();
+  }
+
   function tick() {
     if (emoteCooldown > 0) { emoteCooldown--; }
+    if (home) { walkHome(); return; }
 
     var target = options.targetFn();
 
@@ -171,28 +213,45 @@ function createCat(options) {
 
     var diffX = catX - chaseX;
     var diffY = catY - chaseY;
-    var direction = '';
-    if (diffY / chaseDist > 0.5)  { direction += 'N'; }
-    if (diffY / chaseDist < -0.5) { direction += 'S'; }
-    if (diffX / chaseDist > 0.5)  { direction += 'W'; }
-    if (diffX / chaseDist < -0.5) { direction += 'E'; }
 
-    setSprite(direction || 'idle', frameCount % 2);
+    setSprite(direction(diffX, diffY, chaseDist) || 'idle', frameCount % 2);
 
     catX -= (diffX / chaseDist) * CAT_SPEED;
     catY -= (diffY / chaseDist) * CAT_SPEED;
 
-    el.style.left = (catX - 16) + 'px';
-    el.style.top  = (catY - 16) + 'px';
+    place();
   }
 
   var timer = setInterval(tick, 100);
 
+  function destroy() {
+    clearInterval(timer);
+    if (el.parentNode) { el.parentNode.removeChild(el); }
+  }
+
   return {
     position: function () { return { x: catX, y: catY }; },
-    destroy:  function () {
-      clearInterval(timer);
-      if (el.parentNode) { el.parentNode.removeChild(el); }
+    destroy:  destroy,
+    /* Walk to targetFn() (the kennel door) and disappear there, then call cb.
+       Speed scales with distance so the trip takes about three seconds. */
+    goHome: function (targetFn, cb) {
+      var h = targetFn();
+      var dist = Math.sqrt((catX - h.x) * (catX - h.x) + (catY - h.y) * (catY - h.y));
+      idleAnimation = null;
+      idleFrame = 0;
+      idleTime = 0;
+      _wasIdling = false;
+      emoteCooldown = 0;
+      emote('\u2757'); /* ❗ */
+      home = { targetFn: targetFn, cb: cb, speed: Math.max(10, dist / 30), ticks: 0 };
+    },
+    /* Cancel a call home; the cat goes back to wandering. */
+    stayOut: function () {
+      if (!home) { return; }
+      home = null;
+      wpTimer = 1;
+      emoteCooldown = 0;
+      emote('?');
     }
   };
 }
