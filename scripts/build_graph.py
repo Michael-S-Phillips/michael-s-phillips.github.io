@@ -126,8 +126,8 @@ TOPIC_KEYWORDS = {
     "mineralogy": [
         "feldspathic", "plagioclase", "anorthosite", "feldspar", "crust",
         "mantle", "composition", "mineralogy", "mineral", "differentiation",
-        "basalt", "igneous", "petrology", "lithology", "rock", "spectra",
-        "spectroscopy", "spectral",
+        "basalt", "igneous", "petrology", "lithology", "rock",
+        "spectra",  # also matches "spectral" and "spectroscopy"
     ],
     "astrobiology": [
         "astrobiology", "biosignature", "life", "habita", "microbial", "microb",
@@ -143,6 +143,8 @@ TOPIC_KEYWORDS = {
         "artificial intelligence", "machine learning", "deep learning", "neural",
         "automated", "python", "toolbox", "software", "algorithm", "detection",
         "classification", "ai", "ml", "tool",
+        "self-supervised", "foundation model", "convolutional", "retrieval",
+        "benchmark", "open-source", "visualization", "gui", "code",
     ],
 }
 
@@ -214,10 +216,34 @@ def classify_pub_type(venue, url=""):
     # 4. Default
     return "conference"
 
+def _kw_pattern(kw):
+    """Regex for a keyword that must start a word.
+
+    Keywords of four letters or fewer must also end the word (an optional
+    plural "s" is allowed), so "ai" does not match "terrain", "life" does not
+    match "lifecycle", and "mola" does not match "molecular". Longer keywords
+    may be stems ("habita" matches "habitat" and "habitability").
+    """
+    core = re.escape(kw)
+    if len(kw) <= 4:
+        return re.compile(r"(?<![a-z])" + core + r"s?(?![a-z])")
+    return re.compile(r"(?<![a-z])" + core)
+
+
+_KW_CACHE = {}
+
+
+def has_kw(text_lower, kw):
+    pat = _KW_CACHE.get(kw)
+    if pat is None:
+        pat = _KW_CACHE[kw] = _kw_pattern(kw)
+    return pat.search(text_lower) is not None
+
+
 def score_dict(text, kw_dict):
-    """Sum scores for all matching keywords in text."""
+    """Sum scores for all keywords found in text (matched on word starts)."""
     low = text.lower()
-    return sum(score for kw, score in kw_dict.items() if kw in low)
+    return sum(score for kw, score in kw_dict.items() if has_kw(low, kw))
 
 def categorize(text):
     earth_score   = score_dict(text, EARTH_KEYWORDS)
@@ -234,7 +260,8 @@ def categorize(text):
         planet = winners[0] if len(winners) == 1 else "multi"
 
     # Topic: most keyword hits wins
-    topic_scores = {t: sum(1 for kw in kws if kw in text.lower())
+    low = text.lower()
+    topic_scores = {t: sum(1 for kw in kws if has_kw(low, kw))
                     for t, kws in TOPIC_KEYWORDS.items()}
     best = max(topic_scores, key=lambda k: topic_scores[k])
     topic = best if topic_scores[best] > 0 else "other"
@@ -269,6 +296,118 @@ def cosine(a, b):
     norm_a = sqrt(sum(v * v for v in a.values()))
     norm_b = sqrt(sum(v * v for v in b.values()))
     return dot / (norm_a * norm_b) if norm_a and norm_b else 0.0
+
+# ── Theme clusters ────────────────────────────────────────────────────────────
+
+MIN_CLUSTER_SIZE = 3      # smaller communities are drawn without a theme name
+LABEL_TERMS      = 3      # words per theme name
+
+# Words that are common in titles but say nothing about a theme.
+LABEL_STOPWORDS = STOPWORDS | {
+    "implications", "evaluation", "evaluating", "identification", "identify",
+    "toward", "towards", "framework", "potential", "possible", "evidence",
+    "insights", "understanding", "preliminary", "unique", "early", "ancient",
+    "planetary", "planet", "surface", "high", "multi", "scale", "within",
+    "related", "regional", "global", "case", "application", "applications",
+    "use", "used", "can", "may", "how", "what", "where", "why", "next",
+    "steps", "key", "strategies", "reveals", "revealed", "detected",
+    "environment", "environments", "system", "systems", "northern", "southern",
+}
+
+
+def detect_communities(n, edges):
+    """Greedy modularity communities (Clauset–Newman–Moore agglomeration).
+
+    edges: list of (i, j, weight). Returns a community index per node, with
+    communities numbered by size (largest first). Deterministic for a given
+    input, so the weekly rebuild does not reshuffle themes without reason.
+    """
+    m = sum(w for _, _, w in edges)
+    if m == 0:
+        return list(range(n))
+    members = {i: {i} for i in range(n)}
+    a = [0.0] * n
+    between = {}
+    for i, j, w in edges:
+        a[i] += w / (2 * m)
+        a[j] += w / (2 * m)
+        key = (min(i, j), max(i, j))
+        between[key] = between.get(key, 0.0) + w
+    a = dict(enumerate(a))
+
+    while True:
+        best, best_dq = None, 1e-12
+        for (x, y), w in sorted(between.items()):
+            dq = 2 * (w / (2 * m) - a[x] * a[y])
+            if dq > best_dq:
+                best, best_dq = (x, y), dq
+        if best is None:
+            break
+        x, y = best
+        members[x] |= members.pop(y)
+        a[x] += a.pop(y)
+        merged = {}
+        for (p, q), w in between.items():
+            p = x if p == y else p
+            q = x if q == y else q
+            if p != q:
+                key = (min(p, q), max(p, q))
+                merged[key] = merged.get(key, 0.0) + w
+        between = merged
+
+    ordered = sorted(members.values(), key=lambda s: (-len(s), min(s)))
+    membership = [0] * n
+    for ci, group in enumerate(ordered):
+        for i in group:
+            membership[i] = ci
+    return membership
+
+
+def _label_tokens(text):
+    """Tokens for theme naming: plural forms folded onto the singular."""
+    return [t for t in tokenize(text) if t not in LABEL_STOPWORDS]
+
+
+def name_clusters(membership, docs):
+    """Name each community by the words that most distinguish it (class TF-IDF).
+
+    A word scores high when many papers in the community use it and few
+    papers outside it do. Only words used by at least two papers in the
+    community are eligible, so one long abstract cannot name a theme.
+    """
+    doc_sets = [set(_label_tokens(d)) for d in docs]
+    vocab = set().union(*doc_sets) if doc_sets else set()
+    fold = {t: t[:-1] for t in vocab if t.endswith("s") and t[:-1] in vocab}
+    doc_sets = [{fold.get(t, t) for t in s} for s in doc_sets]
+
+    N = len(docs)
+    df = Counter(t for s in doc_sets for t in s)
+    clusters = []
+    for cid in sorted(set(membership)):
+        idx = [i for i, c in enumerate(membership) if c == cid]
+        if len(idx) < MIN_CLUSTER_SIZE:
+            continue
+        df_c = Counter(t for i in idx for t in doc_sets[i])
+        scored = sorted(
+            ((df_c[t] / len(idx)) * log(N / df[t]), t)
+            for t in df_c if df_c[t] >= 2
+        )
+        terms = []
+        for _, t in reversed(scored):
+            # Skip near-duplicates such as "crust" / "crustal".
+            if any(t[:5] == u[:5] for u in terms):
+                continue
+            terms.append(t)
+            if len(terms) == LABEL_TERMS:
+                break
+        clusters.append({
+            "id": cid,
+            "size": len(idx),
+            "terms": terms,
+            "label": " · ".join(terms),
+        })
+    return clusters
+
 
 # ── Semantic Scholar citation counts ─────────────────────────────────────────
 
@@ -541,20 +680,32 @@ def main():
     ]
     edge_count = Counter()
     links = []
+    kept = []
     for i, j, w in sorted(raw_links, key=lambda x: -x[2]):
         if edge_count[i] < MAX_EDGES_PER and edge_count[j] < MAX_EDGES_PER:
             links.append({"source": nodes[i]["id"], "target": nodes[j]["id"], "weight": w})
+            kept.append((i, j, w))
             edge_count[i] += 1
             edge_count[j] += 1
+
+    # Theme clusters: communities in the similarity graph, named by their
+    # most distinctive words. The website draws these names over the graph.
+    membership = detect_communities(len(nodes), kept)
+    clusters = name_clusters(membership, docs)
+    for n, c in zip(nodes, membership):
+        n["cluster"] = c if c in {cl["id"] for cl in clusters} else -1
 
     print(f"\nSummary: {len(nodes)} nodes, {len(links)} edges")
     for p in ("mars", "earth", "mercury", "multi"):
         print(f"  {p}: {sum(1 for n in nodes if n['planet'] == p)}")
     for t in ("journal", "conference"):
         print(f"  {t}: {sum(1 for n in nodes if n['pub_type'] == t)}")
+    print(f"  themes: {len(clusters)}")
+    for cl in clusters:
+        print(f"    [{cl['id']}] {cl['size']:2d} papers  {cl['label']}")
 
     OUT_FILE.parent.mkdir(exist_ok=True)
-    OUT_FILE.write_text(json.dumps({"nodes": nodes, "links": links}, indent=2))
+    OUT_FILE.write_text(json.dumps({"nodes": nodes, "links": links, "clusters": clusters}, indent=2))
     print(f"\nWritten → {OUT_FILE}")
 
 if __name__ == "__main__":

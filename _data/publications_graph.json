@@ -10,7 +10,8 @@
       "topic": "remote_sensing",
       "pub_type": "conference",
       "citations": 1,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 2
     },
     {
       "id": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
@@ -22,7 +23,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 1
     },
     {
       "id": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
@@ -34,7 +36,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 0
     },
     {
       "id": "2018-03-01-astrobiology-fdl-partnership-2018",
@@ -46,7 +49,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning."
+      "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning.",
+      "cluster": 0
     },
     {
       "id": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
@@ -58,7 +62,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Analysis of feldspathic rock compositions in northern Hellas providing insights into early Martian mantle conditions and differentiation."
+      "excerpt": "Analysis of feldspathic rock compositions in northern Hellas providing insights into early Martian mantle conditions and differentiation.",
+      "cluster": 1
     },
     {
       "id": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
@@ -70,7 +75,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 0
     },
     {
       "id": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
@@ -82,7 +88,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Study of hydrothermal processes and mineral alteration patterns around major Martian impact basins."
+      "excerpt": "Study of hydrothermal processes and mineral alteration patterns around major Martian impact basins.",
+      "cluster": 3
     },
     {
       "id": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
@@ -94,7 +101,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability."
+      "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins and their implications for early Mars habitability.",
+      "cluster": 3
     },
     {
       "id": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
@@ -106,7 +114,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Spectroscopic detection and analysis of plagioclase in ancient crustal rocks of northern Hellas region on Mars."
+      "excerpt": "Spectroscopic detection and analysis of plagioclase in ancient crustal rocks of northern Hellas region on Mars.",
+      "cluster": 1
     },
     {
       "id": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
@@ -118,7 +127,8 @@
       "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 3
     },
     {
       "id": "2019-07-01-microbial-communities-salar-pajonales-2019",
@@ -130,7 +140,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Ecological study of microbial communities in the Mars analog environment of Salar de Pajonales, Chile, examining habitability patterns."
+      "excerpt": "Ecological study of microbial communities in the Mars analog environment of Salar de Pajonales, Chile, examining habitability patterns.",
+      "cluster": 0
     },
     {
       "id": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
@@ -139,10 +150,11 @@
       "venue": "51st Lunar and Planetary Science Conference, Abstract #1865",
       "url": "https://www.hou.usra.edu/meetings/lpsc2020/pdf/1865.pdf",
       "planet": "earth",
-      "topic": "mineralogy",
+      "topic": "remote_sensing",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 4
     },
     {
       "id": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
@@ -154,19 +166,21 @@
       "topic": "ai_ml",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 7
     },
     {
       "id": "2020-01-01-michael-s-phillips-hypyrameter-hypyrameter-v0-2-0",
-      "title": "Michael-S-Phillips/HyPyRameter: HyPyRameter v0.2.0",
+      "title": "HyPyRameter v0.2.0: Code Release",
       "year": 2024,
-      "venue": "Zenodo",
+      "venue": "Zenodo (software)",
       "url": "https://doi.org/10.5281/zenodo.10801542",
       "planet": "multi",
-      "topic": "other",
+      "topic": "ai_ml",
       "pub_type": "software",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "Code release (v0.2.0) of the Python toolbox for calculating spectral parameters from hyperspectral reflectance data, described in Phillips et al. (2024) in The Planetary Science Journal.",
+      "cluster": 5
     },
     {
       "id": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
@@ -175,10 +189,11 @@
       "venue": "51st Lunar and Planetary Science Conference",
       "url": "https://ui.adsabs.harvard.edu/abs/2020LPI....51.2442P/abstract",
       "planet": "mercury",
-      "topic": "ai_ml",
+      "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 2
     },
     {
       "id": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
@@ -187,10 +202,11 @@
       "venue": "51st Lunar and Planetary Science Conference",
       "url": "https://ui.adsabs.harvard.edu/abs/2020LPI....51.1485V/abstract",
       "planet": "mars",
-      "topic": "mineralogy",
+      "topic": "remote_sensing",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 4
     },
     {
       "id": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
@@ -202,7 +218,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 0
     },
     {
       "id": "2020-03-01-temporal-analysis-cerro-pasco-2020",
@@ -211,10 +228,11 @@
       "venue": "Science of the Total Environment",
       "url": "https://doi.org/10.1016/j.scitotenv.2019.135640",
       "planet": "earth",
-      "topic": "mineralogy",
+      "topic": "remote_sensing",
       "pub_type": "journal",
       "citations": 5,
-      "excerpt": "Multispectral and 3D analysis of mining impacts and environmental changes at Cerro de Pasco using remote sensing techniques."
+      "excerpt": "Multispectral and 3D analysis of mining impacts and environmental changes at Cerro de Pasco using remote sensing techniques.",
+      "cluster": -1
     },
     {
       "id": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
@@ -226,7 +244,8 @@
       "topic": "astrobiology",
       "pub_type": "report",
       "citations": 0,
-      "excerpt": "Strategic assessment of current knowledge gaps and future research priorities for Mars biosignature detection."
+      "excerpt": "Strategic assessment of current knowledge gaps and future research priorities for Mars biosignature detection.",
+      "cluster": 0
     },
     {
       "id": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
@@ -238,7 +257,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 1
     },
     {
       "id": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
@@ -250,7 +270,8 @@
       "topic": "mineralogy",
       "pub_type": "thesis",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 1
     },
     {
       "id": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
@@ -262,7 +283,8 @@
       "topic": "ai_ml",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 0
     },
     {
       "id": "2021-03-01-unique-basin-related-alteration-on-early-mars",
@@ -274,7 +296,8 @@
       "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 3
     },
     {
       "id": "2021-05-01-planetary-geologic-mapping",
@@ -286,7 +309,8 @@
       "topic": "remote_sensing",
       "pub_type": "report",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 4
     },
     {
       "id": "2021-09-01-mercury-hollows-lifecycle-2021",
@@ -295,10 +319,11 @@
       "venue": "Icarus",
       "url": "https://doi.org/10.1016/j.icarus.2021.114306",
       "planet": "mercury",
-      "topic": "astrobiology",
+      "topic": "other",
       "pub_type": "journal",
       "citations": 17,
-      "excerpt": "Comprehensive analysis of Mercury's enigmatic hollow features, evaluating volatile phases and proposing a novel formation mechanism."
+      "excerpt": "Comprehensive analysis of Mercury's enigmatic hollow features, evaluating volatile phases and proposing a novel formation mechanism.",
+      "cluster": 2
     },
     {
       "id": "2021-12-01-regional-composition-isidis-hellas-2021",
@@ -307,10 +332,11 @@
       "venue": "AGU Fall Meeting Abstracts",
       "url": "https://ui.adsabs.harvard.edu/abs/2021AGUFM.P54A..05V/abstract",
       "planet": "mars",
-      "topic": "mineralogy",
+      "topic": "remote_sensing",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Regional analysis of surface composition around major impact basins on Mars using orbital spectroscopy data."
+      "excerpt": "Regional analysis of surface composition around major impact basins on Mars using orbital spectroscopy data.",
+      "cluster": 3
     },
     {
       "id": "2022-01-01-insights-of-extreme-desert-ecology-to-the-habitats-and-habit",
@@ -322,7 +348,8 @@
       "topic": "astrobiology",
       "pub_type": "journal",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 0
     },
     {
       "id": "2022-01-01-signatures-of-life-learning-features-of-prebiotic-and-biotic",
@@ -334,7 +361,8 @@
       "topic": "astrobiology",
       "pub_type": "report",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 7
     },
     {
       "id": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
@@ -346,7 +374,8 @@
       "topic": "other",
       "pub_type": "journal",
       "citations": 12,
-      "excerpt": "Characterization of surface morphologies in a high-altitude calcium sulfate salar, providing insights into Mars analog environments and sulfate formation processes."
+      "excerpt": "Characterization of surface morphologies in a high-altitude calcium sulfate salar, providing insights into Mars analog environments and sulfate formation processes.",
+      "cluster": 0
     },
     {
       "id": "2022-04-01-gypsum-habitability-zones-2022",
@@ -358,7 +387,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Study of gypsum crystal habits as indicators of habitable zones across multiple spatial scales in Mars analog environments."
+      "excerpt": "Study of gypsum crystal habits as indicators of habitable zones across multiple spatial scales in Mars analog environments.",
+      "cluster": 0
     },
     {
       "id": "2022-05-01-crism-radiometric-reconciliation-2022",
@@ -370,7 +400,8 @@
       "topic": "remote_sensing",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Development of radiometric calibration methods for CRISM hyperspectral mapping data to improve data quality and accuracy."
+      "excerpt": "Development of radiometric calibration methods for CRISM hyperspectral mapping data to improve data quality and accuracy.",
+      "cluster": 4
     },
     {
       "id": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
@@ -382,7 +413,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 0
     },
     {
       "id": "2022-06-01-mars-analog-deep-learning-2022",
@@ -394,7 +426,8 @@
       "topic": "ai_ml",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Deep learning approach to automated identification and classification of Mars analog habitats with confidence metrics."
+      "excerpt": "Deep learning approach to automated identification and classification of Mars analog habitats with confidence metrics.",
+      "cluster": 0
     },
     {
       "id": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
@@ -406,7 +439,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Analysis of uplifted massifs on Mars as windows into ancient crustal composition and early planetary processes."
+      "excerpt": "Analysis of uplifted massifs on Mars as windows into ancient crustal composition and early planetary processes.",
+      "cluster": 1
     },
     {
       "id": "2022-10-01-feldspathic-crust-hellas-geology-2022",
@@ -418,7 +452,21 @@
       "topic": "mineralogy",
       "pub_type": "journal",
       "citations": 22,
-      "excerpt": "Discovery of extensive feldspathic crust around the northern Hellas basin rim, providing insights into Mars' primary crustal formation and early differentiation."
+      "excerpt": "Discovery of extensive feldspathic crust around the northern Hellas basin rim, providing insights into Mars' primary crustal formation and early differentiation.",
+      "cluster": 1
+    },
+    {
+      "id": "2022-12-01-conv-net-data-orbit-to-ground",
+      "title": "Conv Net Data: Training Images and Labels for the Orbit-to-Ground Biosignature Model",
+      "year": 2022,
+      "venue": "Zenodo (dataset)",
+      "url": "https://doi.org/10.5281/zenodo.7384287",
+      "planet": "earth",
+      "topic": "ai_ml",
+      "pub_type": "dataset",
+      "citations": 0,
+      "excerpt": "Images and labels used to train the convolutional neural network in Warren-Rhodes et al. (2023), \u201cOrbit-to-ground framework to decode and predict biosignature patterns in terrestrial analogues,\u201d Nature Astronomy.",
+      "cluster": 0
     },
     {
       "id": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
@@ -430,7 +478,8 @@
       "topic": "ai_ml",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 7
     },
     {
       "id": "2022-12-01-molecular-complexity-to-biosignatures-a-machine-learning-pip",
@@ -442,7 +491,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 7
     },
     {
       "id": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
@@ -451,10 +501,11 @@
       "venue": "Astrobiology",
       "url": "https://doi.org/10.1089/ast.2022.0014",
       "planet": "earth",
-      "topic": "ai_ml",
+      "topic": "astrobiology",
       "pub_type": "journal",
       "citations": 5,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 0
     },
     {
       "id": "2023-02-01-salt-constructs-astrobiology-targets-2023",
@@ -466,7 +517,8 @@
       "topic": "astrobiology",
       "pub_type": "journal",
       "citations": 10,
-      "excerpt": "Identification and characterization of salt constructs in ancient lake basins as priority targets for astrobiology investigations and biosignature preservation."
+      "excerpt": "Identification and characterization of salt constructs in ancient lake basins as priority targets for astrobiology investigations and biosignature preservation.",
+      "cluster": 0
     },
     {
       "id": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
@@ -475,10 +527,11 @@
       "venue": "54th Lunar and Planetary Science Conference",
       "url": "https://ui.adsabs.harvard.edu/abs/2023LPICo2806.1840B/abstract",
       "planet": "earth",
-      "topic": "mineralogy",
+      "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 6
     },
     {
       "id": "2023-03-01-crism-processing-pipeline-2023",
@@ -490,7 +543,8 @@
       "topic": "remote_sensing",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Development of automated processing pipeline for CRISM hyperspectral data to enable systematic analysis of Mars surface composition."
+      "excerpt": "Development of automated processing pipeline for CRISM hyperspectral data to enable systematic analysis of Mars surface composition.",
+      "cluster": 4
     },
     {
       "id": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
@@ -499,10 +553,11 @@
       "venue": "54th Lunar and Planetary Science Conference",
       "url": "https://ui.adsabs.harvard.edu/abs/2023LPICo2806.1732S/abstract",
       "planet": "earth",
-      "topic": "ai_ml",
+      "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 6
     },
     {
       "id": "2023-03-01-rover-aerial-vehicle-exploration-network-raven-mission-plann",
@@ -511,10 +566,11 @@
       "venue": "54th Lunar and Planetary Science Conference",
       "url": "https://ui.adsabs.harvard.edu/abs/2023LPICo2806.1748G/abstract",
       "planet": "earth",
-      "topic": "ai_ml",
+      "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 6
     },
     {
       "id": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
@@ -526,7 +582,8 @@
       "topic": "remote_sensing",
       "pub_type": "journal",
       "citations": 18,
-      "excerpt": "Multi-scale framework combining orbital remote sensing with ground observations to identify and predict biosignature patterns in Mars analog environments."
+      "excerpt": "Multi-scale framework combining orbital remote sensing with ground observations to identify and predict biosignature patterns in Mars analog environments.",
+      "cluster": 0
     },
     {
       "id": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",
@@ -538,7 +595,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 5
     },
     {
       "id": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
@@ -547,10 +605,11 @@
       "venue": "Icarus",
       "url": "https://doi.org/10.1016/j.icarus.2023.115712",
       "planet": "mars",
-      "topic": "mineralogy",
+      "topic": "remote_sensing",
       "pub_type": "journal",
       "citations": 4,
-      "excerpt": "First comprehensive analysis of CRISM hyperspectral mapping data from Mawrth Vallis, Mars, revealing detailed mineralogical compositions."
+      "excerpt": "First comprehensive analysis of CRISM hyperspectral mapping data from Mawrth Vallis, Mars, revealing detailed mineralogical compositions.",
+      "cluster": 4
     },
     {
       "id": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
@@ -562,7 +621,8 @@
       "topic": "astrobiology",
       "pub_type": "journal",
       "citations": 1,
-      "excerpt": "Study of gypsum formations in volcanic tumuli with implications for Mars analog environments and habitability."
+      "excerpt": "Study of gypsum formations in volcanic tumuli with implications for Mars analog environments and habitability.",
+      "cluster": 0
     },
     {
       "id": "2023-10-01-ai-search-for-life-2023",
@@ -574,7 +634,8 @@
       "topic": "astrobiology",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Application of artificial intelligence techniques to improve biosignature detection and astrobiology research methodologies."
+      "excerpt": "Application of artificial intelligence techniques to improve biosignature detection and astrobiology research methodologies.",
+      "cluster": 0
     },
     {
       "id": "2023-10-01-basin-related-alteration-early-mars-2023",
@@ -586,7 +647,8 @@
       "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins on early Mars."
+      "excerpt": "Investigation of hydrothermal alteration processes associated with large impact basins on early Mars.",
+      "cluster": 3
     },
     {
       "id": "2024-01-01-a-prediction-of-the-inter-annual-variability-of-sulfur-in-me",
@@ -598,7 +660,8 @@
       "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 2
     },
     {
       "id": "2024-01-01-pattern-recognition-and-analysis-in-planetary-contexts-re-ex",
@@ -610,7 +673,8 @@
       "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 0
     },
     {
       "id": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
@@ -622,7 +686,8 @@
       "topic": "ai_ml",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Analysis of current limitations and future directions for artificial intelligence applications in astrobiology research."
+      "excerpt": "Analysis of current limitations and future directions for artificial intelligence applications in astrobiology research.",
+      "cluster": 0
     },
     {
       "id": "2024-03-01-new-views-pre-noachian-mars-2024",
@@ -634,7 +699,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Investigation of ancient Martian crustal composition and processes from the earliest period of Mars history."
+      "excerpt": "Investigation of ancient Martian crustal composition and processes from the earliest period of Mars history.",
+      "cluster": 1
     },
     {
       "id": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
@@ -646,7 +712,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Spectroscopic analysis comparing terrestrial and Martian plagioclase detections in igneous rocks."
+      "excerpt": "Spectroscopic analysis comparing terrestrial and Martian plagioclase detections in igneous rocks.",
+      "cluster": 1
     },
     {
       "id": "2024-03-01-space-imagery-center-arizona-2024",
@@ -658,7 +725,8 @@
       "topic": "remote_sensing",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Overview of the Space Imagery Center facilities and capabilities for planetary image processing and analysis."
+      "excerpt": "Overview of the Space Imagery Center facilities and capabilities for planetary image processing and analysis.",
+      "cluster": 4
     },
     {
       "id": "2024-03-01-spectral-cube-analysis-tool-2024",
@@ -670,7 +738,8 @@
       "topic": "remote_sensing",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": "Development of Python software for processing and analyzing hyperspectral image cubes in planetary science."
+      "excerpt": "Development of Python software for processing and analyzing hyperspectral image cubes in planetary science.",
+      "cluster": 5
     },
     {
       "id": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
@@ -679,10 +748,11 @@
       "venue": "The Planetary Science Journal",
       "url": "https://doi.org/10.3847/PSJ/ad55f4",
       "planet": "earth",
-      "topic": "ai_ml",
+      "topic": "other",
       "pub_type": "journal",
       "citations": 6,
-      "excerpt": "Field study comparing rover and helicopter mission architectures for planetary exploration using Mars analog terrain in Iceland."
+      "excerpt": "Field study comparing rover and helicopter mission architectures for planetary exploration using Mars analog terrain in Iceland.",
+      "cluster": 6
     },
     {
       "id": "2024-11-01-hypyrameter-python-toolbox-2024",
@@ -691,10 +761,11 @@
       "venue": "The Planetary Science Journal",
       "url": "https://doi.org/10.3847/PSJ/ad81f8",
       "planet": "multi",
-      "topic": "ai_ml",
+      "topic": "remote_sensing",
       "pub_type": "journal",
       "citations": 1,
-      "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications."
+      "excerpt": "Comprehensive Python toolkit for calculating spectral parameters from hyperspectral data, designed for planetary science applications.",
+      "cluster": 5
     },
     {
       "id": "2025-01-01-a-novel-theoretical-approach-to-predict-the-interannual-vari",
@@ -706,7 +777,8 @@
       "topic": "other",
       "pub_type": "journal",
       "citations": 4,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 2
     },
     {
       "id": "2025-01-01-alteration-of-pre-noachian-mars",
@@ -718,7 +790,8 @@
       "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 3
     },
     {
       "id": "2025-01-01-mars-analog-field-testing-reveals-key-operational-strategies",
@@ -727,10 +800,11 @@
       "venue": "AGU Fall Meeting 2025, abstract P21C-265",
       "url": "https://ui.adsabs.harvard.edu/abs/2025AGUFMP21C..265H/abstract",
       "planet": "earth",
-      "topic": "ai_ml",
+      "topic": "other",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 6
     },
     {
       "id": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
@@ -742,7 +816,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 1
     },
     {
       "id": "2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra",
@@ -754,7 +829,8 @@
       "topic": "mineralogy",
       "pub_type": "dataset",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 7
     },
     {
       "id": "2025-11-22-ancient-anorthosites-mars-2025",
@@ -766,7 +842,8 @@
       "topic": "mineralogy",
       "pub_type": "journal",
       "citations": 7,
-      "excerpt": "Discovery of widespread ancient anorthosite in Mars' lower crust, providing new insights into early planetary differentiation and crustal evolution."
+      "excerpt": "Discovery of widespread ancient anorthosite in Mars' lower crust, providing new insights into early planetary differentiation and crustal evolution.",
+      "cluster": 1
     },
     {
       "id": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
@@ -778,7 +855,8 @@
       "topic": "other",
       "pub_type": "journal",
       "citations": 1,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 2
     },
     {
       "id": "2026-01-01-craterbench-r-instance-level-crater-retrieval-for-planetary",
@@ -787,10 +865,11 @@
       "venue": "arXiv:2604.06245; accepted at EarthVision 2026 Workshop, CVPR 2026 (CVPRW)",
       "url": "https://doi.org/10.48550/arXiv.2604.06245",
       "planet": "multi",
-      "topic": "other",
+      "topic": "ai_ml",
       "pub_type": "preprint",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 2
     },
     {
       "id": "2026-01-01-diversity-distribution-and-petrogenesis-of-spectrally-feldsp",
@@ -802,7 +881,8 @@
       "topic": "mineralogy",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 6
     },
     {
       "id": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
@@ -814,7 +894,8 @@
       "topic": "ai_ml",
       "pub_type": "conference",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 5
     },
     {
       "id": "2026-01-06-a-domain-specific-vision-foundation-model-for-mars-self-supe",
@@ -826,7 +907,8 @@
       "topic": "ai_ml",
       "pub_type": "journal",
       "citations": 3,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 2
     },
     {
       "id": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
@@ -838,7 +920,8 @@
       "topic": "mineralogy",
       "pub_type": "journal",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 1
     },
     {
       "id": "2026-09-01-visible-to-near-infrared-properties-of-felsic-rocks-plagiocl",
@@ -850,254 +933,327 @@
       "topic": "mineralogy",
       "pub_type": "journal",
       "citations": 0,
-      "excerpt": ""
+      "excerpt": "",
+      "cluster": 1
+    },
+    {
+      "id": "2026-10-18-varda-software",
+      "title": "Varda: Visualization and Analysis of Raster Data",
+      "year": 2026,
+      "venue": "Zenodo (software)",
+      "url": "https://doi.org/10.5281/zenodo.23447208",
+      "planet": "multi",
+      "topic": "remote_sensing",
+      "pub_type": "software",
+      "citations": 0,
+      "excerpt": "Desktop application for visualizing and analyzing hyperspectral and multispectral images, with spectral plots, regions of interest that work across images and coordinate systems, transforms, classifiers, band parameters,",
+      "cluster": 5
+    },
+    {
+      "id": "2026-10-26-mars-crater-superposition-graph-dataset",
+      "title": "Mars Crater Superposition Graph: Relative-Age Relations among 83,370 Martian Impact Craters",
+      "year": 2026,
+      "venue": "Zenodo (dataset)",
+      "url": "https://doi.org/10.5281/zenodo.23675713",
+      "planet": "mars",
+      "topic": "other",
+      "pub_type": "dataset",
+      "citations": 0,
+      "excerpt": "Directed graph of Martian impact craters in which each edge records that one crater formed after another, built from the Robbins and Hynek (2012) crater database using rim containment and rim overlap. The archive holds t",
+      "cluster": 2
+    },
+    {
+      "id": "2026-10-29-mercury-crater-graph-hollows-dataset",
+      "title": "Mercury Crater Graph and Hollows: Containment Relations among 31,571 Craters and 52 Basins, with 6,299 Hollows",
+      "year": 2026,
+      "venue": "Zenodo (dataset)",
+      "url": "https://doi.org/10.5281/zenodo.23779916",
+      "planet": "mercury",
+      "topic": "other",
+      "pub_type": "dataset",
+      "citations": 0,
+      "excerpt": "Directed graph of Mercury impact craters in which each edge records that a crater formed inside an older crater or basin. The nodes are the 31,571 craters at least 5 km across in the Herrick et al. (2018) catalog and 52 ",
+      "cluster": 2
+    },
+    {
+      "id": "2026-11-11-mercury-hollows-code-and-data",
+      "title": "Mercury Hollows: Code and Derived Data for a Hollow Formation Model",
+      "year": 2026,
+      "venue": "Zenodo (software and data)",
+      "url": "https://doi.org/10.5281/zenodo.24121932",
+      "planet": "mercury",
+      "topic": "ai_ml",
+      "pub_type": "software",
+      "citations": 0,
+      "excerpt": "Analysis code, derived data, hand measurements, and figure scripts behind the paper \u201cToward a Geologically Plausible Model of Hollow Formation on Mercury\u201d (submitted to Planetary Research). The record includes the 19,110",
+      "cluster": 2
     }
   ],
   "links": [
-    {
-      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
-      "target": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
-      "weight": 0.705
-    },
     {
       "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
       "target": "2023-10-01-basin-related-alteration-early-mars-2023",
       "weight": 0.696
     },
     {
-      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
-      "target": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
-      "weight": 0.684
+      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "target": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
+      "weight": 0.692
     },
     {
       "source": "2021-03-01-unique-basin-related-alteration-on-early-mars",
       "target": "2023-10-01-basin-related-alteration-early-mars-2023",
-      "weight": 0.679
+      "weight": 0.682
+    },
+    {
+      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "target": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "weight": 0.675
     },
     {
       "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
       "target": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
-      "weight": 0.662
+      "weight": 0.652
     },
     {
       "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
       "target": "2022-12-01-molecular-complexity-to-biosignatures-a-machine-learning-pip",
-      "weight": 0.592
+      "weight": 0.594
     },
     {
       "source": "2022-06-01-mars-analog-deep-learning-2022",
       "target": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
-      "weight": 0.581
+      "weight": 0.587
     },
     {
       "source": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
       "target": "2023-10-01-basin-related-alteration-early-mars-2023",
-      "weight": 0.566
+      "weight": 0.562
+    },
+    {
+      "source": "2026-10-26-mars-crater-superposition-graph-dataset",
+      "target": "2026-10-29-mercury-crater-graph-hollows-dataset",
+      "weight": 0.537
     },
     {
       "source": "2024-01-01-a-prediction-of-the-inter-annual-variability-of-sulfur-in-me",
       "target": "2025-01-01-a-novel-theoretical-approach-to-predict-the-interannual-vari",
-      "weight": 0.525
+      "weight": 0.527
+    },
+    {
+      "source": "2020-01-01-michael-s-phillips-hypyrameter-hypyrameter-v0-2-0",
+      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "weight": 0.505
     },
     {
       "source": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
       "target": "2025-01-01-mars-analog-field-testing-reveals-key-operational-strategies",
-      "weight": 0.497
+      "weight": 0.489
     },
     {
-      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
-      "target": "2023-10-01-basin-related-alteration-early-mars-2023",
-      "weight": 0.445
+      "source": "2022-12-01-conv-net-data-orbit-to-ground",
+      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "weight": 0.456
     },
     {
       "source": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
       "target": "2022-12-01-molecular-complexity-to-biosignatures-a-machine-learning-pip",
-      "weight": 0.442
+      "weight": 0.447
     },
     {
-      "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
-      "target": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
-      "weight": 0.418
+      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "target": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "weight": 0.44
     },
     {
       "source": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
       "target": "2021-03-01-unique-basin-related-alteration-on-early-mars",
-      "weight": 0.416
+      "weight": 0.431
+    },
+    {
+      "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
+      "target": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
+      "weight": 0.421
     },
     {
       "source": "2024-03-01-new-views-pre-noachian-mars-2024",
       "target": "2025-01-01-alteration-of-pre-noachian-mars",
-      "weight": 0.409
-    },
-    {
-      "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
-      "target": "2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra",
-      "weight": 0.401
+      "weight": 0.41
     },
     {
       "source": "2025-01-01-a-novel-theoretical-approach-to-predict-the-interannual-vari",
       "target": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
-      "weight": 0.401
+      "weight": 0.405
+    },
+    {
+      "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
+      "target": "2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra",
+      "weight": 0.403
     },
     {
       "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
       "target": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
+      "weight": 0.397
+    },
+    {
+      "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
+      "target": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
       "weight": 0.396
     },
     {
       "source": "2024-01-01-a-prediction-of-the-inter-annual-variability-of-sulfur-in-me",
       "target": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
-      "weight": 0.395
-    },
-    {
-      "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
-      "target": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
-      "weight": 0.391
-    },
-    {
-      "source": "2023-03-01-rover-aerial-vehicle-exploration-network-raven-mission-plann",
-      "target": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
-      "weight": 0.379
+      "weight": 0.394
     },
     {
       "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
       "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
-      "weight": 0.377
+      "weight": 0.387
     },
     {
-      "source": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
-      "target": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
-      "weight": 0.364
+      "source": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
+      "target": "2026-11-11-mercury-hollows-code-and-data",
+      "weight": 0.382
+    },
+    {
+      "source": "2023-03-01-rover-aerial-vehicle-exploration-network-raven-mission-plann",
+      "target": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
+      "weight": 0.382
     },
     {
       "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
       "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
-      "weight": 0.356
+      "weight": 0.365
+    },
+    {
+      "source": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
+      "target": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
+      "weight": 0.363
     },
     {
       "source": "2022-12-01-molecular-complexity-to-biosignatures-a-machine-learning-pip",
       "target": "2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra",
-      "weight": 0.345
-    },
-    {
-      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
-      "target": "2023-03-01-crism-processing-pipeline-2023",
-      "weight": 0.343
+      "weight": 0.347
     },
     {
       "source": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
       "target": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
-      "weight": 0.34
-    },
-    {
-      "source": "2024-03-01-spectral-cube-analysis-tool-2024",
-      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
-      "weight": 0.34
+      "weight": 0.341
     },
     {
       "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
       "target": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
-      "weight": 0.337
+      "weight": 0.335
+    },
+    {
+      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "target": "2023-03-01-crism-processing-pipeline-2023",
+      "weight": 0.333
     },
     {
       "source": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
       "target": "2022-05-01-crism-radiometric-reconciliation-2022",
-      "weight": 0.323
+      "weight": 0.332
+    },
+    {
+      "source": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "weight": 0.332
     },
     {
       "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
       "target": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
-      "weight": 0.316
+      "weight": 0.318
     },
     {
       "source": "2023-10-01-ai-search-for-life-2023",
       "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
-      "weight": 0.312
-    },
-    {
-      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
-      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
-      "weight": 0.304
+      "weight": 0.317
     },
     {
       "source": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
       "target": "2021-05-01-planetary-geologic-mapping",
-      "weight": 0.301
+      "weight": 0.31
     },
     {
       "source": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
       "target": "2021-12-01-regional-composition-isidis-hellas-2021",
-      "weight": 0.297
+      "weight": 0.304
     },
     {
       "source": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
       "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
-      "weight": 0.293
+      "weight": 0.301
     },
     {
       "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
       "target": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
-      "weight": 0.29
+      "weight": 0.3
+    },
+    {
+      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "weight": 0.296
     },
     {
       "source": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
       "target": "2022-06-01-mars-analog-deep-learning-2022",
-      "weight": 0.286
-    },
-    {
-      "source": "2023-03-01-crism-processing-pipeline-2023",
-      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
-      "weight": 0.283
+      "weight": 0.29
     },
     {
       "source": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
       "target": "2026-09-01-visible-to-near-infrared-properties-of-felsic-rocks-plagiocl",
-      "weight": 0.279
-    },
-    {
-      "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
-      "target": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
-      "weight": 0.276
+      "weight": 0.29
     },
     {
       "source": "2022-10-01-feldspathic-crust-hellas-geology-2022",
       "target": "2025-11-22-ancient-anorthosites-mars-2025",
-      "weight": 0.276
+      "weight": 0.284
     },
     {
-      "source": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
-      "target": "2021-09-01-mercury-hollows-lifecycle-2021",
-      "weight": 0.271
-    },
-    {
-      "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
-      "target": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
-      "weight": 0.268
+      "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
+      "target": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "weight": 0.28
     },
     {
       "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
       "target": "2021-03-01-unique-basin-related-alteration-on-early-mars",
-      "weight": 0.265
+      "weight": 0.275
     },
     {
-      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
-      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
-      "weight": 0.263
+      "source": "2023-03-01-crism-processing-pipeline-2023",
+      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "weight": 0.273
+    },
+    {
+      "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
+      "target": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
+      "weight": 0.269
     },
     {
       "source": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
       "target": "2025-01-01-saganmc-a-molecular-complexity-dataset-with-mass-spectra",
-      "weight": 0.255
+      "weight": 0.258
     },
     {
       "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
       "target": "2025-11-22-ancient-anorthosites-mars-2025",
-      "weight": 0.254
+      "weight": 0.257
     },
     {
       "source": "2022-04-01-gypsum-habitability-zones-2022",
       "target": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
+      "weight": 0.255
+    },
+    {
+      "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
+      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
       "weight": 0.254
+    },
+    {
+      "source": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
+      "target": "2023-03-01-crism-processing-pipeline-2023",
+      "weight": 0.251
     },
     {
       "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
@@ -1107,42 +1263,62 @@
     {
       "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
       "target": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
-      "weight": 0.246
+      "weight": 0.248
     },
     {
-      "source": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
-      "target": "2023-03-01-crism-processing-pipeline-2023",
-      "weight": 0.244
+      "source": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
+      "target": "2021-09-01-mercury-hollows-lifecycle-2021",
+      "weight": 0.246
     },
     {
       "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
       "target": "2025-11-22-ancient-anorthosites-mars-2025",
-      "weight": 0.24
+      "weight": 0.241
     },
     {
       "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
       "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
-      "weight": 0.23
+      "weight": 0.236
     },
     {
-      "source": "2023-10-01-basin-related-alteration-early-mars-2023",
-      "target": "2025-01-01-alteration-of-pre-noachian-mars",
-      "weight": 0.223
+      "source": "2021-09-01-mercury-hollows-lifecycle-2021",
+      "target": "2026-11-11-mercury-hollows-code-and-data",
+      "weight": 0.235
     },
     {
       "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
       "target": "2025-01-01-alteration-of-pre-noachian-mars",
-      "weight": 0.222
+      "weight": 0.228
     },
     {
       "source": "2019-03-01-plagioclase-ancient-crust-hellas-2019",
       "target": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
-      "weight": 0.222
+      "weight": 0.226
+    },
+    {
+      "source": "2023-10-01-basin-related-alteration-early-mars-2023",
+      "target": "2025-01-01-alteration-of-pre-noachian-mars",
+      "weight": 0.226
+    },
+    {
+      "source": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
+      "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
+      "weight": 0.224
     },
     {
       "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
       "target": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
-      "weight": 0.221
+      "weight": 0.223
+    },
+    {
+      "source": "2021-03-01-unique-basin-related-alteration-on-early-mars",
+      "target": "2025-01-01-alteration-of-pre-noachian-mars",
+      "weight": 0.222
+    },
+    {
+      "source": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
+      "target": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
+      "weight": 0.222
     },
     {
       "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
@@ -1150,29 +1326,29 @@
       "weight": 0.22
     },
     {
-      "source": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
-      "target": "2022-10-01-feldspathic-crust-hellas-geology-2022",
-      "weight": 0.219
+      "source": "2025-11-22-ancient-anorthosites-mars-2025",
+      "target": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
+      "weight": 0.218
     },
     {
-      "source": "2021-03-01-unique-basin-related-alteration-on-early-mars",
-      "target": "2025-01-01-alteration-of-pre-noachian-mars",
-      "weight": 0.218
+      "source": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
+      "target": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
+      "weight": 0.214
+    },
+    {
+      "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
+      "target": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "weight": 0.214
     },
     {
       "source": "2023-03-01-crism-processing-pipeline-2023",
       "target": "2024-03-01-spectral-cube-analysis-tool-2024",
-      "weight": 0.215
+      "weight": 0.214
     },
     {
-      "source": "2025-11-22-ancient-anorthosites-mars-2025",
-      "target": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
-      "weight": 0.215
-    },
-    {
-      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
-      "target": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
-      "weight": 0.212
+      "source": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "target": "2026-10-18-varda-software",
+      "weight": 0.213
     },
     {
       "source": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
@@ -1180,44 +1356,29 @@
       "weight": 0.212
     },
     {
-      "source": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
-      "target": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
-      "weight": 0.212
-    },
-    {
-      "source": "2024-03-01-plagioclase-detections-igneous-spectra-2024",
-      "target": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
-      "weight": 0.212
-    },
-    {
-      "source": "2022-06-01-mars-uplifted-massifs-ancient-crust-2022",
-      "target": "2024-03-01-new-views-pre-noachian-mars-2024",
-      "weight": 0.211
-    },
-    {
-      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
-      "target": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
-      "weight": 0.207
+      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
+      "target": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
+      "weight": 0.21
     },
     {
       "source": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
       "target": "2024-03-01-new-views-pre-noachian-mars-2024",
-      "weight": 0.207
+      "weight": 0.209
+    },
+    {
+      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "target": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
+      "weight": 0.205
     },
     {
       "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
       "target": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
-      "weight": 0.203
-    },
-    {
-      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
-      "target": "2020-03-01-regional-compositional-mapping-using-crism-multispectral-map",
-      "weight": 0.203
+      "weight": 0.205
     },
     {
       "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
       "target": "2025-11-22-ancient-anorthosites-mars-2025",
-      "weight": 0.202
+      "weight": 0.204
     },
     {
       "source": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
@@ -1227,77 +1388,92 @@
     {
       "source": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
       "target": "2025-01-01-alteration-of-pre-noachian-mars",
-      "weight": 0.195
-    },
-    {
-      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
-      "target": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
-      "weight": 0.192
+      "weight": 0.2
     },
     {
       "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
       "target": "2025-01-01-alteration-of-pre-noachian-mars",
-      "weight": 0.192
+      "weight": 0.198
     },
     {
-      "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
-      "target": "2026-01-01-diversity-distribution-and-petrogenesis-of-spectrally-feldsp",
-      "weight": 0.186
+      "source": "2020-01-01-michael-s-phillips-hypyrameter-hypyrameter-v0-2-0",
+      "target": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "weight": 0.198
+    },
+    {
+      "source": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
+      "target": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
+      "weight": 0.193
     },
     {
       "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
       "target": "2024-03-01-new-views-pre-noachian-mars-2024",
-      "weight": 0.185
+      "weight": 0.189
     },
     {
-      "source": "2021-05-01-planetary-geologic-mapping",
-      "target": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
+      "source": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "target": "2026-10-18-varda-software",
+      "weight": 0.186
+    },
+    {
+      "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
+      "target": "2026-01-01-diversity-distribution-and-petrogenesis-of-spectrally-feldsp",
       "weight": 0.185
     },
     {
       "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
-      "target": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
-      "weight": 0.174
+      "target": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
+      "weight": 0.184
     },
     {
-      "source": "2021-03-01-unique-basin-related-alteration-on-early-mars",
-      "target": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
-      "weight": 0.174
+      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
+      "target": "2026-10-29-mercury-crater-graph-hollows-dataset",
+      "weight": 0.184
+    },
+    {
+      "source": "2021-05-01-planetary-geologic-mapping",
+      "target": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
+      "weight": 0.181
     },
     {
       "source": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
       "target": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
-      "weight": 0.172
+      "weight": 0.175
+    },
+    {
+      "source": "2026-01-01-craterbench-r-instance-level-crater-retrieval-for-planetary",
+      "target": "2026-10-26-mars-crater-superposition-graph-dataset",
+      "weight": 0.174
     },
     {
       "source": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
       "target": "2022-06-01-mars-analog-deep-learning-2022",
-      "weight": 0.17
+      "weight": 0.173
     },
     {
       "source": "2018-09-01-hydrothermal-alteration-impact-basins-2018",
       "target": "2021-03-01-unique-basin-related-alteration-on-early-mars",
-      "weight": 0.166
+      "weight": 0.173
     },
     {
-      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
-      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
-      "weight": 0.165
+      "source": "2020-01-01-michael-s-phillips-hypyrameter-hypyrameter-v0-2-0",
+      "target": "2026-10-18-varda-software",
+      "weight": 0.173
     },
     {
       "source": "2020-03-01-remote-detection-and-identification-of-microbial-habitats-in",
       "target": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
-      "weight": 0.165
+      "weight": 0.167
     },
     {
       "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
       "target": "2018-03-01-feldspathic-rock-hellas-mantle-2018",
-      "weight": 0.164
+      "weight": 0.165
     },
     {
       "source": "2016-12-01-composition-and-distribution-of-northern-hellas-massifs-prel",
       "target": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
-      "weight": 0.16
+      "weight": 0.161
     },
     {
       "source": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
@@ -1305,9 +1481,29 @@
       "weight": 0.16
     },
     {
-      "source": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
+      "source": "2021-05-01-planetary-geologic-mapping",
+      "target": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "weight": 0.16
+    },
+    {
+      "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
+      "target": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
+      "weight": 0.159
+    },
+    {
+      "source": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
       "target": "2021-12-01-regional-composition-isidis-hellas-2021",
-      "weight": 0.158
+      "weight": 0.159
+    },
+    {
+      "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
+      "target": "2022-06-01-mars-analog-deep-learning-2022",
+      "weight": 0.159
+    },
+    {
+      "source": "2021-03-01-unique-basin-related-alteration-on-early-mars",
+      "target": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
+      "weight": 0.159
     },
     {
       "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
@@ -1315,49 +1511,39 @@
       "weight": 0.158
     },
     {
-      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
-      "target": "2021-09-01-mercury-hollows-lifecycle-2021",
-      "weight": 0.157
-    },
-    {
-      "source": "2020-01-01-michael-s-phillips-hypyrameter-hypyrameter-v0-2-0",
-      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
-      "weight": 0.157
-    },
-    {
-      "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
-      "target": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
-      "weight": 0.156
-    },
-    {
-      "source": "2021-05-01-planetary-geologic-mapping",
-      "target": "2022-05-01-crism-radiometric-reconciliation-2022",
-      "weight": 0.156
-    },
-    {
       "source": "2022-01-01-signatures-of-life-learning-features-of-prebiotic-and-biotic",
       "target": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
+      "weight": 0.158
+    },
+    {
+      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
+      "target": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
+      "weight": 0.157
+    },
+    {
+      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
+      "target": "2022-12-01-conv-net-data-orbit-to-ground",
       "weight": 0.156
-    },
-    {
-      "source": "2021-01-01-composition-of-4-1-ga-crustal-blocks-northern-hellas-mars",
-      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
-      "weight": 0.155
-    },
-    {
-      "source": "2021-01-01-planetary-processes-active-and-ancient-hollowing-on-mercury",
-      "target": "2022-06-01-mars-analog-deep-learning-2022",
-      "weight": 0.155
     },
     {
       "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
       "target": "2026-09-01-visible-to-near-infrared-properties-of-felsic-rocks-plagiocl",
-      "weight": 0.153
+      "weight": 0.154
     },
     {
       "source": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
       "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
-      "weight": 0.152
+      "weight": 0.154
+    },
+    {
+      "source": "2019-03-01-hydrothermal-alteration-impact-basins-2019",
+      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
+      "weight": 0.151
+    },
+    {
+      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
+      "target": "2022-06-01-mars-analog-deep-learning-2022",
+      "weight": 0.151
     },
     {
       "source": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
@@ -1365,129 +1551,139 @@
       "weight": 0.15
     },
     {
-      "source": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",
-      "target": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
-      "weight": 0.15
-    },
-    {
-      "source": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
-      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
+      "target": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
       "weight": 0.148
     },
     {
       "source": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
       "target": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
-      "weight": 0.145
+      "weight": 0.148
     },
     {
       "source": "2023-10-01-basin-related-alteration-early-mars-2023",
       "target": "2024-03-01-new-views-pre-noachian-mars-2024",
-      "weight": 0.145
-    },
-    {
-      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
-      "target": "2022-06-01-mars-analog-deep-learning-2022",
-      "weight": 0.144
+      "weight": 0.147
     },
     {
       "source": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
       "target": "2023-03-01-rover-aerial-vehicle-exploration-network-raven-mission-plann",
-      "weight": 0.144
+      "weight": 0.146
     },
     {
-      "source": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
-      "target": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
-      "weight": 0.143
+      "source": "2026-10-29-mercury-crater-graph-hollows-dataset",
+      "target": "2026-11-11-mercury-hollows-code-and-data",
+      "weight": 0.146
     },
     {
       "source": "2021-05-01-planetary-geologic-mapping",
       "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
-      "weight": 0.142
+      "weight": 0.145
     },
     {
       "source": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
       "target": "2026-01-01-diversity-distribution-and-petrogenesis-of-spectrally-feldsp",
+      "weight": 0.144
+    },
+    {
+      "source": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",
+      "target": "2026-10-18-varda-software",
+      "weight": 0.143
+    },
+    {
+      "source": "2019-07-01-hydrothermal-alteration-related-to-large-impact-basins",
+      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
       "weight": 0.142
     },
     {
-      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
-      "target": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
-      "weight": 0.141
+      "source": "2022-05-01-decoding-the-patterns-of-life-towards-predictive-search-and",
+      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "weight": 0.142
     },
     {
-      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
-      "target": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
-      "weight": 0.14
+      "source": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
+      "target": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
+      "weight": 0.142
+    },
+    {
+      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
+      "target": "2021-09-01-mercury-hollows-lifecycle-2021",
+      "weight": 0.138
     },
     {
       "source": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
       "target": "2025-01-01-mars-analog-field-testing-reveals-key-operational-strategies",
-      "weight": 0.139
+      "weight": 0.138
     },
     {
-      "source": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
-      "target": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
-      "weight": 0.135
-    },
-    {
-      "source": "2022-01-01-insights-of-extreme-desert-ecology-to-the-habitats-and-habit",
-      "target": "2022-06-01-mars-analog-deep-learning-2022",
-      "weight": 0.134
-    },
-    {
-      "source": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
-      "target": "2025-01-01-a-novel-theoretical-approach-to-predict-the-interannual-vari",
-      "weight": 0.132
-    },
-    {
-      "source": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",
-      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
-      "weight": 0.132
-    },
-    {
-      "source": "2024-03-01-spectral-cube-analysis-tool-2024",
-      "target": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
-      "weight": 0.132
-    },
-    {
-      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
-      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
-      "weight": 0.131
+      "source": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
+      "target": "2026-10-29-mercury-crater-graph-hollows-dataset",
+      "weight": 0.138
     },
     {
       "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
       "target": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
+      "weight": 0.136
+    },
+    {
+      "source": "2022-01-01-insights-of-extreme-desert-ecology-to-the-habitats-and-habit",
+      "target": "2022-06-01-mars-analog-deep-learning-2022",
+      "weight": 0.135
+    },
+    {
+      "source": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",
+      "target": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
+      "weight": 0.135
+    },
+    {
+      "source": "2024-03-01-new-views-pre-noachian-mars-2024",
+      "target": "2025-11-22-ancient-anorthosites-mars-2025",
       "weight": 0.13
     },
     {
-      "source": "2021-12-01-regional-composition-isidis-hellas-2021",
-      "target": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
+      "source": "2020-01-01-michael-s-phillips-hypyrameter-hypyrameter-v0-2-0",
+      "target": "2026-11-11-mercury-hollows-code-and-data",
       "weight": 0.129
     },
     {
       "source": "2022-12-01-molecular-complexity-to-biosignatures-a-machine-learning-pip",
       "target": "2023-03-01-crism-processing-pipeline-2023",
-      "weight": 0.128
+      "weight": 0.129
     },
     {
-      "source": "2024-03-01-new-views-pre-noachian-mars-2024",
-      "target": "2025-11-22-ancient-anorthosites-mars-2025",
-      "weight": 0.128
-    },
-    {
-      "source": "2024-11-01-hypyrameter-python-toolbox-2024",
-      "target": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
+      "source": "2026-01-01-craterbench-r-instance-level-crater-retrieval-for-planetary",
+      "target": "2026-01-06-a-domain-specific-vision-foundation-model-for-mars-self-supe",
       "weight": 0.128
     },
     {
       "source": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
       "target": "2023-01-01-planetary-mapping-using-deep-learning-a-method-to-evaluate-f",
+      "weight": 0.127
+    },
+    {
+      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
+      "target": "2023-03-01-correlating-aerial-and-ground-based-hyperspectral-data-with",
+      "weight": 0.127
+    },
+    {
+      "source": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "target": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
+      "weight": 0.127
+    },
+    {
+      "source": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "target": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
       "weight": 0.126
     },
     {
-      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
-      "target": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
+      "target": "2023-10-01-ai-search-for-life-2023",
       "weight": 0.125
+    },
+    {
+      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
+      "target": "2021-12-01-regional-composition-isidis-hellas-2021",
+      "weight": 0.124
     },
     {
       "source": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
@@ -1495,8 +1691,23 @@
       "weight": 0.124
     },
     {
+      "source": "2018-03-01-astrobiology-fdl-partnership-2018",
+      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
+      "weight": 0.123
+    },
+    {
+      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
+      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "weight": 0.123
+    },
+    {
       "source": "2026-01-01-craterbench-r-instance-level-crater-retrieval-for-planetary",
-      "target": "2026-01-06-a-domain-specific-vision-foundation-model-for-mars-self-supe",
+      "target": "2026-10-29-mercury-crater-graph-hollows-dataset",
+      "weight": 0.122
+    },
+    {
+      "source": "2026-01-01-visualization-and-analysis-of-raster-data-with-an-open-sourc",
+      "target": "2026-10-18-varda-software",
       "weight": 0.122
     },
     {
@@ -1505,58 +1716,63 @@
       "weight": 0.121
     },
     {
-      "source": "2018-03-01-astrobiology-fdl-partnership-2018",
-      "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
-      "weight": 0.121
+      "source": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "target": "2024-03-01-spectral-cube-analysis-tool-2024",
+      "weight": 0.119
     },
     {
-      "source": "2021-09-01-mercury-hollows-lifecycle-2021",
+      "source": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "target": "2025-01-01-a-novel-theoretical-approach-to-predict-the-interannual-vari",
+      "weight": 0.119
+    },
+    {
+      "source": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
       "target": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
-      "weight": 0.121
-    },
-    {
-      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
-      "target": "2023-10-01-ai-search-for-life-2023",
       "weight": 0.118
     },
     {
-      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
-      "target": "2022-05-01-crism-radiometric-reconciliation-2022",
-      "weight": 0.116
+      "source": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
+      "target": "2026-10-29-mercury-crater-graph-hollows-dataset",
+      "weight": 0.118
     },
     {
-      "source": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
-      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
+      "target": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
       "weight": 0.115
     },
     {
       "source": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
       "target": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
-      "weight": 0.113
+      "weight": 0.114
     },
     {
       "source": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
       "target": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
-      "weight": 0.112
+      "weight": 0.114
     },
     {
-      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
-      "target": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
-      "weight": 0.109
+      "source": "2023-06-01-automated-vectorization-of-spectral-parameter-raster-product",
+      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "weight": 0.114
+    },
+    {
+      "source": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "weight": 0.113
+    },
+    {
+      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
+      "target": "2022-05-01-crism-radiometric-reconciliation-2022",
+      "weight": 0.11
     },
     {
       "source": "2023-02-01-salt-constructs-astrobiology-targets-2023",
       "target": "2024-02-01-ai-ml-astrobiology-bottlenecks-2024",
-      "weight": 0.109
+      "weight": 0.11
     },
     {
-      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
-      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
-      "weight": 0.105
-    },
-    {
-      "source": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
-      "target": "2023-10-01-ai-search-for-life-2023",
+      "source": "2021-09-01-mercury-hollows-lifecycle-2021",
+      "target": "2025-12-28-mercury-s-hollows-a-potential-signature-of-sulfur-exosphere",
       "weight": 0.104
     },
     {
@@ -1565,29 +1781,19 @@
       "weight": 0.104
     },
     {
-      "source": "2018-03-01-astrobiology-fdl-partnership-2018",
-      "target": "2026-01-06-a-domain-specific-vision-foundation-model-for-mars-self-supe",
-      "weight": 0.102
-    },
-    {
-      "source": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
-      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
-      "weight": 0.101
-    },
-    {
-      "source": "2021-03-01-convolutional-neural-network-image-classification-of-mars-an",
-      "target": "2024-08-01-rover-helicopter-mars-analog-iceland-2024",
-      "weight": 0.1
-    },
-    {
-      "source": "2023-02-01-salt-constructs-astrobiology-targets-2023",
+      "source": "2021-01-01-biosignatures-knowledge-gaps-mars-2021",
       "target": "2023-10-01-ai-search-for-life-2023",
-      "weight": 0.097
+      "weight": 0.103
+    },
+    {
+      "source": "2020-01-01-a-new-community-resource-for-terrestrial-analog-field-resear",
+      "target": "2023-07-01-crism-hyperspectral-mawrth-vallis-2023",
+      "weight": 0.1
     },
     {
       "source": "2025-01-01-plagioclase-rich-crust-on-mars-revealed-in-argyre-basin-mass",
       "target": "2026-09-01-visible-to-near-infrared-properties-of-felsic-rocks-plagiocl",
-      "weight": 0.097
+      "weight": 0.098
     },
     {
       "source": "2018-03-01-thresholds-of-detection-and-identification-of-halite-nodule",
@@ -1595,104 +1801,186 @@
       "weight": 0.096
     },
     {
-      "source": "2023-03-01-crism-processing-pipeline-2023",
-      "target": "2024-11-01-hypyrameter-python-toolbox-2024",
+      "source": "2023-02-01-salt-constructs-astrobiology-targets-2023",
+      "target": "2023-10-01-ai-search-for-life-2023",
       "weight": 0.096
+    },
+    {
+      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
+      "target": "2020-01-01-michael-s-phillips-hypyrameter-hypyrameter-v0-2-0",
+      "weight": 0.095
     },
     {
       "source": "2023-03-01-rover-aerial-vehicle-exploration-network-raven-mission-plann",
       "target": "2025-01-01-mars-analog-field-testing-reveals-key-operational-strategies",
-      "weight": 0.091
-    },
-    {
-      "source": "2024-03-01-space-imagery-center-arizona-2024",
-      "target": "2024-03-01-spectral-cube-analysis-tool-2024",
-      "weight": 0.091
+      "weight": 0.093
     },
     {
       "source": "2018-03-01-astrobiology-fdl-partnership-2018",
       "target": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
+      "weight": 0.092
+    },
+    {
+      "source": "2022-12-01-conv-net-data-orbit-to-ground",
+      "target": "2026-10-18-varda-software",
+      "weight": 0.092
+    },
+    {
+      "source": "2022-12-01-modeling-molecular-complexity-building-a-novel-multidiscipli",
+      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
       "weight": 0.09
     },
     {
-      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
-      "target": "2025-01-01-a-novel-theoretical-approach-to-predict-the-interannual-vari",
+      "source": "2018-03-01-astrobiology-fdl-partnership-2018",
+      "target": "2026-01-06-a-domain-specific-vision-foundation-model-for-mars-self-supe",
       "weight": 0.088
-    },
-    {
-      "source": "2016-03-01-hollows-on-mercury-no-geographic-trends-in-reflectance",
-      "target": "2024-01-01-a-prediction-of-the-inter-annual-variability-of-sulfur-in-me",
-      "weight": 0.086
     },
     {
       "source": "2018-03-01-astrobiology-fdl-partnership-2018",
       "target": "2023-02-01-salt-constructs-astrobiology-targets-2023",
-      "weight": 0.085
+      "weight": 0.087
+    },
+    {
+      "source": "2021-05-01-planetary-geologic-mapping",
+      "target": "2023-03-01-crism-processing-pipeline-2023",
+      "weight": 0.086
     },
     {
       "source": "2022-04-01-gypsum-habitability-zones-2022",
       "target": "2024-01-01-pattern-recognition-and-analysis-in-planetary-contexts-re-ex",
-      "weight": 0.084
+      "weight": 0.085
     },
     {
       "source": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
       "target": "2023-03-01-evaluating-the-use-of-unoccupied-aircraft-systems-uas-for-pl",
-      "weight": 0.081
+      "weight": 0.082
     },
     {
       "source": "2017-03-01-thresholds-of-detectability-for-habitable-environments-in-th",
       "target": "2025-01-01-mars-analog-field-testing-reveals-key-operational-strategies",
-      "weight": 0.08
-    },
-    {
-      "source": "2021-05-01-planetary-geologic-mapping",
-      "target": "2024-03-01-space-imagery-center-arizona-2024",
-      "weight": 0.08
-    },
-    {
-      "source": "2018-03-01-astrobiology-fdl-partnership-2018",
-      "target": "2020-03-01-a-thermal-model-and-the-hermean-hollows-constraints-on-plaus",
-      "weight": 0.079
+      "weight": 0.081
     },
     {
       "source": "2022-01-01-insights-of-extreme-desert-ecology-to-the-habitats-and-habit",
       "target": "2023-09-01-gypsum-degassing-holes-tumuli-2023",
-      "weight": 0.079
+      "weight": 0.08
     },
     {
-      "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
-      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
-      "weight": 0.077
-    },
-    {
-      "source": "2021-05-01-planetary-geologic-mapping",
-      "target": "2026-01-01-craterbench-r-instance-level-crater-retrieval-for-planetary",
-      "weight": 0.076
+      "source": "2026-06-02-proposed-identification-criteria-of-the-martian-lower-crust",
+      "target": "2026-10-26-mars-crater-superposition-graph-dataset",
+      "weight": 0.08
     },
     {
       "source": "2018-03-01-astrobiology-fdl-partnership-2018",
       "target": "2023-10-01-ai-search-for-life-2023",
-      "weight": 0.075
+      "weight": 0.077
+    },
+    {
+      "source": "2019-07-01-microbial-communities-salar-pajonales-2019",
+      "target": "2023-04-01-orbit-to-ground-biosignature-framework-2023",
+      "weight": 0.076
     },
     {
       "source": "2020-01-01-inferring-molecular-complexity-from-mass-spectrometry-data-u",
       "target": "2022-01-01-signatures-of-life-learning-features-of-prebiotic-and-biotic",
+      "weight": 0.075
+    },
+    {
+      "source": "2021-05-01-planetary-geologic-mapping",
+      "target": "2024-03-01-space-imagery-center-arizona-2024",
       "weight": 0.074
     },
     {
       "source": "2021-09-01-mercury-hollows-lifecycle-2021",
       "target": "2022-01-01-signatures-of-life-learning-features-of-prebiotic-and-biotic",
-      "weight": 0.073
+      "weight": 0.074
     },
     {
       "source": "2022-03-01-ca-sulfate-mars-analog-morphologies-2022",
       "target": "2023-02-01-salt-constructs-astrobiology-targets-2023",
       "weight": 0.073
+    }
+  ],
+  "clusters": [
+    {
+      "id": 0,
+      "size": 20,
+      "terms": [
+        "analog",
+        "biosignature",
+        "search"
+      ],
+      "label": "analog \u00b7 biosignature \u00b7 search"
     },
     {
-      "source": "2021-09-01-mercury-hollows-lifecycle-2021",
-      "target": "2025-01-01-a-novel-theoretical-approach-to-predict-the-interannual-vari",
-      "weight": 0.071
+      "id": 1,
+      "size": 13,
+      "terms": [
+        "crust",
+        "hellas",
+        "rock"
+      ],
+      "label": "crust \u00b7 hellas \u00b7 rock"
+    },
+    {
+      "id": 2,
+      "size": 11,
+      "terms": [
+        "mercury",
+        "hollow",
+        "crater"
+      ],
+      "label": "mercury \u00b7 hollow \u00b7 crater"
+    },
+    {
+      "id": 3,
+      "size": 7,
+      "terms": [
+        "alteration",
+        "basin",
+        "hydrothermal"
+      ],
+      "label": "alteration \u00b7 basin \u00b7 hydrothermal"
+    },
+    {
+      "id": 4,
+      "size": 7,
+      "terms": [
+        "mapping",
+        "crism",
+        "hyperspectral"
+      ],
+      "label": "mapping \u00b7 crism \u00b7 hyperspectral"
+    },
+    {
+      "id": 5,
+      "size": 6,
+      "terms": [
+        "spectral",
+        "python",
+        "parameter"
+      ],
+      "label": "spectral \u00b7 python \u00b7 parameter"
+    },
+    {
+      "id": 6,
+      "size": 6,
+      "terms": [
+        "exploration",
+        "iceland",
+        "field"
+      ],
+      "label": "exploration \u00b7 iceland \u00b7 field"
+    },
+    {
+      "id": 7,
+      "size": 5,
+      "terms": [
+        "molecular",
+        "complexity",
+        "mass"
+      ],
+      "label": "molecular \u00b7 complexity \u00b7 mass"
     }
   ]
 }
