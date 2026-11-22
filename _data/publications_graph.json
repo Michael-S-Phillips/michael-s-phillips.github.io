@@ -48,7 +48,7 @@
       "planet": "multi",
       "topic": "astrobiology",
       "pub_type": "conference",
-      "citations": 0,
+      "citations": 2,
       "excerpt": "Discussion of the Frontier Development Lab model for advancing astrobiology research through public-private partnerships and machine learning.",
       "cluster": 0
     },
@@ -321,7 +321,7 @@
       "planet": "mercury",
       "topic": "other",
       "pub_type": "journal",
-      "citations": 17,
+      "citations": 18,
       "excerpt": "Comprehensive analysis of Mercury's enigmatic hollow features, evaluating volatile phases and proposing a novel formation mechanism.",
       "cluster": 2
     },
